@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  reflected_xss:
+    build: .
+    container_name: reflected_xss
+    ports:
+      - "8001:8000"
+    volumes:
+      - ./xss_lab/reflected_xss:/var/www/html
+
+  stored_xss:
+    build: .
+    container_name: stored_xss
+    ports:
+      - "8002:8000"
+    volumes:
+      - ./xss_lab/stored_xss:/var/www/html
+
+  dom_xss:
+    build: .
+    container_name: dom_xss
+    ports:
+      - "8003:8000"
+    volumes:
+      - ./xss_lab/dom_xss:/var/www/html
