@@ -1,0 +1,1442 @@
+payload,true_label,predicted_label,probabilities,inference_time_ms
+"<style>@keyframes slidein {}</style><figcaption style=""animation-duration:1s;animation-name:slidein;animation-iteration-count:2"" onanimationiteration=""alert(1)""></figcaption>",1,0,"{'benign': 0.6112, 'malicious': 0.3888}",1932.6136000000015
+<strong id=x tabindex=1 onactivate=alert(1)></strong>,1,0,"{'benign': 0.5138, 'malicious': 0.4862}",42.33699999999985
+<map onpointerup=alert(1)>XSS</map>,1,0,"{'benign': 0.5747, 'malicious': 0.4253}",27.898799999999113
+"<embed oncontextmenu=""alert(1)"">test</embed>",1,0,"{'benign': 0.5572, 'malicious': 0.4428}",28.57370000000259
+<input id=x tabindex=1 onactivate=alert(1)></input>,1,0,"{'benign': 0.5143, 'malicious': 0.4857}",25.157000000000096
+"<style>:target {color:red;}</style><shadow id=x style=""transition:color 1s"" ontransitionend=alert(1)></shadow>",1,0,"{'benign': 0.6284, 'malicious': 0.3716}",39.32749999999885
+"<style>:target {transform: rotate(180deg);}</style><element id=x style=""transition:transform 2s"" ontransitionrun=alert(1)></element>",1,0,"{'benign': 0.5977, 'malicious': 0.4023}",41.11950000000064
+"<IMG STYLE="":expr/**/ession(alert(''))"">",1,0,"{'benign': 0.5249, 'malicious': 0.4751}",30.248200000002612
+"<time onbeforecut=""alert(1)"" contenteditable>test</time>",1,0,"{'benign': 0.6437, 'malicious': 0.3563}",26.505000000000223
+"<sub onmouseout=""alert(1)"">test</sub>",1,0,"{'benign': 0.5504, 'malicious': 0.4496}",25.19399999999905
+URL=javascript:alert(''),1,0,"{'benign': 0.6041, 'malicious': 0.3959}",26.996100000001633
+"<rt onpaste=""alert(1)"" contenteditable>test</rt>",1,0,"{'benign': 0.5768, 'malicious': 0.4232}",24.23119999999912
+"<br oncontextmenu=""alert(1)"">test</br>",1,0,"{'benign': 0.5177, 'malicious': 0.4823}",25.428500000000298
+"<style>:target {color:red;}</style><slot id=x style=""transition:color 1s"" ontransitionend=alert(1)></slot>",1,0,"{'benign': 0.6075, 'malicious': 0.3925}",37.182200000000165
+<object onblur=alert(1) tabindex=1 id=x></object><input autofocus>,1,0,"{'benign': 0.5158, 'malicious': 0.4842}",31.008600000003383
+document.scripts.length,1,0,"{'benign': 0.538, 'malicious': 0.462}",21.315400000002427
+"<listing onmouseenter=""alert(1)"">test</listing>",1,0,"{'benign': 0.53, 'malicious': 0.47}",30.433800000000844
+"<style>@keyframes x{}</style><u style=""animation-name:x"" onanimationstart=""alert(1)""></u>",1,0,"{'benign': 0.5673, 'malicious': 0.4327}",37.62790000000038
+"<strong draggable=""true"" ondrag=""alert(1)"">test</strong>",1,0,"{'benign': 0.5169, 'malicious': 0.4831}",26.87699999999893
+"<q onmouseup=""alert(1)"">test</q>",1,0,"{'benign': 0.502, 'malicious': 0.498}",21.718100000001073
+<bgsound id=x tabindex=1 onfocusin=alert(1)></bgsound>,1,0,"{'benign': 0.5414, 'malicious': 0.4586}",27.462899999999735
+"<div draggable=""true"" contenteditable>drag me</div><hgroup ondragover=alert(1) contenteditable>drop here</hgroup>",1,0,"{'benign': 0.6267, 'malicious': 0.3733}",35.91690000000014
+"document.getElementsByClassName("""").length",1,0,"{'benign': 0.5589, 'malicious': 0.4411}",24.858300000001776
+<big onfocusout=alert(1) tabindex=1 id=x></big><input autofocus>,1,0,"{'benign': 0.5598, 'malicious': 0.4402}",26.2108000000012
+"<address onbeforecut=""alert(1)"" contenteditable>test</address>",1,0,"{'benign': 0.5442, 'malicious': 0.4558}",27.917699999999712
+url(javascript:alert('')),1,0,"{'benign': 0.6393, 'malicious': 0.3607}",20.859299999997916
+"<isindex draggable=""true"" ondragleave=""alert(1)"">test</isindex>",1,0,"{'benign': 0.516, 'malicious': 0.484}",32.497299999999285
+<menuitem onpointerleave=alert(1)>XSS</menuitem>,1,0,"{'benign': 0.5399, 'malicious': 0.4601}",25.22459999999782
+<tr id=x tabindex=1 onfocus=alert(1)></tr>,1,0,"{'benign': 0.5469, 'malicious': 0.4531}",26.613499999999846
+"<style>@keyframes x{}</style><b style=""animation-name:x"" onanimationstart=""alert(1)""></b>",1,0,"{'benign': 0.5739, 'malicious': 0.4261}",33.2125000000012
+"<select onbeforecut=""alert(1)"" contenteditable>test</select>",1,0,"{'benign': 0.6115, 'malicious': 0.3885}",24.39329999999984
+"<option onkeydown=""alert(1)"" contenteditable>test</option>",1,0,"{'benign': 0.5739, 'malicious': 0.4261}",24.66270000000037
+<small id=x tabindex=1 onbeforeactivate=alert(1)></small>,1,0,"{'benign': 0.563, 'malicious': 0.437}",26.763700000000057
+<hr id=x tabindex=1 onactivate=alert(1)></hr>,1,0,"{'benign': 0.5374, 'malicious': 0.4626}",25.954399999999822
+"<style>@keyframes x{}</style><body style=""animation-name:x"" onanimationend=""alert(1)""></body>",1,0,"{'benign': 0.5964, 'malicious': 0.4036}",42.11059999999733
+<em onpointerout=alert(1)>XSS</em>,1,0,"{'benign': 0.5875, 'malicious': 0.4125}",28.545799999999844
+"<cite onmouseout=""alert(1)"">test</cite>",1,0,"{'benign': 0.5264, 'malicious': 0.4736}",26.62169999999975
+"<details onmousemove=""alert(1)"">test</details>",1,0,"{'benign': 0.6109, 'malicious': 0.3891}",22.687900000001093
+<table onpointerleave=alert(1)>XSS</table>,1,0,"{'benign': 0.559, 'malicious': 0.441}",24.847699999998696
+"<div draggable=""true"" contenteditable>drag me</div><listing ondrop=alert(1) contenteditable>drop here</listing>",1,0,"{'benign': 0.6054, 'malicious': 0.3946}",32.097000000000264
+"<div draggable=""true"" contenteditable>drag me</div><ol ondrop=alert(1) contenteditable>drop here</ol>",1,0,"{'benign': 0.618, 'malicious': 0.382}",31.69889999999853
+"<bdo onclick=""alert(1)"">test</bdo>",1,0,"{'benign': 0.6431, 'malicious': 0.3569}",24.87419999999929
+"<style>:target {color:red;}</style><map id=x style=""transition:color 1s"" ontransitionend=alert(1)></map>",1,0,"{'benign': 0.6168, 'malicious': 0.3832}",32.52279999999885
+<main id=x tabindex=1 onbeforedeactivate=alert(1)></main><input autofocus>,1,0,"{'benign': 0.5423, 'malicious': 0.4577}",28.8353999999984
+"<image onmouseover=""alert(1)"">test</image>",1,0,"{'benign': 0.5406, 'malicious': 0.4594}",28.052200000001193
+<noembed id=x tabindex=1 onfocus=alert(1)></noembed>,1,0,"{'benign': 0.5804, 'malicious': 0.4196}",28.63100000000074
+<sub onpointerleave=alert(1)>XSS</sub>,1,0,"{'benign': 0.6032, 'malicious': 0.3968}",24.710100000000068
+"<area onkeyup=""alert(1)"" contenteditable>test</area>",1,0,"{'benign': 0.5732, 'malicious': 0.4268}",31.226700000001273
+<picture id=x tabindex=1 onbeforedeactivate=alert(1)></picture><input autofocus>,1,0,"{'benign': 0.5637, 'malicious': 0.4363}",26.965699999998094
+"<style>@keyframes x{from {left:0;}to {left: 1000px;}}:target {animation:10s ease-in-out 0s 1 x;}</style><input id=x style=""position:absolute;"" onanimationcancel=""alert(1)""></input>",1,0,"{'benign': 0.5941, 'malicious': 0.4059}",56.63140000000055
+"<big draggable=""true"" ondragstart=""alert(1)"">test</big>",1,0,"{'benign': 0.5768, 'malicious': 0.4232}",26.86170000000132
+<section onpointerover=alert(1)>XSS</section>,1,0,"{'benign': 0.558, 'malicious': 0.442}",23.415199999998748
+<object onpointerover=alert(1)>XSS</object>,1,0,"{'benign': 0.5023, 'malicious': 0.4977}",25.292800000002558
+"<optgroup onbeforecut=""alert(1)"" contenteditable>test</optgroup>",1,0,"{'benign': 0.6372, 'malicious': 0.3628}",29.271999999998854
+"<div draggable=""true"" contenteditable>drag me</div><link ondragover=alert(1) contenteditable>drop here</link>",1,0,"{'benign': 0.6011, 'malicious': 0.3989}",34.258300000001185
+"<textarea onmouseover=""alert(1)"">test</textarea>",1,0,"{'benign': 0.5841, 'malicious': 0.4159}",22.54650000000069
+"<tr onkeypress=""alert(1)"" contenteditable>test</tr>",1,0,"{'benign': 0.5992, 'malicious': 0.4008}",27.153999999999456
+"<header onmouseover=""alert(1)"">test</header>",1,0,"{'benign': 0.5763, 'malicious': 0.4237}",26.15420000000057
+"<style>@keyframes slidein {}</style><font style=""animation-duration:1s;animation-name:slidein;animation-iteration-count:2"" onanimationiteration=""alert(1)""></font>",1,0,"{'benign': 0.5748, 'malicious': 0.4252}",41.695299999997104
+"<div draggable=""true"" contenteditable>drag me</div><br ondrop=alert(1) contenteditable>drop here</br>",1,0,"{'benign': 0.5892, 'malicious': 0.4108}",32.778499999999156
+"<style>:target {color:red;}</style><audio id=x style=""transition:color 1s"" ontransitionend=alert(1)></audio>",1,0,"{'benign': 0.6261, 'malicious': 0.3739}",32.35950000000187
+"<frameset onbeforepaste=""alert(1)"" contenteditable>test</frameset>",1,0,"{'benign': 0.5867, 'malicious': 0.4133}",30.809099999999034
+"<progress onbeforecopy=""alert(1)"" contenteditable>test</progress>",1,0,"{'benign': 0.6163, 'malicious': 0.3837}",26.124499999998108
+"<ul draggable=""true"" ondragleave=""alert(1)"">test</ul>",1,0,"{'benign': 0.5251, 'malicious': 0.4749}",26.136999999998523
+"<div draggable=""true"" contenteditable>drag me</div><tbody ondrop=alert(1) contenteditable>drop here</tbody>",1,0,"{'benign': 0.6276, 'malicious': 0.3724}",32.56460000000061
+"<style>:target {transform: rotate(180deg);}</style><main id=x style=""transition:transform 2s"" ontransitionrun=alert(1)></main>",1,0,"{'benign': 0.5935, 'malicious': 0.4065}",40.211700000000405
+"<listing onclick=""alert(1)"">test</listing>",1,0,"{'benign': 0.5117, 'malicious': 0.4883}",27.691100000001967
+"<tr onkeydown=""alert(1)"" contenteditable>test</tr>",1,0,"{'benign': 0.578, 'malicious': 0.422}",32.9763000000014
+"<hgroup onmouseover=""alert(1)"">test</hgroup>",1,0,"{'benign': 0.5625, 'malicious': 0.4375}",25.26600000000201
+"<ul oncut=""alert(1)"" contenteditable>test</ul>",1,0,"{'benign': 0.5836, 'malicious': 0.4164}",25.27170000000112
+"<style>@keyframes x{from {left:0;}to {left: 1000px;}}:target {animation:10s ease-in-out 0s 1 x;}</style><em id=x style=""position:absolute;"" onanimationcancel=""alert(1)""></em>",1,0,"{'benign': 0.603, 'malicious': 0.397}",56.584100000002024
+<dir onpointerup=alert(1)>XSS</dir>,1,0,"{'benign': 0.5619, 'malicious': 0.4381}",21.491799999999728
+<li>Memory,0,1,"{'benign': 0.4293, 'malicious': 0.5707}",18.80199999999732
+"<canvas draggable=""true"" ondragleave=""alert(1)"">test</canvas>",1,0,"{'benign': 0.5192, 'malicious': 0.4808}",30.489400000000444
+"<multicol onmouseover=""alert(1)"">test</multicol>",1,0,"{'benign': 0.5868, 'malicious': 0.4132}",25.67330000000112
+"<track draggable=""true"" ondragstart=""alert(1)"">test</track>",1,0,"{'benign': 0.5233, 'malicious': 0.4767}",25.104200000001242
+"<details draggable=""true"" ondrag=""alert(1)"">test</details>",1,0,"{'benign': 0.5571, 'malicious': 0.4429}",25.520399999997778
+"<noframes draggable=""true"" ondrag=""alert(1)"">test</noframes>",1,0,"{'benign': 0.5404, 'malicious': 0.4596}",28.372700000002027
+"<style>@keyframes x{}</style><canvas style=""animation-name:x"" onanimationend=""alert(1)""></canvas>",1,0,"{'benign': 0.5733, 'malicious': 0.4267}",34.727000000000174
+<isindex id=x tabindex=1 onbeforedeactivate=alert(1)></isindex><input autofocus>,1,0,"{'benign': 0.5586, 'malicious': 0.4414}",31.672799999999057
+<dt onpointerenter=alert(1)>XSS</dt>,1,0,"{'benign': 0.6307, 'malicious': 0.3693}",23.247200000000134
+"<style>:target {color: red;}</style><nobr id=x style=""transition:color 10s"" ontransitioncancel=alert(1)></nobr>",1,0,"{'benign': 0.6422, 'malicious': 0.3578}",40.37830000000042
+<body onblur=alert(1) id=x><iframe id=x>,1,0,"{'benign': 0.5217, 'malicious': 0.4783}",25.431999999998567
+"<h1 draggable=""true"" ondragstart=""alert(1)"">test</h1>",1,0,"{'benign': 0.5426, 'malicious': 0.4574}",25.406999999997737
+<strong onblur=alert(1) tabindex=1 id=x></strong><input autofocus>,1,0,"{'benign': 0.559, 'malicious': 0.441}",28.72560000000135
+top[??al\x65rt??¢](1),1,0,"{'benign': 0.6574, 'malicious': 0.3426}",25.178900000000226
+"<br onmouseenter=""alert(1)"">test</br>",1,0,"{'benign': 0.5346, 'malicious': 0.4654}",23.020999999999958
+"<style>:target {color: red;}</style><ol id=x style=""transition:color 10s"" ontransitioncancel=alert(1)></ol>",1,0,"{'benign': 0.6492, 'malicious': 0.3508}",35.72759999999775
+<br onblur=alert(1) tabindex=1 id=x></br><input autofocus>,1,0,"{'benign': 0.5191, 'malicious': 0.4809}",25.494299999998304
+"<keygen onkeypress=""alert(1)"" contenteditable>test</keygen>",1,0,"{'benign': 0.5411, 'malicious': 0.4589}",25.63519999999997
+<marquee onstart=alert(1)></marquee>,1,0,"{'benign': 0.5469, 'malicious': 0.4531}",27.13500000000124
+"<th onbeforecut=""alert(1)"" contenteditable>test</th>",1,0,"{'benign': 0.5907, 'malicious': 0.4093}",24.964000000000652
+"<style>@keyframes x{}</style><label style=""animation-name:x"" onanimationstart=""alert(1)""></label>",1,0,"{'benign': 0.5662, 'malicious': 0.4338}",34.006399999999104
+<tr onpointerenter=alert(1)>XSS</tr>,1,0,"{'benign': 0.6057, 'malicious': 0.3943}",24.12879999999973
+"<s onkeyup=""alert(1)"" contenteditable>test</s>",1,0,"{'benign': 0.5747, 'malicious': 0.4253}",25.633300000002635
+"<acronym onmouseup=""alert(1)"">test</acronym>",1,0,"{'benign': 0.5575, 'malicious': 0.4425}",24.485200000000873
+"<div draggable=""true"" contenteditable>drag me</div><link ondrop=alert(1) contenteditable>drop here</link>",1,0,"{'benign': 0.6058, 'malicious': 0.3942}",34.42649999999858
+"<body onbeforepaste=""alert(1)"" contenteditable>test</body>",1,0,"{'benign': 0.6427, 'malicious': 0.3573}",27.530699999999797
+"<style>@keyframes x{}</style><img style=""animation-name:x"" onanimationend=""alert(1)""></img>",1,0,"{'benign': 0.5706, 'malicious': 0.4294}",36.13890000000097
+<cite onpointerleave=alert(1)>XSS</cite>,1,0,"{'benign': 0.6075, 'malicious': 0.3925}",23.26680000000181
+"<style oncut=""alert(1)"" contenteditable>test</style>",1,0,"{'benign': 0.5784, 'malicious': 0.4216}",24.623000000001838
+<textarea autofocus onfocusin=alert(1)>test</textarea>,1,0,"{'benign': 0.5657, 'malicious': 0.4343}",24.895900000000637
+"        <span class=""commit"">",0,1,"{'benign': 0.4634, 'malicious': 0.5366}",29.05460000000204
+<frame onpointerenter=alert(1)>XSS</frame>,1,0,"{'benign': 0.5876, 'malicious': 0.4124}",24.68730000000008
+<custom tags onpointerout=alert(1)>XSS</custom tags>,1,0,"{'benign': 0.5588, 'malicious': 0.4412}",25.891200000000225
+"<style>@keyframes x{}</style><textarea style=""animation-name:x"" onanimationstart=""alert(1)""></textarea>",1,0,"{'benign': 0.5749, 'malicious': 0.4251}",34.55929999999796
+"<style>:target {color:red;}</style><nextid id=x style=""transition:color 1s"" ontransitionend=alert(1)></nextid>",1,0,"{'benign': 0.6257, 'malicious': 0.3743}",33.15049999999786
+"<nobr ondblclick=""alert(1)"">test</nobr>",1,0,"{'benign': 0.5812, 'malicious': 0.4188}",24.483400000001154
+"<BR SIZE=""&{alert('')}"">",1,0,"{'benign': 0.534, 'malicious': 0.466}",25.36620000000056
+"<base onbeforecopy=""alert(1)"" contenteditable>test</base>",1,0,"{'benign': 0.6064, 'malicious': 0.3936}",26.031100000000862
+"<colgroup oncontextmenu=""alert(1)"">test</colgroup>",1,0,"{'benign': 0.602, 'malicious': 0.398}",24.466700000001396
+"<b onbeforepaste=""alert(1)"" contenteditable>test</b>",1,0,"{'benign': 0.6214, 'malicious': 0.3786}",25.19670000000218
+"<style>@keyframes x{}</style><button style=""animation-name:x"" onanimationstart=""alert(1)""></button>",1,0,"{'benign': 0.5696, 'malicious': 0.4304}",36.499800000001414
+<noscript id=x tabindex=1 onfocus=alert(1)></noscript>,1,0,"{'benign': 0.5634, 'malicious': 0.4366}",27.313599999999383
+"<title ondblclick=""alert(1)"">test</title>",1,0,"{'benign': 0.5916, 'malicious': 0.4084}",27.322300000001576
+"<td draggable=""true"" ondrag=""alert(1)"">test</td>",1,0,"{'benign': 0.5109, 'malicious': 0.4891}",25.12259999999955
+"<center onmouseleave=""alert(1)"">test</center>",1,0,"{'benign': 0.6093, 'malicious': 0.3907}",23.835399999999396
+<rtc onblur=alert(1) tabindex=1 id=x></rtc><input autofocus>,1,0,"{'benign': 0.5262, 'malicious': 0.4738}",26.418599999999515
+<th id=x tabindex=1 onbeforeactivate=alert(1)></th>,1,0,"{'benign': 0.5428, 'malicious': 0.4572}",25.685700000000367
+<menuitem onfocusout=alert(1) tabindex=1 id=x></menuitem><input autofocus>,1,0,"{'benign': 0.5047, 'malicious': 0.4953}",26.870100000000008
+"<p draggable=""true"" ondragstart=""alert(1)"">test</p>",1,0,"{'benign': 0.5185, 'malicious': 0.4815}",26.9880000000029
+"RC=""data:image/svg+xml;base64,PHN2ZyB4bWxuczpzdmc9Imh0dH A6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hs aW5rIiB2ZXJzaW9uPSIxLjAiIHg9IjAiIHk9IjAiIHdpZHRoPSIxOTQiIGhlaWdodD0iMjAw IiBpZD0ieHNzIj48c2NyaXB0IHR5cGU9InRleHQvZWNtYXNjcmlwdCI+YWxlcnQoIlh TUyIpOzwvc2NyaXB0Pjwvc3ZnPg=="" type=""image/svg+xml"" AllowScriptAccess=""always""",1,0,"{'benign': 0.6342, 'malicious': 0.3658}",131.6215000000014
+<hr onpointerenter=alert(1)>XSS</hr>,1,0,"{'benign': 0.6094, 'malicious': 0.3906}",23.03020000000089
+"<style>@keyframes x{}</style><slot style=""animation-name:x"" onanimationend=""alert(1)""></slot>",1,0,"{'benign': 0.5735, 'malicious': 0.4265}",31.81889999999754
+"<object ondblclick=""alert(1)"">test</object>",1,0,"{'benign': 0.5681, 'malicious': 0.4319}",28.433399999997278
+"<style>@keyframes x{}</style><applet style=""animation-name:x"" onanimationend=""alert(1)""></applet>",1,0,"{'benign': 0.5895, 'malicious': 0.4105}",35.09990000000229
+"<spacer onbeforecopy=""alert(1)"" contenteditable>test</spacer>",1,0,"{'benign': 0.6474, 'malicious': 0.3526}",20.9243999999984
+"<picture onkeyup=""alert(1)"" contenteditable>test</picture>",1,0,"{'benign': 0.6162, 'malicious': 0.3838}",24.789999999999424
+"<colgroup onmouseout=""alert(1)"">test</colgroup>",1,0,"{'benign': 0.6322, 'malicious': 0.3678}",25.753400000002813
+"<style>@keyframes slidein {}</style><form style=""animation-duration:1s;animation-name:slidein;animation-iteration-count:2"" onanimationiteration=""alert(1)""></form>",1,0,"{'benign': 0.591, 'malicious': 0.409}",44.23519999999925
+<image3 onpointerdown=alert(1)>XSS</image3>,1,0,"{'benign': 0.5802, 'malicious': 0.4198}",24.436399999999026
+"<listing draggable=""true"" ondragenter=""alert(1)"">test</listing>",1,0,"{'benign': 0.5312, 'malicious': 0.4688}",28.689799999998655
+"<cite onmouseover=""alert(1)"">test</cite>",1,0,"{'benign': 0.5326, 'malicious': 0.4674}",25.691800000000597
+"<dd oncontextmenu=""alert(1)"">test</dd>",1,0,"{'benign': 0.5269, 'malicious': 0.4731}",23.85110000000168
+"<style>:target {color: red;}</style><template id=x style=""transition:color 10s"" ontransitioncancel=alert(1)></template>",1,0,"{'benign': 0.6445, 'malicious': 0.3555}",36.11670000000089
+"<svg onmouseup=""alert(1)"">test</svg>",1,0,"{'benign': 0.5947, 'malicious': 0.4053}",28.30759999999799
+<svg><dt onload=alert(1)></dt>,1,0,"{'benign': 0.6038, 'malicious': 0.3962}",25.23000000000053
+"<style>:target {transform: rotate(180deg);}</style><menuitem id=x style=""transition:transform 2s"" ontransitionrun=alert(1)></menuitem>",1,0,"{'benign': 0.5919, 'malicious': 0.4081}",42.832600000000554
+"<thead onmouseenter=""alert(1)"">test</thead>",1,0,"{'benign': 0.6087, 'malicious': 0.3913}",26.358599999998233
+<br onpointerover=alert(1)>XSS</br>,1,0,"{'benign': 0.5136, 'malicious': 0.4864}",23.06030000000092
+"<div draggable=""true"" contenteditable>drag me</div><s ondrop=alert(1) contenteditable>drop here</s>",1,0,"{'benign': 0.5994, 'malicious': 0.4006}",31.261300000000602
+</div>,0,1,"{'benign': 0.4444, 'malicious': 0.5556}",19.748499999998614
+<rb onfocusout=alert(1) tabindex=1 id=x></rb><input autofocus>,1,0,"{'benign': 0.5239, 'malicious': 0.4761}",31.016300000000996
+<svg><image href=1 onerror=alert(1)>,1,0,"{'benign': 0.5055, 'malicious': 0.4945}",24.340500000000986
+<svg><template onload=alert(1)></template>,1,0,"{'benign': 0.5922, 'malicious': 0.4078}",22.780600000000817
+document.write,1,0,"{'benign': 0.5332, 'malicious': 0.4668}",19.37059999999846
+"<menuitem oncopy=""alert(1)"" contenteditable>test</menuitem>",1,0,"{'benign': 0.5115, 'malicious': 0.4885}",29.897600000001745
+<picture onpointerdown=alert(1)>XSS</picture>,1,0,"{'benign': 0.5682, 'malicious': 0.4318}",22.908900000000898
+ </div>,0,1,"{'benign': 0.4444, 'malicious': 0.5556}",19.522899999998344
+<div id=x tabindex=1 ondeactivate=alert(1)></div><input id=y autofocus>,1,0,"{'benign': 0.5074, 'malicious': 0.4926}",29.94029999999981
+"<sub draggable=""true"" ondragleave=""alert(1)"">test</sub>",1,0,"{'benign': 0.5718, 'malicious': 0.4282}",26.755800000000107
+"<textarea draggable=""true"" ondragleave=""alert(1)"">test</textarea>",1,0,"{'benign': 0.5354, 'malicious': 0.4646}",28.02249999999873
+"		<h3  id=""p-tb-label"">",0,1,"{'benign': 0.4955, 'malicious': 0.5045}",23.19750000000198
+<listing onpointermove=alert(1)>XSS</listing>,1,0,"{'benign': 0.5325, 'malicious': 0.4675}",26.108400000001808
+<b onpointerenter=alert(1)>XSS</b>,1,0,"{'benign': 0.5511, 'malicious': 0.4489}",22.99939999999978
+"<label onmousemove=""alert(1)"">test</label>",1,0,"{'benign': 0.553, 'malicious': 0.447}",23.448800000000602
+"<style draggable=""true"" ondragstart=""alert(1)"">test</style>",1,0,"{'benign': 0.5202, 'malicious': 0.4798}",28.64399999999989
+<svg onpointerdown=alert(1)>XSS</svg>,1,0,"{'benign': 0.601, 'malicious': 0.399}",32.069000000003456
+<img src/onerror=alert(1)>,1,0,"{'benign': 0.5717, 'malicious': 0.4283}",23.688400000001053
+"<style>:target {transform: rotate(180deg);}</style><code id=x style=""transition:transform 2s"" ontransitionrun=alert(1)></code>",1,0,"{'benign': 0.5805, 'malicious': 0.4195}",51.17689999999797
+<input type=checkbox id=x onfocus=alert(1)>,1,0,"{'benign': 0.5145, 'malicious': 0.4855}",31.110100000002916
+"<h1 onmousedown=""alert(1)"">test</h1>",1,0,"{'benign': 0.5547, 'malicious': 0.4453}",23.474799999998908
+<dir onpointerout=alert(1)>XSS</dir>,1,0,"{'benign': 0.5264, 'malicious': 0.4736}",23.440400000001915
+"<hgroup onmousemove=""alert(1)"">test</hgroup>",1,0,"{'benign': 0.5769, 'malicious': 0.4231}",23.560700000000878
+<hgroup id=x tabindex=1 onfocusin=alert(1)></hgroup>,1,0,"{'benign': 0.5262, 'malicious': 0.4738}",29.80879999999786
+<big onpointerup=alert(1)>XSS</big>,1,0,"{'benign': 0.6547, 'malicious': 0.3453}",24.17639999999821
+"<style>:target {color:red;}</style><div id=x style=""transition:color 1s"" ontransitionend=alert(1)></div>",1,0,"{'benign': 0.5963, 'malicious': 0.4037}",34.44849999999988
+"<acronym onbeforepaste=""alert(1)"" contenteditable>test</acronym>",1,0,"{'benign': 0.5754, 'malicious': 0.4246}",26.361800000000102
+"<button oncopy=""alert(1)"" contenteditable>test</button>",1,0,"{'benign': 0.5496, 'malicious': 0.4504}",23.68669999999895
+"<template draggable=""true"" ondrag=""alert(1)"">test</template>",1,0,"{'benign': 0.5445, 'malicious': 0.4555}",25.201800000001384
+<textarea onbeforecut=alert(1) autofocus>XSS</textarea>,1,0,"{'benign': 0.5868, 'malicious': 0.4132}",26.02059999999895
+"<div draggable=""true"" contenteditable>drag me</div><noembed ondragover=alert(1) contenteditable>drop here</noembed>",1,0,"{'benign': 0.6269, 'malicious': 0.3731}",35.61949999999925
+"<BODY onload!#$%&()*~+-_.,:;?@[/|\]^`=alert("""")>",1,0,"{'benign': 0.5685, 'malicious': 0.4315}",30.56829999999877
+"<em onbeforecopy=""alert(1)"" contenteditable>test</em>",1,0,"{'benign': 0.6171, 'malicious': 0.3829}",26.27209999999991
+<canvas onblur=alert(1) tabindex=1 id=x></canvas><input autofocus>,1,0,"{'benign': 0.5379, 'malicious': 0.4621}",28.676300000000765
+"<div draggable=""true"" contenteditable>drag me</div><footer ondragover=alert(1) contenteditable>drop here</footer>",1,0,"{'benign': 0.5894, 'malicious': 0.4106}",40.155200000000946
+"<blockquote onbeforepaste=""alert(1)"" contenteditable>test</blockquote>",1,0,"{'benign': 0.574, 'malicious': 0.426}",28.156700000000257
+<wbr id=x tabindex=1 onfocus=alert(1)></wbr>,1,0,"{'benign': 0.574, 'malicious': 0.426}",28.019999999997935
+"<i oncopy=""alert(1)"" contenteditable>test</i>",1,0,"{'benign': 0.5673, 'malicious': 0.4327}",29.42339999999888
+<xmp onpointermove=alert(1)>XSS</xmp>,1,0,"{'benign': 0.5743, 'malicious': 0.4257}",23.54790000000051
+"<br onpaste=""alert(1)"" contenteditable>test</br>",1,0,"{'benign': 0.5669, 'malicious': 0.4331}",25.236699999997114
+<discard onpointerup=alert(1)>XSS</discard>,1,0,"{'benign': 0.5968, 'malicious': 0.4032}",28.645699999998442
+<svg><video onload=alert(1)></video>,1,0,"{'benign': 0.6051, 'malicious': 0.3949}",23.21320000000071
+"<option onmousedown=""alert(1)"">test</option>",1,0,"{'benign': 0.5345, 'malicious': 0.4655}",25.040799999999308
+<dd onpointerdown=alert(1)>XSS</dd>,1,0,"{'benign': 0.5365, 'malicious': 0.4635}",23.623900000000475
+"<base draggable=""true"" ondragenter=""alert(1)"">test</base>",1,0,"{'benign': 0.5379, 'malicious': 0.4621}",30.165100000001388
+"<noframes onbeforecut=""alert(1)"" contenteditable>test</noframes>",1,0,"{'benign': 0.6234, 'malicious': 0.3766}",26.560200000002254
+"\<a onmouseover=""alert(document.cookie)""\>xxs link\</a\>",1,0,"{'benign': 0.575, 'malicious': 0.425}",26.112000000001245
+document.write(sadfsa),1,0,"{'benign': 0.5219, 'malicious': 0.4781}",22.50439999999898
+"<style>@keyframes slidein {}</style><noframes style=""animation-duration:1s;animation-name:slidein;animation-iteration-count:2"" onanimationiteration=""alert(1)""></noframes>",1,0,"{'benign': 0.5988, 'malicious': 0.4012}",52.06270000000046
+"<tfoot onpaste=""alert(1)"" contenteditable>test</tfoot>",1,0,"{'benign': 0.5881, 'malicious': 0.4119}",30.834399999999818
+"<style>:target {color: red;}</style><picture id=x style=""transition:color 10s"" ontransitioncancel=alert(1)></picture>",1,0,"{'benign': 0.6293, 'malicious': 0.3707}",35.59670000000281
+"<blink onkeyup=""alert(1)"" contenteditable>test</blink>",1,0,"{'benign': 0.5852, 'malicious': 0.4148}",27.225600000001293
+<menuitem onblur=alert(1) tabindex=1 id=x></menuitem><input autofocus>,1,0,"{'benign': 0.5386, 'malicious': 0.4614}",31.000899999998666
+javas<!-- -->cript:alert(''),1,0,"{'benign': 0.5405, 'malicious': 0.4595}",23.41870000000057
+<animatetransform onpointerup=alert(1)>XSS</animatetransform>,1,0,"{'benign': 0.6118, 'malicious': 0.3882}",30.840600000001217
+"<embed draggable=""true"" ondragleave=""alert(1)"">test</embed>",1,0,"{'benign': 0.5485, 'malicious': 0.4515}",32.24050000000034
+<legend onpointerover=alert(1)>XSS</legend>,1,0,"{'benign': 0.5694, 'malicious': 0.4306}",24.467300000001302
+<s onpointerover=alert(1)>XSS</s>,1,0,"{'benign': 0.5518, 'malicious': 0.4482}",23.335499999998177
+<blockquote onpointerup=alert(1)>XSS</blockquote>,1,0,"{'benign': 0.5945, 'malicious': 0.4055}",25.005900000000025
+<output onpointerenter=alert(1)>XSS</output>,1,0,"{'benign': 0.5596, 'malicious': 0.4404}",23.917400000001976
+<frame id=x tabindex=1 ondeactivate=alert(1)></frame><input id=y autofocus>,1,0,"{'benign': 0.5473, 'malicious': 0.4527}",31.323399999998003
+<kbd onfocusout=alert(1) tabindex=1 id=x></kbd><input autofocus>,1,0,"{'benign': 0.5094, 'malicious': 0.4906}",28.137000000000967
+"<style>:target {color: red;}</style><span id=x style=""transition:color 10s"" ontransitioncancel=alert(1)></span>",1,0,"{'benign': 0.626, 'malicious': 0.374}",37.62539999999959
+"<noscript onmouseleave=""alert(1)"">test</noscript>",1,0,"{'benign': 0.6109, 'malicious': 0.3891}",25.40520000000157
+"<noembed draggable=""true"" ondragstart=""alert(1)"">test</noembed>",1,0,"{'benign': 0.5434, 'malicious': 0.4566}",29.247099999999193
+<figure id=x tabindex=1 ondeactivate=alert(1)></figure><input id=y autofocus>,1,0,"{'benign': 0.5129, 'malicious': 0.4871}",36.18909999999431
+document.URL,1,0,"{'benign': 0.5243, 'malicious': 0.4757}",20.597200000004534
+"<style>:target {transform: rotate(180deg);}</style><dl id=x style=""transition:transform 2s"" ontransitionrun=alert(1)></dl>",1,0,"{'benign': 0.595, 'malicious': 0.405}",41.07419999999706
+"<base onmousemove=""alert(1)"">test</base>",1,0,"{'benign': 0.5749, 'malicious': 0.4251}",25.289399999998352
+<isindex id=x tabindex=1 onfocus=alert(1)></isindex>,1,0,"{'benign': 0.5287, 'malicious': 0.4713}",26.68159999999631
+<image3 onpointerup=alert(1)>XSS</image3>,1,0,"{'benign': 0.6054, 'malicious': 0.3946}",26.560899999999776
+"<A HREF=""http://%77%77%77%2E%67%6F%6F%67%6C%65%2E%63%6F%6D""></A>",1,0,"{'benign': 0.5692, 'malicious': 0.4308}",42.37450000000109
+"<style>@keyframes x{}</style><details style=""animation-name:x"" onanimationend=""alert(1)""></details>",1,0,"{'benign': 0.575, 'malicious': 0.425}",38.116500000001
+"<em onkeypress=""alert(1)"" contenteditable>test</em>",1,0,"{'benign': 0.6036, 'malicious': 0.3964}",24.638400000000615
+<kbd onpointerdown=alert(1)>XSS</kbd>,1,0,"{'benign': 0.5744, 'malicious': 0.4256}",23.606399999998473
+"<title onmouseup=""alert(1)"">test</title>",1,0,"{'benign': 0.5992, 'malicious': 0.4008}",23.277100000001383
+"<template onbeforepaste=""alert(1)"" contenteditable>test</template>",1,0,"{'benign': 0.6403, 'malicious': 0.3597}",27.090400000005843
+"<img onkeydown=""alert(1)"" contenteditable>test</img>",1,0,"{'benign': 0.5853, 'malicious': 0.4147}",28.81190000000089
+<rtc onpointerout=alert(1)>XSS</rtc>,1,0,"{'benign': 0.5473, 'malicious': 0.4527}",26.53670000000119
+"<style>:target {color: red;}</style><h1 id=x style=""transition:color 10s"" ontransitioncancel=alert(1)></h1>",1,0,"{'benign': 0.6233, 'malicious': 0.3767}",35.28790000000015
+"<div draggable=""true"" contenteditable>drag me</div><wbr ondrop=alert(1) contenteditable>drop here</wbr>",1,0,"{'benign': 0.5996, 'malicious': 0.4004}",34.12010000000265
+<time onblur=alert(1) tabindex=1 id=x></time><input autofocus>,1,0,"{'benign': 0.5636, 'malicious': 0.4364}",26.91300000000041
+"<progress onpaste=""alert(1)"" contenteditable>test</progress>",1,0,"{'benign': 0.5806, 'malicious': 0.4194}",32.71060000000148
+<caption onpointerleave=alert(1)>XSS</caption>,1,0,"{'benign': 0.5862, 'malicious': 0.4138}",28.24910000000358
+"<sup ondblclick=""alert(1)"">test</sup>",1,0,"{'benign': 0.5733, 'malicious': 0.4267}",27.406100000000322
+<base onpointerup=alert(1)>XSS</base>,1,0,"{'benign': 0.594, 'malicious': 0.406}",25.498800000001154
+<template onpointerdown=alert(1)>XSS</template>,1,0,"{'benign': 0.5882, 'malicious': 0.4118}",26.362299999995287
+"<legend onmouseenter=""alert(1)"">test</legend>",1,0,"{'benign': 0.5638, 'malicious': 0.4362}",28.999499999997624
+"<i onbeforecopy=""alert(1)"" contenteditable>test</i>",1,0,"{'benign': 0.6119, 'malicious': 0.3881}",27.62279999999606
+<input id=x tabindex=1 onbeforedeactivate=alert(1)></input><input autofocus>,1,0,"{'benign': 0.5545, 'malicious': 0.4455}",36.76769999999863
+"<style>@keyframes slidein {}</style><image style=""animation-duration:1s;animation-name:slidein;animation-iteration-count:2"" onanimationiteration=""alert(1)""></image>",1,0,"{'benign': 0.5792, 'malicious': 0.4208}",45.602099999996426
+"<style>@keyframes slidein {}</style><legend style=""animation-duration:1s;animation-name:slidein;animation-iteration-count:2"" onanimationiteration=""alert(1)""></legend>",1,0,"{'benign': 0.5956, 'malicious': 0.4044}",86.12229999999954
+<base onfocusout=alert(1) tabindex=1 id=x></base><input autofocus>,1,0,"{'benign': 0.515, 'malicious': 0.485}",28.21859999999532
+<header onpointerover=alert(1)>XSS</header>,1,0,"{'benign': 0.5663, 'malicious': 0.4337}",26.393300000002284
+"<style>:target {color: red;}</style><fieldset id=x style=""transition:color 10s"" ontransitioncancel=alert(1)></fieldset>",1,0,"{'benign': 0.633, 'malicious': 0.367}",44.72109999999674
+"<embed onclick=""alert(1)"">test</embed>",1,0,"{'benign': 0.5454, 'malicious': 0.4546}",21.677400000001512
+"<a draggable=""true"" ondragstart=""alert(1)"">test</a>",1,0,"{'benign': 0.5326, 'malicious': 0.4674}",26.665800000003514
+"<map oncut=""alert(1)"" contenteditable>test</map>",1,0,"{'benign': 0.5683, 'malicious': 0.4317}",24.89150000000251
+"<div draggable=""true"" contenteditable>drag me</div><option ondragover=alert(1) contenteditable>drop here</option>",1,0,"{'benign': 0.6048, 'malicious': 0.3952}",30.662800000001766
+<li onpointerup=alert(1)>XSS</li>,1,0,"{'benign': 0.5925, 'malicious': 0.4075}",22.42350000000215
+"<title draggable=""true"" ondragenter=""alert(1)"">test</title>",1,0,"{'benign': 0.5582, 'malicious': 0.4418}",26.51199999999676
+"<colgroup onmousemove=""alert(1)"">test</colgroup>",1,0,"{'benign': 0.6518, 'malicious': 0.3482}",23.359700000000316
+<xmp onpointerout=alert(1)>XSS</xmp>,1,0,"{'benign': 0.5758, 'malicious': 0.4242}",22.00419999999781
+"<iframe oncontextmenu=""alert(1)"">test</iframe>",1,0,"{'benign': 0.5589, 'malicious': 0.4411}",26.688200000002382
+"<rp onpaste=""alert(1)"" contenteditable>test</rp>",1,0,"{'benign': 0.5906, 'malicious': 0.4094}",32.208300000000634
+<svg><optgroup onload=alert(1)></optgroup>,1,0,"{'benign': 0.6161, 'malicious': 0.3839}",23.74629999999911
+"<td onmousedown=""alert(1)"">test</td>",1,0,"{'benign': 0.5407, 'malicious': 0.4593}",24.295699999996145
+<article onpointerup=alert(1)>XSS</article>,1,0,"{'benign': 0.5792, 'malicious': 0.4208}",23.364200000003166
+"<del onmouseover=""alert(1)"">test</del>",1,0,"{'benign': 0.5247, 'malicious': 0.4753}",23.74009999999771
+"<isindex onkeypress=""alert(1)"" contenteditable>test</isindex>",1,0,"{'benign': 0.5417, 'malicious': 0.4583}",28.084499999998513
+"<div draggable=""true"" contenteditable>drag me</div><iframe ondrop=alert(1) contenteditable>drop here</iframe>",1,0,"{'benign': 0.6, 'malicious': 0.4}",31.35830000000084
+"<code onpaste=""alert(1)"" contenteditable>test</code>",1,0,"{'benign': 0.5224, 'malicious': 0.4776}",27.435099999998158
+<b onpointerdown=alert(1)>XSS</b>,1,0,"{'benign': 0.5387, 'malicious': 0.4613}",24.171000000002607
+"<code onmousemove=""alert(1)"">test</code>",1,0,"{'benign': 0.5412, 'malicious': 0.4588}",25.46219999999977
+"<area draggable=""true"" ondrag=""alert(1)"">test</area>",1,0,"{'benign': 0.5013, 'malicious': 0.4987}",27.74790000000138
+"<style>@keyframes x{from {left:0;}to {left: 1000px;}}:target {animation:10s ease-in-out 0s 1 x;}</style><frame id=x style=""position:absolute;"" onanimationcancel=""alert(1)""></frame>",1,0,"{'benign': 0.5879, 'malicious': 0.4121}",59.0635000000006
+<input4 onpointerleave=alert(1)>XSS</input4>,1,0,"{'benign': 0.5729, 'malicious': 0.4271}",22.69629999999978
+<footer id=x tabindex=1 onbeforeactivate=alert(1)></footer>,1,0,"{'benign': 0.5326, 'malicious': 0.4674}",27.297400000001915
+<applet id=x tabindex=1 onfocusin=alert(1)></applet>,1,0,"{'benign': 0.5159, 'malicious': 0.4841}",30.370599999997694
+"<output onmouseover=""alert(1)"">test</output>",1,0,"{'benign': 0.5401, 'malicious': 0.4599}",24.866899999999248
+"<td onclick=""alert(1)"">test</td>",1,0,"{'benign': 0.5498, 'malicious': 0.4502}",22.974699999998904
+"<style>@keyframes x{from {left:0;}to {left: 1000px;}}:target {animation:10s ease-in-out 0s 1 x;}</style><style id=x style=""position:absolute;"" onanimationcancel=""alert(1)""></style>",1,0,"{'benign': 0.5859, 'malicious': 0.4141}",65.90029999999558
+<tfoot id=x tabindex=1 ondeactivate=alert(1)></tfoot><input id=y autofocus>,1,0,"{'benign': 0.5576, 'malicious': 0.4424}",47.64329999999717
+"<style>:target {transform: rotate(180deg);}</style><del id=x style=""transition:transform 2s"" ontransitionrun=alert(1)></del>",1,0,"{'benign': 0.5922, 'malicious': 0.4078}",57.35419999999891
+<map id=x tabindex=1 onfocusin=alert(1)></map>,1,0,"{'benign': 0.5057, 'malicious': 0.4943}",26.37759999999645
+"<li onbeforecopy=""alert(1)"" contenteditable>test</li>",1,0,"{'benign': 0.6211, 'malicious': 0.3789}",27.336900000001663
+<img onpointerover=alert(1)>XSS</img>,1,0,"{'benign': 0.5804, 'malicious': 0.4196}",28.558700000004933
+		 </div> </div>,0,1,"{'benign': 0.4662, 'malicious': 0.5338}",23.424699999999632
+<svg><sub onload=alert(1)></sub>,1,0,"{'benign': 0.5976, 'malicious': 0.4024}",22.821499999999162
+"<div draggable=""true"" contenteditable>drag me</div><a ondrop=alert(1) contenteditable>drop here</a>",1,0,"{'benign': 0.6082, 'malicious': 0.3918}",34.715099999999666
+"<audio onmouseenter=""alert(1)"">test</audio>",1,0,"{'benign': 0.5877, 'malicious': 0.4123}",23.727300000004448
+"<style>@keyframes x{}</style><video style=""animation-name:x"" onanimationend=""alert(1)""></video>",1,0,"{'benign': 0.5883, 'malicious': 0.4117}",32.02259999999768
+<dir id=x tabindex=1 ondeactivate=alert(1)></dir><input id=y autofocus>,1,0,"{'benign': 0.5288, 'malicious': 0.4712}",29.375100000002874
+<h1 onblur=alert(1) tabindex=1 id=x></h1><input autofocus>,1,0,"{'benign': 0.5157, 'malicious': 0.4843}",33.807899999999336
+"<style>:target {color: red;}</style><nextid id=x style=""transition:color 10s"" ontransitioncancel=alert(1)></nextid>",1,0,"{'benign': 0.6346, 'malicious': 0.3654}",38.213900000002354
+"<audio onmousemove=""alert(1)"">test</audio>",1,0,"{'benign': 0.5782, 'malicious': 0.4218}",24.25050000000084
+"<style draggable=""true"" ondrag=""alert(1)"">test</style>",1,0,"{'benign': 0.5196, 'malicious': 0.4804}",30.485399999996332
+<rb id=x tabindex=1 onfocusin=alert(1)></rb>,1,0,"{'benign': 0.5396, 'malicious': 0.4604}",24.87440000000163
+"<nav onmouseout=""alert(1)"">test</nav>",1,0,"{'benign': 0.5448, 'malicious': 0.4552}",23.535299999998927
+"<kbd oncontextmenu=""alert(1)"">test</kbd>",1,0,"{'benign': 0.5582, 'malicious': 0.4418}",23.884999999999934
+<shadow id=x tabindex=1 onactivate=alert(1)></shadow>,1,0,"{'benign': 0.5283, 'malicious': 0.4717}",24.354800000004673
+"<samp onclick=""alert(1)"">test</samp>",1,0,"{'benign': 0.5712, 'malicious': 0.4288}",23.311100000000806
+<h1 onpointerenter=alert(1)>XSS</h1>,1,0,"{'benign': 0.5489, 'malicious': 0.4511}",22.76830000000274
+"<ul onbeforecut=""alert(1)"" contenteditable>test</ul>",1,0,"{'benign': 0.6135, 'malicious': 0.3865}",24.763999999997566
+"<html ondblclick=""alert(1)"">test</html>",1,0,"{'benign': 0.5905, 'malicious': 0.4095}",24.167399999996064
+			Print/export,0,1,"{'benign': 0.4582, 'malicious': 0.5418}",19.339299999998616
+"<style>:target {color: red;}</style><bdo id=x style=""transition:color 10s"" ontransitioncancel=alert(1)></bdo>",1,0,"{'benign': 0.6588, 'malicious': 0.3412}",41.697399999996776
+"<keygen draggable=""true"" ondragleave=""alert(1)"">test</keygen>",1,0,"{'benign': 0.5323, 'malicious': 0.4677}",27.208100000002844
+"<kbd onbeforepaste=""alert(1)"" contenteditable>test</kbd>",1,0,"{'benign': 0.6146, 'malicious': 0.3854}",24.828300000002912
+"<area draggable=""true"" ondragleave=""alert(1)"">test</area>",1,0,"{'benign': 0.5236, 'malicious': 0.4764}",27.720999999999663
+"<embed onkeyup=""alert(1)"" contenteditable>test</embed>",1,0,"{'benign': 0.5891, 'malicious': 0.4109}",17.536299999996174
+"<br onmouseover=""alert(1)"">test</br>",1,0,"{'benign': 0.5117, 'malicious': 0.4883}",20.30229999999733
+         </div>,0,1,"{'benign': 0.4444, 'malicious': 0.5556}",13.648500000002173
+"<style>:target {transform: rotate(180deg);}</style><object id=x style=""transition:transform 2s"" ontransitionrun=alert(1)></object>",1,0,"{'benign': 0.5879, 'malicious': 0.4121}",33.97340000000071
+<source id=x tabindex=1 onbeforedeactivate=alert(1)></source><input autofocus>,1,0,"{'benign': 0.5995, 'malicious': 0.4005}",23.801599999998757
+"<html onmousedown=""alert(1)"">test</html>",1,0,"{'benign': 0.5455, 'malicious': 0.4545}",22.270999999996377
+<colgroup onpointerout=alert(1)>XSS</colgroup>,1,0,"{'benign': 0.6177, 'malicious': 0.3823}",17.458699999998828
+"<blockquote onmouseenter=""alert(1)"">test</blockquote>",1,0,"{'benign': 0.6039, 'malicious': 0.3961}",23.84010000000103
+"<img onmousemove=""alert(1)"">test</img>",1,0,"{'benign': 0.584, 'malicious': 0.416}",19.882300000006126
+<li id=x tabindex=1 onbeforedeactivate=alert(1)></li><input autofocus>,1,0,"{'benign': 0.5679, 'malicious': 0.4321}",24.630399999999497
+"<multicol onmouseout=""alert(1)"">test</multicol>",1,0,"{'benign': 0.5913, 'malicious': 0.4087}",22.490099999998847
+"<iframe onmousemove=""alert(1)"">test</iframe>",1,0,"{'benign': 0.556, 'malicious': 0.444}",20.848599999993667
+<rb onpointerout=alert(1)>XSS</rb>,1,0,"{'benign': 0.5857, 'malicious': 0.4143}",27.55759999999441
+"<div draggable=""true"" contenteditable>drag me</div><ins ondragover=alert(1) contenteditable>drop here</ins>",1,0,"{'benign': 0.5962, 'malicious': 0.4038}",53.73880000000497
+"<blink onpaste=""alert(1)"" contenteditable>test</blink>",1,0,"{'benign': 0.5661, 'malicious': 0.4339}",18.902099999998256
+"<figure onbeforepaste=""alert(1)"" contenteditable>test</figure>",1,0,"{'benign': 0.6017, 'malicious': 0.3983}",20.940299999999468
+"<noembed oncontextmenu=""alert(1)"">test</noembed>",1,0,"{'benign': 0.5694, 'malicious': 0.4306}",22.44089999999943
+<style id=x tabindex=1 onfocus=alert(1)></style>,1,0,"{'benign': 0.5129, 'malicious': 0.4871}",21.242800000003115
+"<isindex onbeforecopy=""alert(1)"" contenteditable>test</isindex>",1,0,"{'benign': 0.6012, 'malicious': 0.3988}",18.824599999994973
+<span onpointerover=alert(1)>XSS</span>,1,0,"{'benign': 0.5222, 'malicious': 0.4778}",19.64269999999857
+"<table onmousemove=""alert(1)"">test</table>",1,0,"{'benign': 0.5386, 'malicious': 0.4614}",16.254699999997513
+"<div draggable=""true"" contenteditable>drag me</div><html ondrop=alert(1) contenteditable>drop here</html>",1,0,"{'benign': 0.5992, 'malicious': 0.4008}",26.999000000003548
+"<span onkeyup=""alert(1)"" contenteditable>test</span>",1,0,"{'benign': 0.612, 'malicious': 0.388}",22.773700000001895
+"<img oncopy=""alert(1)"" contenteditable>test</img>",1,0,"{'benign': 0.5781, 'malicious': 0.4219}",19.949099999998054
+"<caption onclick=""alert(1)"">test</caption>",1,0,"{'benign': 0.5227, 'malicious': 0.4773}",18.258799999998132
+"<tfoot onmouseout=""alert(1)"">test</tfoot>",1,0,"{'benign': 0.5761, 'malicious': 0.4239}",17.204800000001796
+"<marquee onbeforepaste=""alert(1)"" contenteditable>test</marquee>",1,0,"{'benign': 0.6048, 'malicious': 0.3952}",22.5428999999977
+"<h1 onbeforepaste=""alert(1)"" contenteditable>test</h1>",1,0,"{'benign': 0.5881, 'malicious': 0.4119}",22.789200000005394
+"<div onkeyup=""alert(1)"" contenteditable>test</div>",1,0,"{'benign': 0.554, 'malicious': 0.446}",21.853400000004797
+"<del onbeforecut=""alert(1)"" contenteditable>test</del>",1,0,"{'benign': 0.5944, 'malicious': 0.4056}",22.7110999999951
+"<p onkeydown=""alert(1)"" contenteditable>test</p>",1,0,"{'benign': 0.5633, 'malicious': 0.4367}",21.99410000000057
+"<th oncopy=""alert(1)"" contenteditable>test</th>",1,0,"{'benign': 0.5419, 'malicious': 0.4581}",20.030699999999513
+<nav onpointerdown=alert(1)>XSS</nav>,1,0,"{'benign': 0.5567, 'malicious': 0.4433}",20.926000000002887
+<ruby onpointerout=alert(1)>XSS</ruby>,1,0,"{'benign': 0.5725, 'malicious': 0.4275}",15.807999999999822
+<dt onpointermove=alert(1)>XSS</dt>,1,0,"{'benign': 0.614, 'malicious': 0.386}",21.370300000000952
+<link href=validstyles.css rel=stylesheet onload=alert(1)>,1,0,"{'benign': 0.6255, 'malicious': 0.3745}",25.497000000001435
+"<blockquote onmouseover=""alert(1)"">test</blockquote>",1,0,"{'benign': 0.5763, 'malicious': 0.4237}",23.278799999999933
+"<strike onkeyup=""alert(1)"" contenteditable>test</strike>",1,0,"{'benign': 0.6155, 'malicious': 0.3845}",23.158999999999708
+"<map oncontextmenu=""alert(1)"">test</map>",1,0,"{'benign': 0.5337, 'malicious': 0.4663}",19.674200000004305
+<keygen id=x onfocusin=alert(1)>,1,0,"{'benign': 0.5105, 'malicious': 0.4895}",20.316999999998586
+"<applet onmouseout=""alert(1)"">test</applet>",1,0,"{'benign': 0.5624, 'malicious': 0.4376}",20.557900000000018
+<sub id=x tabindex=1 ondeactivate=alert(1)></sub><input id=y autofocus>,1,0,"{'benign': 0.5537, 'malicious': 0.4463}",22.42989999999878
+x000003C,1,0,"{'benign': 0.5314, 'malicious': 0.4686}",14.23989999999975
+"<style>@keyframes x{}</style><cite style=""animation-name:x"" onanimationstart=""alert(1)""></cite>",1,0,"{'benign': 0.5613, 'malicious': 0.4387}",24.082999999997412
+"<mark draggable=""true"" ondragleave=""alert(1)"">test</mark>",1,0,"{'benign': 0.5164, 'malicious': 0.4836}",24.521499999998753
+"<p draggable=""true"" ondragenter=""alert(1)"">test</p>",1,0,"{'benign': 0.5353, 'malicious': 0.4647}",21.48509999999959
+"<param ondblclick=""alert(1)"">test</param>",1,0,"{'benign': 0.5286, 'malicious': 0.4714}",22.88420000000002
+"<main onkeydown=""alert(1)"" contenteditable>test</main>",1,0,"{'benign': 0.5514, 'malicious': 0.4486}",20.820299999996905
+"<style>@keyframes x{}</style><shadow style=""animation-name:x"" onanimationstart=""alert(1)""></shadow>",1,0,"{'benign': 0.5783, 'malicious': 0.4217}",30.43330000000566
+"<big onkeyup=""alert(1)"" contenteditable>test</big>",1,0,"{'benign': 0.6548, 'malicious': 0.3452}",19.466199999996547
+"<style>:target {transform: rotate(180deg);}</style><label id=x style=""transition:transform 2s"" ontransitionrun=alert(1)></label>",1,0,"{'benign': 0.5983, 'malicious': 0.4017}",38.62349999999992
+"<style>@keyframes x{}</style><colgroup style=""animation-name:x"" onanimationend=""alert(1)""></colgroup>",1,0,"{'benign': 0.6051, 'malicious': 0.3949}",26.13269999999801
+"<u onmouseout=""alert(1)"">test</u>",1,0,"{'benign': 0.5051, 'malicious': 0.4949}",22.472600000000398
+<mark onpointerover=alert(1)>XSS</mark>,1,0,"{'benign': 0.5337, 'malicious': 0.4663}",20.29080000000505
+"<span id=""topics-index"">",0,1,"{'benign': 0.4891, 'malicious': 0.5109}",16.305600000002585
+"<div draggable=""true"" contenteditable>drag me</div><del ondragover=alert(1) contenteditable>drop here</del>",1,0,"{'benign': 0.5852, 'malicious': 0.4148}",29.3682000000004
+<td onblur=alert(1) tabindex=1 id=x></td><input autofocus>,1,0,"{'benign': 0.5441, 'malicious': 0.4559}",24.86499999999836
+"<marquee onclick=""alert(1)"">test</marquee>",1,0,"{'benign': 0.5393, 'malicious': 0.4607}",21.395000000005382
+"<nav draggable=""true"" ondragleave=""alert(1)"">test</nav>",1,0,"{'benign': 0.5188, 'malicious': 0.4812}",23.231699999996636
+"<style>:target {color:red;}</style><noembed id=x style=""transition:color 1s"" ontransitionend=alert(1)></noembed>",1,0,"{'benign': 0.6505, 'malicious': 0.3495}",28.304800000000796
+<video id=x tabindex=1 onbeforedeactivate=alert(1)></video><input autofocus>,1,0,"{'benign': 0.6313, 'malicious': 0.3687}",22.47530000000353
+<time onpointerenter=alert(1)>XSS</time>,1,0,"{'benign': 0.6281, 'malicious': 0.3719}",18.446699999998373
+"<div draggable=""true"" contenteditable>drag me</div><ins ondrop=alert(1) contenteditable>drop here</ins>",1,0,"{'benign': 0.5966, 'malicious': 0.4034}",27.579899999999213
+"<font onmouseup=""alert(1)"">test</font>",1,0,"{'benign': 0.5834, 'malicious': 0.4166}",19.829500000000166
+"<xmp onbeforepaste=""alert(1)"" contenteditable>test</xmp>",1,0,"{'benign': 0.5966, 'malicious': 0.4034}",20.19899999999808
+"<style>@keyframes slidein {}</style><hr style=""animation-duration:1s;animation-name:slidein;animation-iteration-count:2"" onanimationiteration=""alert(1)""></hr>",1,0,"{'benign': 0.6007, 'malicious': 0.3993}",28.625100000006398
+<meta id=x tabindex=1 onactivate=alert(1)></meta>,1,0,"{'benign': 0.5168, 'malicious': 0.4832}",22.656099999998958
+<ul onpointerdown=alert(1)>XSS</ul>,1,0,"{'benign': 0.5705, 'malicious': 0.4295}",21.992399999994916
+"<link rel=""dns-prefetch"" href=""//meta.wikimedia.org"" />",0,1,"{'benign': 0.4881, 'malicious': 0.5119}",26.531999999996003
+"<tbody oncut=""alert(1)"" contenteditable>test</tbody>",1,0,"{'benign': 0.6168, 'malicious': 0.3832}",22.424100000002056
+<meter onpointerdown=alert(1)>XSS</meter>,1,0,"{'benign': 0.5722, 'malicious': 0.4278}",20.608600000002752
+"<p oncut=""alert(1)"" contenteditable>test</p>",1,0,"{'benign': 0.5688, 'malicious': 0.4312}",21.59329999999926
+"<link onmousedown=""alert(1)"">test</link>",1,0,"{'benign': 0.5415, 'malicious': 0.4585}",16.711200000003146
+<listing onpointerup=alert(1)>XSS</listing>,1,0,"{'benign': 0.5501, 'malicious': 0.4499}",21.37559999999894
+"<caption onkeyup=""alert(1)"" contenteditable>test</caption>",1,0,"{'benign': 0.571, 'malicious': 0.429}",21.484000000000947
+"<em draggable=""true"" ondrag=""alert(1)"">test</em>",1,0,"{'benign': 0.5261, 'malicious': 0.4739}",19.440600000002917
+"<style>:target {color: red;}</style><base id=x style=""transition:color 10s"" ontransitioncancel=alert(1)></base>",1,0,"{'benign': 0.6367, 'malicious': 0.3633}",31.944099999996922
+"<acronym onmouseover=""alert(1)"">test</acronym>",1,0,"{'benign': 0.5253, 'malicious': 0.4747}",22.439500000004386
+"<object onkeydown=""alert(1)"" contenteditable>test</object>",1,0,"{'benign': 0.5479, 'malicious': 0.4521}",21.59049999999496
+"<style>@keyframes x{from {left:0;}to {left: 1000px;}}:target {animation:10s ease-in-out 0s 1 x;}</style><select id=x style=""position:absolute;"" onanimationcancel=""alert(1)""></select>",1,0,"{'benign': 0.595, 'malicious': 0.405}",51.65269999999822
+"<h1 oncut=""alert(1)"" contenteditable>test</h1>",1,0,"{'benign': 0.5451, 'malicious': 0.4549}",22.83700000000266
+"<html oncontextmenu=""alert(1)"">test</html>",1,0,"{'benign': 0.5662, 'malicious': 0.4338}",16.448599999996816
+<form onpointerdown=alert(1)>XSS</form>,1,0,"{'benign': 0.5898, 'malicious': 0.4102}",21.384099999998796
+"<style>:target {color:red;}</style><tr id=x style=""transition:color 1s"" ontransitionend=alert(1)></tr>",1,0,"{'benign': 0.6347, 'malicious': 0.3653}",30.921200000001647
+"<button draggable=""true"" ondrag=""alert(1)"">test</button>",1,0,"{'benign': 0.5214, 'malicious': 0.4786}",21.396400000000426
+"<style>@keyframes x{}</style><source style=""animation-name:x"" onanimationstart=""alert(1)""></source>",1,0,"{'benign': 0.5873, 'malicious': 0.4127}",22.258899999997084
+<dfn id=x tabindex=1 onfocusin=alert(1)></dfn>,1,0,"{'benign': 0.5819, 'malicious': 0.4181}",17.789200000002836
+"<rt draggable=""true"" ondragend=""alert(1)"">test</rt>",1,0,"{'benign': 0.5727, 'malicious': 0.4273}",20.594500000001403
+<dfn onpointerleave=alert(1)>XSS</dfn>,1,0,"{'benign': 0.6276, 'malicious': 0.3724}",21.18420000000043
+"<style>:target {color:red;}</style><title id=x style=""transition:color 1s"" ontransitionend=alert(1)></title>",1,0,"{'benign': 0.6021, 'malicious': 0.3979}",31.293000000005122
+"<acronym onmouseenter=""alert(1)"">test</acronym>",1,0,"{'benign': 0.5364, 'malicious': 0.4636}",15.7550999999998
+"<hgroup onmouseout=""alert(1)"">test</hgroup>",1,0,"{'benign': 0.5577, 'malicious': 0.4423}",22.670699999999044
+<footer onpointerup=alert(1)>XSS</footer>,1,0,"{'benign': 0.574, 'malicious': 0.426}",19.528899999997407
+"<sub draggable=""true"" ondragenter=""alert(1)"">test</sub>",1,0,"{'benign': 0.59, 'malicious': 0.41}",22.689299999996138
+"<del onbeforepaste=""alert(1)"" contenteditable>test</del>",1,0,"{'benign': 0.5794, 'malicious': 0.4206}",23.592099999994787
+"<thead onmouseleave=""alert(1)"">test</thead>",1,0,"{'benign': 0.5965, 'malicious': 0.4035}",20.257499999999595
+<nav onpointerup=alert(1)>XSS</nav>,1,0,"{'benign': 0.588, 'malicious': 0.412}",18.507799999994745
+"<style>@keyframes slidein {}</style><spacer style=""animation-duration:1s;animation-name:slidein;animation-iteration-count:2"" onanimationiteration=""alert(1)""></spacer>",1,0,"{'benign': 0.5957, 'malicious': 0.4043}",26.74660000000273
+"<del oncontextmenu=""alert(1)"">test</del>",1,0,"{'benign': 0.5316, 'malicious': 0.4684}",16.92490000000646
+<svg><head onload=alert(1)></head>,1,0,"{'benign': 0.5696, 'malicious': 0.4304}",21.000499999999533
+<isindex id=x tabindex=1 onfocusin=alert(1)></isindex>,1,0,"{'benign': 0.5185, 'malicious': 0.4815}",25.48569999999728
+"<style>:target {transform: rotate(180deg);}</style><dialog id=x style=""transition:transform 2s"" ontransitionrun=alert(1)></dialog>",1,0,"{'benign': 0.6013, 'malicious': 0.3987}",31.986899999999707
+<footer id=x tabindex=1 onbeforedeactivate=alert(1)></footer><input autofocus>,1,0,"{'benign': 0.5353, 'malicious': 0.4647}",26.17559999999486
+<html id=x tabindex=1 ondeactivate=alert(1)></html><input id=y autofocus>,1,0,"{'benign': 0.5427, 'malicious': 0.4573}",26.663399999996784
+"<basefont onkeydown=""alert(1)"" contenteditable>test</basefont>",1,0,"{'benign': 0.5292, 'malicious': 0.4708}",23.947300000003224
+"<video onkeyup=""alert(1)"" contenteditable>test</video>",1,0,"{'benign': 0.6369, 'malicious': 0.3631}",20.72220000000158
+"<meter onmousemove=""alert(1)"">test</meter>",1,0,"{'benign': 0.5637, 'malicious': 0.4363}",20.658400000002075
+<animate onpointermove=alert(1)>XSS</animate>,1,0,"{'benign': 0.5657, 'malicious': 0.4343}",30.706099999996184
+<base id=x tabindex=1 onbeforedeactivate=alert(1)></base><input autofocus>,1,0,"{'benign': 0.5631, 'malicious': 0.4369}",27.778599999997766
+"<div draggable=""true"" contenteditable>drag me</div><frameset ondrop=alert(1) contenteditable>drop here</frameset>",1,0,"{'benign': 0.6006, 'malicious': 0.3994}",37.215700000004404
+"<multicol onmouseup=""alert(1)"">test</multicol>",1,0,"{'benign': 0.6115, 'malicious': 0.3885}",26.555700000002957
+"<a onmousedown=""alert(1)"">test</a>",1,0,"{'benign': 0.5602, 'malicious': 0.4398}",24.80080000000129
+"<marquee draggable=""true"" ondragend=""alert(1)"">test</marquee>",1,0,"{'benign': 0.506, 'malicious': 0.494}",24.730300000001648
+"<button onmouseleave=""alert(1)"">test</button>",1,0,"{'benign': 0.6033, 'malicious': 0.3967}",28.069500000000858
+"<caption onbeforecut=""alert(1)"" contenteditable>test</caption>",1,0,"{'benign': 0.5937, 'malicious': 0.4063}",30.436399999999253
+<th id=x tabindex=1 onfocusin=alert(1)></th>,1,0,"{'benign': 0.5119, 'malicious': 0.4881}",27.697699999997383
+<img id=x tabindex=1 onfocus=alert(1)></img>,1,0,"{'benign': 0.5022, 'malicious': 0.4978}",24.809499999996376
+<rp onpointerenter=alert(1)>XSS</rp>,1,0,"{'benign': 0.5865, 'malicious': 0.4135}",19.429199999997593
+"<basefont ondblclick=""alert(1)"">test</basefont>",1,0,"{'benign': 0.5239, 'malicious': 0.4761}",20.30330000000191
+"<summary onmouseup=""alert(1)"">test</summary>",1,0,"{'benign': 0.5659, 'malicious': 0.4341}",21.52309999999602
+"<title draggable=""true"" ondragend=""alert(1)"">test</title>",1,0,"{'benign': 0.5603, 'malicious': 0.4397}",24.984400000001017
+"<area draggable=""true"" ondragenter=""alert(1)"">test</area>",1,0,"{'benign': 0.5256, 'malicious': 0.4744}",22.044199999996295
+"<s onmouseenter=""alert(1)"">test</s>",1,0,"{'benign': 0.5565, 'malicious': 0.4435}",20.322100000001342
+"<br onmouseleave=""alert(1)"">test</br>",1,0,"{'benign': 0.5479, 'malicious': 0.4521}",21.871699999998384
+"<wbr onmouseleave=""alert(1)"">test</wbr>",1,0,"{'benign': 0.5618, 'malicious': 0.4382}",16.56189999999924
+<svg><nav onload=alert(1)></nav>,1,0,"{'benign': 0.5552, 'malicious': 0.4448}",20.659199999997213
+"<textarea onmouseup=""alert(1)"">test</textarea>",1,0,"{'benign': 0.589, 'malicious': 0.411}",21.09980000000178
+"<head onkeypress=""alert(1)"" contenteditable>test</head>",1,0,"{'benign': 0.5794, 'malicious': 0.4206}",20.781799999994632
+"<style>:target {transform: rotate(180deg);}</style><nobr id=x style=""transition:transform 2s"" ontransitionrun=alert(1)></nobr>",1,0,"{'benign': 0.6025, 'malicious': 0.3975}",34.174499999998886
+"<tbody onkeyup=""alert(1)"" contenteditable>test</tbody>",1,0,"{'benign': 0.6011, 'malicious': 0.3989}",21.673400000004506
+<sub onpointerover=alert(1)>XSS</sub>,1,0,"{'benign': 0.5672, 'malicious': 0.4328}",21.11680000000149
+"<big draggable=""true"" ondragend=""alert(1)"">test</big>",1,0,"{'benign': 0.5987, 'malicious': 0.4013}",19.800299999999993
+<bdo onpointermove=alert(1)>XSS</bdo>,1,0,"{'benign': 0.6083, 'malicious': 0.3917}",21.086599999996736
+"<div draggable=""true"" contenteditable>drag me</div><map ondrop=alert(1) contenteditable>drop here</map>",1,0,"{'benign': 0.6143, 'malicious': 0.3857}",26.666799999993884
+"<meta onkeydown=""alert(1)"" contenteditable>test</meta>",1,0,"{'benign': 0.57, 'malicious': 0.43}",19.06540000000234
+<svg><param onload=alert(1)></param>,1,0,"{'benign': 0.5184, 'malicious': 0.4816}",19.911299999996857
+          <dd>,0,1,"{'benign': 0.4807, 'malicious': 0.5193}",17.12779999999725
+<abbr id=x tabindex=1 onfocusin=alert(1)></abbr>,1,0,"{'benign': 0.6119, 'malicious': 0.3881}",22.525000000001683
+<multicol onpointerdown=alert(1)>XSS</multicol>,1,0,"{'benign': 0.6125, 'malicious': 0.3875}",21.281999999999357
+"<input draggable=""true"" ondragend=""alert(1)"">test</input>",1,0,"{'benign': 0.5421, 'malicious': 0.4579}",23.04629999999719
+<p onblur=alert(1) tabindex=1 id=x></p><input autofocus>,1,0,"{'benign': 0.5467, 'malicious': 0.4533}",22.77819999999764
+"<style>:target {color:red;}</style><meta id=x style=""transition:color 1s"" ontransitionend=alert(1)></meta>",1,0,"{'benign': 0.6081, 'malicious': 0.3919}",29.616699999998275
+<li onpointerleave=alert(1)>XSS</li>,1,0,"{'benign': 0.6192, 'malicious': 0.3808}",19.214200000000403
+		 </div> </div>,0,1,"{'benign': 0.4662, 'malicious': 0.5338}",16.903199999994456
+<select onpointerover=alert(1)>XSS</select>,1,0,"{'benign': 0.5816, 'malicious': 0.4184}",20.524000000001763
+"<style>:target {color: red;}</style><marquee id=x style=""transition:color 10s"" ontransitioncancel=alert(1)></marquee>",1,0,"{'benign': 0.6157, 'malicious': 0.3843}",32.075399999996534
+"<aside onclick=""alert(1)"">test</aside>",1,0,"{'benign': 0.5814, 'malicious': 0.4186}",23.41040000000305
+"<summary ondblclick=""alert(1)"">test</summary>",1,0,"{'benign': 0.5853, 'malicious': 0.4147}",25.137699999994823
+<select id=x tabindex=1 onbeforedeactivate=alert(1)></select><input autofocus>,1,0,"{'benign': 0.5604, 'malicious': 0.4396}",29.77249999999998
+<big onblur=alert(1) tabindex=1 id=x></big><input autofocus>,1,0,"{'benign': 0.592, 'malicious': 0.408}",29.198100000002114
+"<div draggable=""true"" contenteditable>drag me</div><track ondrop=alert(1) contenteditable>drop here</track>",1,0,"{'benign': 0.6083, 'malicious': 0.3917}",25.71309999999727
+"<figure draggable=""true"" ondragend=""alert(1)"">test</figure>",1,0,"{'benign': 0.5299, 'malicious': 0.4701}",22.711499999999774
+"<hr draggable=""true"" ondrag=""alert(1)"">test</hr>",1,0,"{'benign': 0.5401, 'malicious': 0.4599}",21.613499999993735
+"<template draggable=""true"" ondragstart=""alert(1)"">test</template>",1,0,"{'benign': 0.5517, 'malicious': 0.4483}",26.592399999998406
+"<style>@keyframes x{}</style><figure style=""animation-name:x"" onanimationstart=""alert(1)""></figure>",1,0,"{'benign': 0.5723, 'malicious': 0.4277}",21.321499999999105
+"<style>:target {transform: rotate(180deg);}</style><a id=x style=""transition:transform 									2s"" ontransitionrun=alert(1)></a>",1,0,"{'benign': 0.5986, 'malicious': 0.4014}",28.6036999999979
+"<basefont onbeforepaste=""alert(1)"" contenteditable>test</basefont>",1,0,"{'benign': 0.5707, 'malicious': 0.4293}",24.312899999998194
+<head>,0,1,"{'benign': 0.471, 'malicious': 0.529}",17.59129999999942
+"<bdo onbeforecut=""alert(1)"" contenteditable>test</bdo>",1,0,"{'benign': 0.642, 'malicious': 0.358}",22.20599999999706
+"<ruby onkeydown=""alert(1)"" contenteditable>test</ruby>",1,0,"{'benign': 0.5596, 'malicious': 0.4404}",20.940500000001805
+"<style>:target {color: red;}</style><bgsound id=x style=""transition:color 10s"" ontransitioncancel=alert(1)></bgsound>",1,0,"{'benign': 0.6575, 'malicious': 0.3425}",28.50920000000201
+"<cite onmousedown=""alert(1)"">test</cite>",1,0,"{'benign': 0.5439, 'malicious': 0.4561}",21.039699999995776
+<svg><mark onload=alert(1)></mark>,1,0,"{'benign': 0.5551, 'malicious': 0.4449}",18.96759999999631
+<data id=x tabindex=1 onbeforedeactivate=alert(1)></data><input autofocus>,1,0,"{'benign': 0.5606, 'malicious': 0.4394}",25.774800000000653
+"<style>@keyframes x{}</style><bdi style=""animation-name:x"" onanimationend=""alert(1)""></bdi>",1,0,"{'benign': 0.5894, 'malicious': 0.4106}",31.245500000004256
+<style onpointerdown=alert(1)>XSS</style>,1,0,"{'benign': 0.5612, 'malicious': 0.4388}",20.52460000000167
+<big onpointerout=alert(1)>XSS</big>,1,0,"{'benign': 0.6307, 'malicious': 0.3693}",24.096200000002455
+"<shadow onmousemove=""alert(1)"">test</shadow>",1,0,"{'benign': 0.6035, 'malicious': 0.3965}",22.299599999996644
+<body onpointerout=alert(1)>XSS</body>,1,0,"{'benign': 0.5578, 'malicious': 0.4422}",21.777600000000064
+<style onpointerenter=alert(1)>XSS</style>,1,0,"{'benign': 0.5643, 'malicious': 0.4357}",18.83540000000039
+"<rtc draggable=""true"" ondragleave=""alert(1)"">test</rtc>",1,0,"{'benign': 0.503, 'malicious': 0.497}",23.403999999999314
+<frame onpointerup=alert(1)>XSS</frame>,1,0,"{'benign': 0.6001, 'malicious': 0.3999}",17.323900000000947
+"<div draggable=""true"" contenteditable>drag me</div><area ondrop=alert(1) contenteditable>drop here</area>",1,0,"{'benign': 0.5983, 'malicious': 0.4017}",25.026799999999128
+"<style>:target {color:red;}</style><button id=x style=""transition:color 1s"" ontransitionend=alert(1)></button>",1,0,"{'benign': 0.614, 'malicious': 0.386}",26.70410000000345
+"<style>@keyframes x{}</style><progress style=""animation-name:x"" onanimationend=""alert(1)""></progress>",1,0,"{'benign': 0.5711, 'malicious': 0.4289}",28.54579999999629
+"<dd oncopy=""alert(1)"" contenteditable>test</dd>",1,0,"{'benign': 0.5564, 'malicious': 0.4436}",21.42050000000495
+"<spacer oncontextmenu=""alert(1)"">test</spacer>",1,0,"{'benign': 0.5682, 'malicious': 0.4318}",21.410299999999438
+"<style>:target {transform: rotate(180deg);}</style><address id=x style=""transition:transform 2s"" ontransitionrun=alert(1)></address>",1,0,"{'benign': 0.5685, 'malicious': 0.4315}",38.07189999999849
+<ins onpointerleave=alert(1)>XSS</ins>,1,0,"{'benign': 0.5834, 'malicious': 0.4166}",18.34239999999454
+"<center onbeforecut=""alert(1)"" contenteditable>test</center>",1,0,"{'benign': 0.631, 'malicious': 0.369}",20.58240000000211
+<keygen onpointerleave=alert(1)>XSS</keygen>,1,0,"{'benign': 0.5771, 'malicious': 0.4229}",16.83209999999491
+<applet onpointermove=alert(1)>XSS</applet>,1,0,"{'benign': 0.5629, 'malicious': 0.4371}",15.187300000000903
+"<form><input type=search onsearch=alert(1) value=""Hit return"" autofocus>",1,0,"{'benign': 0.5501, 'malicious': 0.4499}",23.231500000001404
+<dir onpointerenter=alert(1)>XSS</dir>,1,0,"{'benign': 0.557, 'malicious': 0.443}",19.539099999995813
+"<style>:target {color:red;}</style><section id=x style=""transition:color 1s"" ontransitionend=alert(1)></section>",1,0,"{'benign': 0.6268, 'malicious': 0.3732}",29.9772000000047
+<body ontouchstart=alert(1)> ,1,0,"{'benign': 0.5292, 'malicious': 0.4708}",19.695499999997423
+    </div>,0,1,"{'benign': 0.4444, 'malicious': 0.5556}",14.857999999996707
+"<div draggable=""true"" contenteditable>drag me</div><content ondrop=alert(1) contenteditable>drop here</content>",1,0,"{'benign': 0.618, 'malicious': 0.382}",27.071099999993464
+"<style>:target {color:red;}</style><fieldset id=x style=""transition:color 1s"" ontransitionend=alert(1)></fieldset>",1,0,"{'benign': 0.6168, 'malicious': 0.3832}",29.35229999999933
+"<datalist draggable=""true"" ondragend=""alert(1)"">test</datalist>",1,0,"{'benign': 0.5591, 'malicious': 0.4409}",23.392600000001096
+<frameset onpointerup=alert(1)>XSS</frameset>,1,0,"{'benign': 0.5783, 'malicious': 0.4217}",15.558699999999703
+"<style>:target {transform: rotate(180deg);}</style><data id=x style=""transition:transform 2s"" ontransitionrun=alert(1)></data>",1,0,"{'benign': 0.5776, 'malicious': 0.4224}",25.166500000004532
+<menuitem id=x tabindex=1 onbeforedeactivate=alert(1)></menuitem><input autofocus>,1,0,"{'benign': 0.5579, 'malicious': 0.4421}",26.27970000000346
+<input type=checkbox id=x onfocusin=alert(1)>,1,0,"{'benign': 0.5169, 'malicious': 0.4831}",16.85820000000149
+<rp id=x tabindex=1 ondeactivate=alert(1)></rp><input id=y autofocus>,1,0,"{'benign': 0.5371, 'malicious': 0.4629}",21.698199999995893
+"<img draggable=""true"" ondragleave=""alert(1)"">test</img>",1,0,"{'benign': 0.568, 'malicious': 0.432}",17.2810000000041
+<element id=x tabindex=1 ondeactivate=alert(1)></element><input id=y autofocus>,1,0,"{'benign': 0.5265, 'malicious': 0.4735}",23.56649999999405
+</div>,0,1,"{'benign': 0.4444, 'malicious': 0.5556}",16.65580000000233
+"<command onmouseleave=""alert(1)"">test</command>",1,0,"{'benign': 0.5383, 'malicious': 0.4617}",20.75349999999787
+"<q onkeydown=""alert(1)"" contenteditable>test</q>",1,0,"{'benign': 0.5028, 'malicious': 0.4972}",22.37930000000432
+"<nextid onbeforecut=""alert(1)"" contenteditable>test</nextid>",1,0,"{'benign': 0.6272, 'malicious': 0.3728}",23.323400000002437
+"<style>@keyframes x{}</style><listing style=""animation-name:x"" onanimationstart=""alert(1)""></listing>",1,0,"{'benign': 0.5557, 'malicious': 0.4443}",31.30949999999899
+"<div draggable=""true"" contenteditable>drag me</div><dir ondrop=alert(1) contenteditable>drop here</dir>",1,0,"{'benign': 0.5695, 'malicious': 0.4305}",23.823799999995288
+"<div draggable=""true"" contenteditable>drag me</div><noframes ondrop=alert(1) contenteditable>drop here</noframes>",1,0,"{'benign': 0.6239, 'malicious': 0.3761}",23.11019999999786
+"<style>@keyframes slidein {}</style><mark style=""animation-duration:1s;animation-name:slidein;animation-iteration-count:2"" onanimationiteration=""alert(1)""></mark>",1,0,"{'benign': 0.5824, 'malicious': 0.4176}",37.38949999999619
+"<style>:target {color:red;}</style><ul id=x style=""transition:color 1s"" ontransitionend=alert(1)></ul>",1,0,"{'benign': 0.6322, 'malicious': 0.3678}",29.022199999999998
+"<cite onbeforecut=""alert(1)"" contenteditable>test</cite>",1,0,"{'benign': 0.5796, 'malicious': 0.4204}",16.45369999999957
+<th id=x tabindex=1 onbeforedeactivate=alert(1)></th><input autofocus>,1,0,"{'benign': 0.5498, 'malicious': 0.4502}",18.118899999997495
+"<style>:target {color:red;}</style><template id=x style=""transition:color 1s"" ontransitionend=alert(1)></template>",1,0,"{'benign': 0.6289, 'malicious': 0.3711}",27.1917999999971
+<rtc id=x tabindex=1 onbeforedeactivate=alert(1)></rtc><input autofocus>,1,0,"{'benign': 0.5356, 'malicious': 0.4644}",25.18930000000097
+"<button onkeydown=""alert(1)"" contenteditable>test</button>",1,0,"{'benign': 0.5722, 'malicious': 0.4278}",21.04529999999727
+"<style>@keyframes x{}</style><optgroup style=""animation-name:x"" onanimationstart=""alert(1)""></optgroup>",1,0,"{'benign': 0.6068, 'malicious': 0.3932}",30.997100000000444
+<svg><applet onload=alert(1)></applet>,1,0,"{'benign': 0.5858, 'malicious': 0.4142}",22.070999999996843
+writetitle(),1,0,"{'benign': 0.6116, 'malicious': 0.3884}",18.0523000000008
+"<style>@keyframes x{}</style><footer style=""animation-name:x"" onanimationstart=""alert(1)""></footer>",1,0,"{'benign': 0.5611, 'malicious': 0.4389}",27.179900000000146
+"<dfn draggable=""true"" ondrag=""alert(1)"">test</dfn>",1,0,"{'benign': 0.6089, 'malicious': 0.3911}",20.268500000000245
+"<option onmouseout=""alert(1)"">test</option>",1,0,"{'benign': 0.5159, 'malicious': 0.4841}",19.109000000000265
+"<bgsound onkeypress=""alert(1)"" contenteditable>test</bgsound>",1,0,"{'benign': 0.5909, 'malicious': 0.4091}",22.87650000000241
+"<ruby onkeypress=""alert(1)"" contenteditable>test</ruby>",1,0,"{'benign': 0.574, 'malicious': 0.426}",20.433300000000543
+<embed onpointerup=alert(1)>XSS</embed>,1,0,"{'benign': 0.5791, 'malicious': 0.4209}",18.59009999999728
+"<svg onmouseout=""alert(1)"">test</svg>",1,0,"{'benign': 0.5344, 'malicious': 0.4656}",20.420500000000175
+"<style>:target {color:red;}</style><bdo id=x style=""transition:color 1s"" ontransitionend=alert(1)></bdo>",1,0,"{'benign': 0.6392, 'malicious': 0.3608}",31.605199999994227
+"<style>@keyframes slidein {}</style><kbd style=""animation-duration:1s;animation-name:slidein;animation-iteration-count:2"" onanimationiteration=""alert(1)""></kbd>",1,0,"{'benign': 0.5923, 'malicious': 0.4077}",38.61570000000114
+"<plaintext draggable=""true"" ondragenter=""alert(1)"">test</plaintext>",1,0,"{'benign': 0.5352, 'malicious': 0.4648}",23.76519999999971
+"<noscript onmouseover=""alert(1)"">test</noscript>",1,0,"{'benign': 0.5932, 'malicious': 0.4068}",21.064400000000205
+"<li onbeforepaste=""alert(1)"" contenteditable>test</li>",1,0,"{'benign': 0.6085, 'malicious': 0.3915}",23.705399999997212
+<link onfocusout=alert(1) tabindex=1 id=x></link><input autofocus>,1,0,"{'benign': 0.5248, 'malicious': 0.4752}",23.002699999999265
+"<div draggable=""true"" contenteditable>drag me</div><form ondrop=alert(1) contenteditable>drop here</form>",1,0,"{'benign': 0.6171, 'malicious': 0.3829}",26.729499999994744
+"<style>@keyframes slidein {}</style><script style=""animation-duration:1s;animation-name:slidein;animation-iteration-count:2"" onanimationiteration=""alert(1)""></script>",1,0,"{'benign': 0.5712, 'malicious': 0.4288}",40.32080000000349
+<i id=x tabindex=1 onbeforedeactivate=alert(1)></i><input autofocus>,1,0,"{'benign': 0.5753, 'malicious': 0.4247}",24.158299999996302
+"<colgroup draggable=""true"" ondrag=""alert(1)"">test</colgroup>",1,0,"{'benign': 0.5987, 'malicious': 0.4013}",24.983200000001204
+"<div ondblclick=""alert(1)"">test</div>",1,0,"{'benign': 0.5353, 'malicious': 0.4647}",21.95820000000026
+"<blockquote onpaste=""alert(1)"" contenteditable>test</blockquote>",1,0,"{'benign': 0.5911, 'malicious': 0.4089}",21.97370000000376
+"<mark draggable=""true"" ondragenter=""alert(1)"">test</mark>",1,0,"{'benign': 0.5117, 'malicious': 0.4883}",17.44070000000164
+"<frameset onmouseup=""alert(1)"">test</frameset>",1,0,"{'benign': 0.5594, 'malicious': 0.4406}",22.539800000004107
+"<datalist onmouseup=""alert(1)"">test</datalist>",1,0,"{'benign': 0.6166, 'malicious': 0.3834}",23.368200000000172
+"<title onclick=""alert(1)"">test</title>",1,0,"{'benign': 0.5533, 'malicious': 0.4467}",17.902400000004093
+"<style>:target {color:red;}</style><link id=x style=""transition:color 1s"" ontransitionend=alert(1)></link>",1,0,"{'benign': 0.6058, 'malicious': 0.3942}",24.89320000000106
+"<style>@keyframes x{from {left:0;}to {left: 1000px;}}:target {animation:10s ease-in-out 0s 1 x;}</style><caption id=x style=""position:absolute;"" onanimationcancel=""alert(1)""></caption>",1,0,"{'benign': 0.5865, 'malicious': 0.4135}",41.45049999999628
+"<isindex onkeyup=""alert(1)"" contenteditable>test</isindex>",1,0,"{'benign': 0.5409, 'malicious': 0.4591}",21.286600000003375
+"<embed draggable=""true"" ondragend=""alert(1)"">test</embed>",1,0,"{'benign': 0.5487, 'malicious': 0.4513}",21.681800000003193
+<dt onpointerdown=alert(1)>XSS</dt>,1,0,"{'benign': 0.6202, 'malicious': 0.3798}",21.147100000000307
+"<noscript draggable=""true"" ondragend=""alert(1)"">test</noscript>",1,0,"{'benign': 0.5932, 'malicious': 0.4068}",23.314999999996644
+"<fieldset onmouseleave=""alert(1)"">test</fieldset>",1,0,"{'benign': 0.5776, 'malicious': 0.4224}",21.643799999999658
+"<style>@keyframes slidein {}</style><meter style=""animation-duration:1s;animation-name:slidein;animation-iteration-count:2"" onanimationiteration=""alert(1)""></meter>",1,0,"{'benign': 0.5827, 'malicious': 0.4173}",40.63119999999998
+"<br onmousedown=""alert(1)"">test</br>",1,0,"{'benign': 0.5317, 'malicious': 0.4683}",19.964999999999122
+<menu onpointerenter=alert(1)>XSS</menu>,1,0,"{'benign': 0.5047, 'malicious': 0.4953}",20.47319999999786
+onFocus(),1,0,"{'benign': 0.5686, 'malicious': 0.4314}",17.159700000000555
+"<a onbeforecopy=""alert(1)"" contenteditable>test</a>",1,0,"{'benign': 0.6063, 'malicious': 0.3937}",22.376100000002452
+"<li onpaste=""alert(1)"" contenteditable>test</li>",1,0,"{'benign': 0.6133, 'malicious': 0.3867}",23.077800000002924
+<mark id=x tabindex=1 ondeactivate=alert(1)></mark><input id=y autofocus>,1,0,"{'benign': 0.5206, 'malicious': 0.4794}",27.62440000000055
+<kbd onpointerleave=alert(1)>XSS</kbd>,1,0,"{'benign': 0.6008, 'malicious': 0.3992}",20.77990000000085
+<em onpointerleave=alert(1)>XSS</em>,1,0,"{'benign': 0.6294, 'malicious': 0.3706}",20.497399999996446
+"<META HTTP-EQUIV=""Link"" Content=""<http://.rocks/.css>; REL=stylesheet"">",1,0,"{'benign': 0.5186, 'malicious': 0.4814}",26.567999999997483
+"<STYLE>li {list-style-image: url(""javascript:alert('')"");}</STYLE><UL><LI></br>",1,0,"{'benign': 0.6125, 'malicious': 0.3875}",30.26110000000415
+<tt onpointerout=alert(1)>XSS</tt>,1,0,"{'benign': 0.5845, 'malicious': 0.4155}",20.71120000000093
+"/?param=<data:text/html;base64,PHNjcmlwdD5hbGVydCgnWFNTJyk8L3NjcmlwdD4=",1,0,"{'benign': 0.518, 'malicious': 0.482}",26.927999999998065
+"<command oncopy=""alert(1)"" contenteditable>test</command>",1,0,"{'benign': 0.5167, 'malicious': 0.4833}",23.543199999998876
+"<style>@keyframes slidein {}</style><time style=""animation-duration:1s;animation-name:slidein;animation-iteration-count:2"" onanimationiteration=""alert(1)""></time>",1,0,"{'benign': 0.5829, 'malicious': 0.4171}",41.89070000000328
+"<select onpaste=""alert(1)"" contenteditable>test</select>",1,0,"{'benign': 0.582, 'malicious': 0.418}",21.741899999994985
+"<rp onclick=""alert(1)"">test</rp>",1,0,"{'benign': 0.544, 'malicious': 0.456}",19.42619999999806
+<svg onpointerleave=alert(1)>XSS</svg>,1,0,"{'benign': 0.6138, 'malicious': 0.3862}",20.42740000000265
+"<div draggable=""true"" contenteditable>drag me</div><rt ondrop=alert(1) contenteditable>drop here</rt>",1,0,"{'benign': 0.6037, 'malicious': 0.3963}",24.469299999999805
+"<rt oncut=""alert(1)"" contenteditable>test</rt>",1,0,"{'benign': 0.5924, 'malicious': 0.4076}",22.11780000000374
+"<span draggable=""true"" ondragstart=""alert(1)"">test</span>",1,0,"{'benign': 0.5079, 'malicious': 0.4921}",16.840000000001965
+"<br oncut=""alert(1)"" contenteditable>test</br>",1,0,"{'benign': 0.5471, 'malicious': 0.4529}",20.261399999995433
+"<div draggable=""true"" contenteditable>drag me</div><img ondragover=alert(1) contenteditable>drop here</img>",1,0,"{'benign': 0.5986, 'malicious': 0.4014}",28.638499999999567
+"<style>:target {transform: rotate(180deg);}</style><figcaption id=x style=""transition:transform 2s"" ontransitionrun=alert(1)></figcaption>",1,0,"{'benign': 0.6034, 'malicious': 0.3966}",36.80500000000109
+<keygen id=x tabindex=1 onactivate=alert(1)></keygen>,1,0,"{'benign': 0.5391, 'malicious': 0.4609}",20.58680000000379
+"<link draggable=""true"" ondragend=""alert(1)"">test</link>",1,0,"{'benign': 0.5468, 'malicious': 0.4532}",23.954899999999668
+"<BGSOUND SRC=""javascript:alert('');"">",1,0,"{'benign': 0.5926, 'malicious': 0.4074}",18.30799999999755
+"<video onbeforecut=""alert(1)"" contenteditable>test</video>",1,0,"{'benign': 0.648, 'malicious': 0.352}",20.391600000003507
+"<div draggable=""true"" contenteditable>drag me</div><fieldset ondrop=alert(1) contenteditable>drop here</fieldset>",1,0,"{'benign': 0.6178, 'malicious': 0.3822}",28.59109999999987
+<br id=x tabindex=1 onbeforedeactivate=alert(1)></br><input autofocus>,1,0,"{'benign': 0.5395, 'malicious': 0.4605}",25.28310000000289
+<h1 id=x tabindex=1 onbeforedeactivate=alert(1)></h1><input autofocus>,1,0,"{'benign': 0.5502, 'malicious': 0.4498}",19.953000000000998
+"<a draggable=""true"" ondragenter=""alert(1)"">test</a>",1,0,"{'benign': 0.5485, 'malicious': 0.4515}",16.997099999997545
+"<input ondblclick=""alert(1)"">test</input>",1,0,"{'benign': 0.5938, 'malicious': 0.4062}",19.816500000004567
+"<style>@keyframes x{from {left:0;}to {left: 1000px;}}:target {animation:10s ease-in-out 0s 1 x;}</style><section id=x style=""position:absolute;"" onanimationcancel=""alert(1)""></section>",1,0,"{'benign': 0.5954, 'malicious': 0.4046}",50.189799999998286
+"<pre draggable=""true"" ondragenter=""alert(1)"">test</pre>",1,0,"{'benign': 0.5628, 'malicious': 0.4372}",22.365699999994604
+<track id=x tabindex=1 onbeforeactivate=alert(1)></track>,1,0,"{'benign': 0.5323, 'malicious': 0.4677}",22.164300000000026
+"<rt draggable=""true"" ondragenter=""alert(1)"">test</rt>",1,0,"{'benign': 0.5595, 'malicious': 0.4405}",22.909099999999682
+"<style>@keyframes x{}</style><style style=""animation-name:x"" onanimationend=""alert(1)""></style>",1,0,"{'benign': 0.5633, 'malicious': 0.4367}",27.888599999997155
+"<link oncontextmenu=""alert(1)"">test</link>",1,0,"{'benign': 0.5521, 'malicious': 0.4479}",19.766299999993464
+<output id=x tabindex=1 onbeforedeactivate=alert(1)></output><input autofocus>,1,0,"{'benign': 0.5692, 'malicious': 0.4308}",24.106399999993755
+<details onpointerdown=alert(1)>XSS</details>,1,0,"{'benign': 0.6035, 'malicious': 0.3965}",18.480900000000133
+<blockquote id=x tabindex=1 onbeforeactivate=alert(1)></blockquote>,1,0,"{'benign': 0.565, 'malicious': 0.435}",19.552999999994825
+url(javascript:alert(''),1,0,"{'benign': 0.6469, 'malicious': 0.3531}",17.567200000002003
+"<style>:target {transform: rotate(180deg);}</style><marquee id=x style=""transition:transform 2s"" ontransitionrun=alert(1)></marquee>",1,0,"{'benign': 0.5801, 'malicious': 0.4199}",38.17229999999938
+"<strike draggable=""true"" ondragleave=""alert(1)"">test</strike>",1,0,"{'benign': 0.5409, 'malicious': 0.4591}",19.753599999994265
+"<textarea onmouseleave=""alert(1)"">test</textarea>",1,0,"{'benign': 0.6098, 'malicious': 0.3902}",24.544499999997527
+"<hgroup oncopy=""alert(1)"" contenteditable>test</hgroup>",1,0,"{'benign': 0.5715, 'malicious': 0.4285}",21.48640000000057
+"<basefont onclick=""alert(1)"">test</basefont>",1,0,"{'benign': 0.562, 'malicious': 0.438}",23.613400000002116
+"<var onclick=""alert(1)"">test</var>",1,0,"{'benign': 0.5282, 'malicious': 0.4718}",15.230700000003594
+<tfoot onpointerout=alert(1)>XSS</tfoot>,1,0,"{'benign': 0.5757, 'malicious': 0.4243}",22.405800000001364
+"<fieldset draggable=""true"" ondragend=""alert(1)"">test</fieldset>",1,0,"{'benign': 0.5459, 'malicious': 0.4541}",24.619300000004785
+"<rt onmouseover=""alert(1)"">test</rt>",1,0,"{'benign': 0.6017, 'malicious': 0.3983}",19.509700000000407
+"<cite onkeyup=""alert(1)"" contenteditable>test</cite>",1,0,"{'benign': 0.5717, 'malicious': 0.4283}",20.330599999994092
+"<rtc onmousemove=""alert(1)"">test</rtc>",1,0,"{'benign': 0.5509, 'malicious': 0.4491}",22.43299999999948
+<img srcset=1 onerror=alert(1)>,1,0,"{'benign': 0.5232, 'malicious': 0.4768}",20.680300000002205
+"<div draggable=""true"" contenteditable>drag me</div><dfn ondragover=alert(1) contenteditable>drop here</dfn>",1,0,"{'benign': 0.6283, 'malicious': 0.3717}",28.731600000000412
+<details onpointerleave=alert(1)>XSS</details>,1,0,"{'benign': 0.6058, 'malicious': 0.3942}",22.688000000002262
+"<plaintext onbeforepaste=""alert(1)"" contenteditable>test</plaintext>",1,0,"{'benign': 0.6274, 'malicious': 0.3726}",16.062000000005128
+</footer>,0,1,"{'benign': 0.4863, 'malicious': 0.5137}",16.61049999999875
+"	<span class=""mw-headline"" id=""General_intelligence"">General intelligence ",0,1,"{'benign': 0.4928, 'malicious': 0.5072}",22.46290000000073
+<svg><meter onload=alert(1)></meter>,1,0,"{'benign': 0.5816, 'malicious': 0.4184}",16.60139999999899
+"<font onbeforepaste=""alert(1)"" contenteditable>test</font>",1,0,"{'benign': 0.5954, 'malicious': 0.4046}",22.038199999997232
+"<nextid draggable=""true"" ondragstart=""alert(1)"">test</nextid>",1,0,"{'benign': 0.541, 'malicious': 0.459}",25.369600000004766
+"<dt draggable=""true"" ondragstart=""alert(1)"">test</dt>",1,0,"{'benign': 0.5678, 'malicious': 0.4322}",25.02470000000301
+"<div draggable=""true"" contenteditable>drag me</div><table ondrop=alert(1) contenteditable>drop here</table>",1,0,"{'benign': 0.6035, 'malicious': 0.3965}",29.420500000000516
+"<iframe onbeforecut=""alert(1)"" contenteditable>test</iframe>",1,0,"{'benign': 0.6152, 'malicious': 0.3848}",21.544499999997413
+"<dir onkeypress=""alert(1)"" contenteditable>test</dir>",1,0,"{'benign': 0.5212, 'malicious': 0.4788}",17.085899999997878
+<picture id=x tabindex=1 onfocus=alert(1)></picture>,1,0,"{'benign': 0.5038, 'malicious': 0.4962}",19.54369999999983
+"<div draggable=""true"" contenteditable>drag me</div><strong ondragover=alert(1) contenteditable>drop here</strong>",1,0,"{'benign': 0.6092, 'malicious': 0.3908}",30.59989999999857
+<ol id=x tabindex=1 ondeactivate=alert(1)></ol><input id=y autofocus>,1,0,"{'benign': 0.5463, 'malicious': 0.4537}",26.123599999998248
+"<style>@keyframes slidein {}</style><tt style=""animation-duration:1s;animation-name:slidein;animation-iteration-count:2"" onanimationiteration=""alert(1)""></tt>",1,0,"{'benign': 0.5788, 'malicious': 0.4212}",34.03499999999582
+"<h1 draggable=""true"" ondragleave=""alert(1)"">test</h1>",1,0,"{'benign': 0.5479, 'malicious': 0.4521}",21.274899999994545
+<label id=x tabindex=1 onbeforedeactivate=alert(1)></label><input autofocus>,1,0,"{'benign': 0.5427, 'malicious': 0.4573}",18.937199999996324
+<svg><label onload=alert(1)></label>,1,0,"{'benign': 0.5512, 'malicious': 0.4488}",23.45629999999943
+"<body draggable=""true"" ondragend=""alert(1)"">test</body>",1,0,"{'benign': 0.5509, 'malicious': 0.4491}",19.030700000001843
+<video onpointerout=alert(1)>XSS</video>,1,0,"{'benign': 0.6145, 'malicious': 0.3855}",18.330499999997585
+<html id=x tabindex=1 onbeforedeactivate=alert(1)></html><input autofocus>,1,0,"{'benign': 0.562, 'malicious': 0.438}",25.125200000005066
+"<img src=""/"" =_="" title=""onerror='prompt(1)'"">",1,0,"{'benign': 0.537, 'malicious': 0.463}",20.84729999999979
+<button onpointerleave=alert(1)>XSS</button>,1,0,"{'benign': 0.612, 'malicious': 0.388}",19.88409999999874
+"<multicol onkeyup=""alert(1)"" contenteditable>test</multicol>",1,0,"{'benign': 0.591, 'malicious': 0.409}",56.45150000000143
+<template id=x tabindex=1 onfocusin=alert(1)></template>,1,0,"{'benign': 0.5255, 'malicious': 0.4745}",23.82459999999753
+<rt id=x tabindex=1 onfocus=alert(1)></rt>,1,0,"{'benign': 0.5422, 'malicious': 0.4578}",21.88329999999894
+<sup onpointerenter=alert(1)>XSS</sup>,1,0,"{'benign': 0.5733, 'malicious': 0.4267}",21.217199999995273
+"<strong onmouseleave=""alert(1)"">test</strong>",1,0,"{'benign': 0.6082, 'malicious': 0.3918}",21.10789999999696
+<noscript id=x tabindex=1 onfocusin=alert(1)></noscript>,1,0,"{'benign': 0.5658, 'malicious': 0.4342}",21.164400000003525
+"<IMG LOWSRC=""javascript:alert('')"">",1,0,"{'benign': 0.61, 'malicious': 0.39}",19.05169999999856
+<figcaption id=x tabindex=1 onfocus=alert(1)></figcaption>,1,0,"{'benign': 0.5112, 'malicious': 0.4888}",22.313499999995656
+"<iframe onkeydown=""alert(1)"" contenteditable>test</iframe>",1,0,"{'benign': 0.5674, 'malicious': 0.4326}",22.866999999997972
+"<rp onbeforecopy=""alert(1)"" contenteditable>test</rp>",1,0,"{'benign': 0.6026, 'malicious': 0.3974}",16.7673999999991
+"<style>:target {transform: rotate(180deg);}</style><param id=x style=""transition:transform 2s"" ontransitionrun=alert(1)></param>",1,0,"{'benign': 0.5692, 'malicious': 0.4308}",38.64870000000309
+"<strong draggable=""true"" ondragstart=""alert(1)"">test</strong>",1,0,"{'benign': 0.5267, 'malicious': 0.4733}",23.437099999995326
+"<h1 draggable=""true"" ondrag=""alert(1)"">test</h1>",1,0,"{'benign': 0.5431, 'malicious': 0.4569}",24.221699999998236
+"<bdi draggable=""true"" ondragstart=""alert(1)"">test</bdi>",1,0,"{'benign': 0.5263, 'malicious': 0.4737}",22.81719999999865
+<template id=x tabindex=1 onbeforedeactivate=alert(1)></template><input autofocus>,1,0,"{'benign': 0.5724, 'malicious': 0.4276}",24.143699999996215
+"<plaintext draggable=""true"" ondragleave=""alert(1)"">test</plaintext>",1,0,"{'benign': 0.531, 'malicious': 0.469}",21.772200000000907
+<details id=x tabindex=1 onfocus=alert(1)></details>,1,0,"{'benign': 0.5276, 'malicious': 0.4724}",18.04289999999753
+"<sup onmouseover=""alert(1)"">test</sup>",1,0,"{'benign': 0.5471, 'malicious': 0.4529}",19.303000000000736
+"<hr onbeforecopy=""alert(1)"" contenteditable>test</hr>",1,0,"{'benign': 0.6452, 'malicious': 0.3548}",17.537099999998418
+<hgroup id=x tabindex=1 onbeforedeactivate=alert(1)></hgroup><input autofocus>,1,0,"{'benign': 0.558, 'malicious': 0.442}",24.073900000004755
+"<pre onclick=""alert(1)"">test</pre>",1,0,"{'benign': 0.5842, 'malicious': 0.4158}",18.717900000005727
+"<pre onbeforecut=""alert(1)"" contenteditable>test</pre>",1,0,"{'benign': 0.6207, 'malicious': 0.3793}",17.73520000000417
+<svg><basefont onload=alert(1)></basefont>,1,0,"{'benign': 0.5446, 'malicious': 0.4554}",21.252499999995678
+"<frameset draggable=""true"" ondragleave=""alert(1)"">test</frameset>",1,0,"{'benign': 0.5155, 'malicious': 0.4845}",19.329700000000116
+"<source onmouseout=""alert(1)"">test</source>",1,0,"{'benign': 0.5816, 'malicious': 0.4184}",21.018999999995458
+"<style>:target {color: red;}</style><main id=x style=""transition:color 10s"" ontransitioncancel=alert(1)></main>",1,0,"{'benign': 0.6313, 'malicious': 0.3687}",32.981800000001726
+<track onfocusout=alert(1) tabindex=1 id=x></track><input autofocus>,1,0,"{'benign': 0.5032, 'malicious': 0.4968}",25.97189999999472
+"<shadow onbeforecut=""alert(1)"" contenteditable>test</shadow>",1,0,"{'benign': 0.6458, 'malicious': 0.3542}",16.98040000000134
+"<time onbeforepaste=""alert(1)"" contenteditable>test</time>",1,0,"{'benign': 0.6167, 'malicious': 0.3833}",21.372299999995903
+"<style>:target {color:red;}</style><dir id=x style=""transition:color 1s"" ontransitionend=alert(1)></dir>",1,0,"{'benign': 0.6085, 'malicious': 0.3915}",27.390099999998085
+<style id=x tabindex=1 onactivate=alert(1)></style>,1,0,"{'benign': 0.5157, 'malicious': 0.4843}",21.400199999995095
+"<strong onmouseenter=""alert(1)"">test</strong>",1,0,"{'benign': 0.5808, 'malicious': 0.4192}",21.089199999998698
+<blink onpointerdown=alert(1)>XSS</blink>,1,0,"{'benign': 0.5623, 'malicious': 0.4377}",20.260800000002632
+<td id=x tabindex=1 onfocus=alert(1)></td>,1,0,"{'benign': 0.5095, 'malicious': 0.4905}",33.347200000001465
+"<dl draggable=""true"" ondragstart=""alert(1)"">test</dl>",1,0,"{'benign': 0.5261, 'malicious': 0.4739}",33.591499999999996
+"<img oncontextmenu=""alert(1)"">test</img>",1,0,"{'benign': 0.5866, 'malicious': 0.4134}",22.914300000003607
+"<hgroup onclick=""alert(1)"">test</hgroup>",1,0,"{'benign': 0.5794, 'malicious': 0.4206}",22.21680000000248
+<script onerror=alert(1) src=/></script>,1,0,"{'benign': 0.5525, 'malicious': 0.4475}",18.09910000000059
+<svg><wbr onload=alert(1)></wbr>,1,0,"{'benign': 0.5882, 'malicious': 0.4118}",21.457200000000398
+<spacer onpointerout=alert(1)>XSS</spacer>,1,0,"{'benign': 0.6182, 'malicious': 0.3818}",24.423699999999826
+"<div draggable=""true"" contenteditable>drag me</div><multicol ondragover=alert(1) contenteditable>drop here</multicol>",1,0,"{'benign': 0.6207, 'malicious': 0.3793}",29.86980000000017
+"<small draggable=""true"" ondrag=""alert(1)"">test</small>",1,0,"{'benign': 0.5364, 'malicious': 0.4636}",23.35100000000523
+<slot onpointerleave=alert(1)>XSS</slot>,1,0,"{'benign': 0.6025, 'malicious': 0.3975}",20.46399999999693
+<tbody onpointerout=alert(1)>XSS</tbody>,1,0,"{'benign': 0.6633, 'malicious': 0.3367}",17.02410000000043
+"<script onmouseout=""alert(1)"">test</script>",1,0,"{'benign': 0.5202, 'malicious': 0.4798}",20.044999999996094
+<nav onblur=alert(1) tabindex=1 id=x></nav><input autofocus>,1,0,"{'benign': 0.5271, 'malicious': 0.4729}",25.170499999994433
+<image onpointerover=alert(1)>XSS</image>,1,0,"{'benign': 0.5217, 'malicious': 0.4783}",19.17559999999696
+<blink onpointerout=alert(1)>XSS</blink>,1,0,"{'benign': 0.5691, 'malicious': 0.4309}",18.623599999997964
+"<mark draggable=""true"" ondragend=""alert(1)"">test</mark>",1,0,"{'benign': 0.5009, 'malicious': 0.4991}",21.876200000001234
+"<li draggable=""true"" ondragstart=""alert(1)"">test</li>",1,0,"{'benign': 0.5506, 'malicious': 0.4494}",20.683999999995706
+"<style>@keyframes x{}</style><nextid style=""animation-name:x"" onanimationstart=""alert(1)""></nextid>",1,0,"{'benign': 0.5826, 'malicious': 0.4174}",31.098499999998808
+"<style>@keyframes x{from {left:0;}to {left: 1000px;}}:target {animation:10s ease-in-out 0s 1 x;}</style><label id=x style=""position:absolute;"" onanimationcancel=""alert(1)""></label>",1,0,"{'benign': 0.5975, 'malicious': 0.4025}",46.556699999996454
+"<sup draggable=""true"" ondragleave=""alert(1)"">test</sup>",1,0,"{'benign': 0.5307, 'malicious': 0.4693}",23.64570000000299
+"<div draggable=""true"" contenteditable>drag me</div><frame ondragover=alert(1) contenteditable>drop here</frame>",1,0,"{'benign': 0.5865, 'malicious': 0.4135}",25.84099999999978
+"<figcaption onmousedown=""alert(1)"">test</figcaption>",1,0,"{'benign': 0.5336, 'malicious': 0.4664}",20.375199999996596
+"<style onbeforepaste=""alert(1)"" contenteditable>test</style>",1,0,"{'benign': 0.6071, 'malicious': 0.3929}",20.109600000004946
+<plaintext id=x tabindex=1 onactivate=alert(1)></plaintext>,1,0,"{'benign': 0.5206, 'malicious': 0.4794}",22.32110000000631
+<bgsound id=x tabindex=1 onbeforeactivate=alert(1)></bgsound>,1,0,"{'benign': 0.5939, 'malicious': 0.4061}",25.619400000003623
+"<plaintext onkeyup=""alert(1)"" contenteditable>test</plaintext>",1,0,"{'benign': 0.613, 'malicious': 0.387}",20.62039999999854
+"<command ondblclick=""alert(1)"">test</command>",1,0,"{'benign': 0.5303, 'malicious': 0.4697}",20.349899999999366
+"<p onmousedown=""alert(1)"">test</p>",1,0,"{'benign': 0.5276, 'malicious': 0.4724}",20.404499999997938
+<set onpointerup=alert(1)>XSS</set>,1,0,"{'benign': 0.547, 'malicious': 0.453}",21.81060000000201
+<nextid id=x tabindex=1 onbeforedeactivate=alert(1)></nextid><input autofocus>,1,0,"{'benign': 0.552, 'malicious': 0.448}",23.975200000002417
+"<style>@keyframes x{}</style><source style=""animation-name:x"" onanimationend=""alert(1)""></source>",1,0,"{'benign': 0.5834, 'malicious': 0.4166}",27.06600000000492
+<embed onfocusout=alert(1) tabindex=1 id=x></embed><input autofocus>,1,0,"{'benign': 0.5003, 'malicious': 0.4997}",21.238599999996666
+"<style>@keyframes x{}</style><abbr style=""animation-name:x"" onanimationend=""alert(1)""></abbr>",1,0,"{'benign': 0.5865, 'malicious': 0.4135}",31.502899999999556
+"<source draggable=""true"" ondragleave=""alert(1)"">test</source>",1,0,"{'benign': 0.5685, 'malicious': 0.4315}",19.99539999999911
+<i onpointermove=alert(1)>XSS</i>,1,0,"{'benign': 0.5884, 'malicious': 0.4116}",21.75740000000559
+"<nobr draggable=""true"" ondragstart=""alert(1)"">test</nobr>",1,0,"{'benign': 0.5435, 'malicious': 0.4565}",25.555099999998276
+"<content onmouseleave=""alert(1)"">test</content>",1,0,"{'benign': 0.6077, 'malicious': 0.3923}",23.430300000001125
+"<style>@keyframes slidein {}</style><content style=""animation-duration:1s;animation-name:slidein;animation-iteration-count:2"" onanimationiteration=""alert(1)""></content>",1,0,"{'benign': 0.5949, 'malicious': 0.4051}",32.410200000001055
+"<col onkeypress=""alert(1)"" contenteditable>test</col>",1,0,"{'benign': 0.6148, 'malicious': 0.3852}",17.117200000001276
+"<style>@keyframes x{}</style><sup style=""animation-name:x"" onanimationend=""alert(1)""></sup>",1,0,"{'benign': 0.5687, 'malicious': 0.4313}",29.476500000001238
+"<tfoot onkeydown=""alert(1)"" contenteditable>test</tfoot>",1,0,"{'benign': 0.5525, 'malicious': 0.4475}",22.817400000000987
+<summary onpointerover=alert(1)>XSS</summary>,1,0,"{'benign': 0.5336, 'malicious': 0.4664}",19.109100000001433
+"<a onkeypress=""alert(1)"" contenteditable>test</a>",1,0,"{'benign': 0.5724, 'malicious': 0.4276}",22.289300000004175
+<tr id=x tabindex=1 onfocusin=alert(1)></tr>,1,0,"{'benign': 0.5499, 'malicious': 0.4501}",21.46619999999899
+"<style>:target {color:red;}</style><content id=x style=""transition:color 1s"" ontransitionend=alert(1)></content>",1,0,"{'benign': 0.6307, 'malicious': 0.3693}",28.468699999997682
+"<rp draggable=""true"" ondragleave=""alert(1)"">test</rp>",1,0,"{'benign': 0.5307, 'malicious': 0.4693}",17.01309999999978
+"<content oncut=""alert(1)"" contenteditable>test</content>",1,0,"{'benign': 0.5957, 'malicious': 0.4043}",20.887500000000614
+<wbr onpointerout=alert(1)>XSS</wbr>,1,0,"{'benign': 0.5942, 'malicious': 0.4058}",23.998900000002266
+<dfn onfocusout=alert(1) tabindex=1 id=x></dfn><input autofocus>,1,0,"{'benign': 0.541, 'malicious': 0.459}",25.04960000000267
+"<style>:target {color:red;}</style><output id=x style=""transition:color 1s"" ontransitionend=alert(1)></output>",1,0,"{'benign': 0.6171, 'malicious': 0.3829}",32.03979999999973
+"<style>@keyframes x{}</style><input style=""animation-name:x"" onanimationstart=""alert(1)""></input>",1,0,"{'benign': 0.5806, 'malicious': 0.4194}",31.48350000000022
+"<bgsound onmouseover=""alert(1)"">test</bgsound>",1,0,"{'benign': 0.597, 'malicious': 0.403}",24.00610000000114
+"<track onmousemove=""alert(1)"">test</track>",1,0,"{'benign': 0.5621, 'malicious': 0.4379}",21.825999999997237
+<td id=x tabindex=1 onbeforeactivate=alert(1)></td>,1,0,"{'benign': 0.5656, 'malicious': 0.4344}",23.401800000002027
+<hgroup id=x tabindex=1 ondeactivate=alert(1)></hgroup><input id=y autofocus>,1,0,"{'benign': 0.5412, 'malicious': 0.4588}",27.901900000003366
+"<td draggable=""true"" ondragend=""alert(1)"">test</td>",1,0,"{'benign': 0.5392, 'malicious': 0.4608}",22.624899999996728
+"<ul onbeforecopy=""alert(1)"" contenteditable>test</ul>",1,0,"{'benign': 0.6113, 'malicious': 0.3887}",16.050400000004572
+"<style>@keyframes x{}</style><caption style=""animation-name:x"" onanimationstart=""alert(1)""></caption>",1,0,"{'benign': 0.5555, 'malicious': 0.4445}",31.18619999999339
+"<th onmousedown=""alert(1)"">test</th>",1,0,"{'benign': 0.522, 'malicious': 0.478}",22.523899999995933
+<var onpointerleave=alert(1)>XSS</var>,1,0,"{'benign': 0.5626, 'malicious': 0.4374}",22.04720000000293
+"<table onkeyup=""alert(1)"" contenteditable>test</table>",1,0,"{'benign': 0.582, 'malicious': 0.418}",22.33619999999803
+<blink onpointerenter=alert(1)>XSS</blink>,1,0,"{'benign': 0.5797, 'malicious': 0.4203}",20.98970000000122
+"<menuitem onbeforepaste=""alert(1)"" contenteditable>test</menuitem>",1,0,"{'benign': 0.5577, 'malicious': 0.4423}",23.50049999999726
+"<rt draggable=""true"" ondragleave=""alert(1)"">test</rt>",1,0,"{'benign': 0.5568, 'malicious': 0.4432}",22.914899999996408
+"<div draggable=""true"" ondragenter=""alert(1)"">test</div>",1,0,"{'benign': 0.5213, 'malicious': 0.4787}",23.105300000004547
+<svg><dd onload=alert(1)></dd>,1,0,"{'benign': 0.5613, 'malicious': 0.4387}",17.21990000000062
+"<style>@keyframes x{}</style><tr style=""animation-name:x"" onanimationstart=""alert(1)""></tr>",1,0,"{'benign': 0.5835, 'malicious': 0.4165}",26.060999999998558
+"<style>@keyframes x{from {left:0;}to {left: 1000px;}}:target {animation:10s ease-in-out 0s 1 x;}</style><title id=x style=""position:absolute;"" onanimationcancel=""alert(1)""></title>",1,0,"{'benign': 0.5845, 'malicious': 0.4155}",43.36969999999951
+<wbr onpointerenter=alert(1)>XSS</wbr>,1,0,"{'benign': 0.5963, 'malicious': 0.4037}",22.53369999999677
+"<form oncopy=""alert(1)"" contenteditable>test</form>",1,0,"{'benign': 0.5948, 'malicious': 0.4052}",19.578600000002666
+"<style>@keyframes x{from {left:0;}to {left: 1000px;}}:target {animation:10s ease-in-out 0s 1 x;}</style><form id=x style=""position:absolute;"" onanimationcancel=""alert(1)""></form>",1,0,"{'benign': 0.5954, 'malicious': 0.4046}",43.81320000000244
+"<pre onmouseup=""alert(1)"">test</pre>",1,0,"{'benign': 0.6023, 'malicious': 0.3977}",22.544500000009293
+"<style>:target {color: red;}</style><xmp id=x style=""transition:color 10s"" ontransitioncancel=alert(1)></xmp>",1,0,"{'benign': 0.631, 'malicious': 0.369}",30.778600000004985
+<svg><tr onload=alert(1)></tr>,1,0,"{'benign': 0.5993, 'malicious': 0.4007}",20.277000000007206
+"<EMBED SRC=""data:image/svg+xml;base64,PHN2ZyB4bWxuczpzdmc9Imh0dH A6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hs aW5rIiB2ZXJzaW9uPSIxLjAiIHg9IjAiIHk9IjAiIHdpZHRoPSIxOTQiIGhlaWdodD0iMjAw IiBpZD0ieHNzIj48c2NyaXB0IHR5cGU9InRleHQvZWNtYXNjcmlwdCI+YWxlcnQoIlh TUyIpOzwvc2NyaXB0Pjwvc3ZnPg=="" type=""image/svg+xml"" AllowScriptAccess=""always""></EMBED>",1,0,"{'benign': 0.6357, 'malicious': 0.3643}",94.56389999999715
+<image3 onpointerover=alert(1)>XSS</image3>,1,0,"{'benign': 0.5696, 'malicious': 0.4304}",20.127799999997364
+"<article onmouseenter=""alert(1)"">test</article>",1,0,"{'benign': 0.5798, 'malicious': 0.4202}",18.858600000001502
+<video onpointerover=alert(1)>XSS</video>,1,0,"{'benign': 0.6095, 'malicious': 0.3905}",20.703300000008085
+"<legend onkeypress=""alert(1)"" contenteditable>test</legend>",1,0,"{'benign': 0.57, 'malicious': 0.43}",18.56779999999958
+<i onpointerleave=alert(1)>XSS</i>,1,0,"{'benign': 0.6353, 'malicious': 0.3647}",24.85239999998612
+<source onpointerleave=alert(1)>XSS</source>,1,0,"{'benign': 0.647, 'malicious': 0.353}",22.463999999999373
+<nobr onpointerleave=alert(1)>XSS</nobr>,1,0,"{'benign': 0.5802, 'malicious': 0.4198}",26.78690000000472
+"<style>:target {transform: rotate(180deg);}</style><xmp id=x style=""transition:transform 2s"" ontransitionrun=alert(1)></xmp>",1,0,"{'benign': 0.5877, 'malicious': 0.4123}",38.47220000000107
+"<tt draggable=""true"" ondragend=""alert(1)"">test</tt>",1,0,"{'benign': 0.5864, 'malicious': 0.4136}",23.36710000000153
+<title onpointerover=alert(1)>XSS</title>,1,0,"{'benign': 0.5718, 'malicious': 0.4282}",19.543200000001093
+"<style>@keyframes x{}</style><sub style=""animation-name:x"" onanimationend=""alert(1)""></sub>",1,0,"{'benign': 0.5885, 'malicious': 0.4115}",32.48359999999195
+"<center onmousedown=""alert(1)"">test</center>",1,0,"{'benign': 0.5526, 'malicious': 0.4474}",20.132099999997877
+"document.getElementsByClassName(""example"")",1,0,"{'benign': 0.5268, 'malicious': 0.4732}",22.37350000000049
+<optgroup id=x tabindex=1 ondeactivate=alert(1)></optgroup><input id=y autofocus>,1,0,"{'benign': 0.5879, 'malicious': 0.4121}",29.511799999994537
+<IMG SRC=javascript:alert('')>,1,0,"{'benign': 0.5619, 'malicious': 0.4381}",22.095600000000104
+"<marquee onmouseup=""alert(1)"">test</marquee>",1,0,"{'benign': 0.5715, 'malicious': 0.4285}",23.514499999990335
+"<frameset onbeforecopy=""alert(1)"" contenteditable>test</frameset>",1,0,"{'benign': 0.596, 'malicious': 0.404}",23.641900000001215
+"<div draggable=""true"" contenteditable>drag me</div><output ondrop=alert(1) contenteditable>drop here</output>",1,0,"{'benign': 0.6097, 'malicious': 0.3903}",29.379000000005817
+"<style>@keyframes slidein {}</style><del style=""animation-duration:1s;animation-name:slidein;animation-iteration-count:2"" onanimationiteration=""alert(1)""></del>",1,0,"{'benign': 0.5792, 'malicious': 0.4208}",39.935400000004506
+"<aside onbeforecopy=""alert(1)"" contenteditable>test</aside>",1,0,"{'benign': 0.6435, 'malicious': 0.3565}",19.39560000000995
+"<figcaption onmouseup=""alert(1)"">test</figcaption>",1,0,"{'benign': 0.5701, 'malicious': 0.4299}",22.51420000000337
+"<ins onkeyup=""alert(1)"" contenteditable>test</ins>",1,0,"{'benign': 0.5753, 'malicious': 0.4247}",21.781700000005344
+"<abbr onkeydown=""alert(1)"" contenteditable>test</abbr>",1,0,"{'benign': 0.6367, 'malicious': 0.3633}",22.887799999992353
+<dialog onpointermove=alert(1)>XSS</dialog>,1,0,"{'benign': 0.5697, 'malicious': 0.4303}",19.23089999999661
+<font onpointerover=alert(1)>XSS</font>,1,0,"{'benign': 0.5309, 'malicious': 0.4691}",20.85719999999469
+"<summary onmouseenter=""alert(1)"">test</summary>",1,0,"{'benign': 0.5685, 'malicious': 0.4315}",22.656699999998864
+"<rp draggable=""true"" ondragstart=""alert(1)"">test</rp>",1,0,"{'benign': 0.516, 'malicious': 0.484}",20.850600000002828
+"<template oncut=""alert(1)"" contenteditable>test</template>",1,0,"{'benign': 0.5831, 'malicious': 0.4169}",21.904899999995564
+<s id=x tabindex=1 onbeforedeactivate=alert(1)></s><input autofocus>,1,0,"{'benign': 0.56, 'malicious': 0.44}",26.509200000006672
+<button onfocusout=alert(1) id=x></button><input autofocus>,1,0,"{'benign': 0.5479, 'malicious': 0.4521}",22.34810000000209
+"<style>:target {transform: rotate(180deg);}</style><datalist id=x style=""transition:transform 2s"" ontransitionrun=alert(1)></datalist>",1,0,"{'benign': 0.6026, 'malicious': 0.3974}",40.16659999999206
+"<param oncut=""alert(1)"" contenteditable>test</param>",1,0,"{'benign': 0.5023, 'malicious': 0.4977}",23.65869999999859
+"<bdi ondblclick=""alert(1)"">test</bdi>",1,0,"{'benign': 0.611, 'malicious': 0.389}",24.9507000000051
+"<div draggable=""true"" contenteditable>drag me</div><th ondrop=alert(1) contenteditable>drop here</th>",1,0,"{'benign': 0.6051, 'malicious': 0.3949}",27.139099999999416
+"<wbr onclick=""alert(1)"">test</wbr>",1,0,"{'benign': 0.6128, 'malicious': 0.3872}",24.513300000009508
+"<dfn onkeypress=""alert(1)"" contenteditable>test</dfn>",1,0,"{'benign': 0.6154, 'malicious': 0.3846}",23.531999999988784
+"<center onbeforecopy=""alert(1)"" contenteditable>test</center>",1,0,"{'benign': 0.631, 'malicious': 0.369}",21.178800000001274
+"<center draggable=""true"" ondragleave=""alert(1)"">test</center>",1,0,"{'benign': 0.5657, 'malicious': 0.4343}",22.87890000000914
+"<abbr ondblclick=""alert(1)"">test</abbr>",1,0,"{'benign': 0.659, 'malicious': 0.341}",20.468000000008146
+<colgroup onpointermove=alert(1)>XSS</colgroup>,1,0,"{'benign': 0.639, 'malicious': 0.361}",21.799200000003793
+AI becomes hugely successful in the early 21st century,0,1,"{'benign': 0.4473, 'malicious': 0.5527}",18.982699999995134
+<style id=x tabindex=1 onbeforeactivate=alert(1)></style>,1,0,"{'benign': 0.5628, 'malicious': 0.4372}",23.673199999990402
+<svg><address onload=alert(1)></address>,1,0,"{'benign': 0.5017, 'malicious': 0.4983}",21.257099999999696
+"<style>:target {color: red;}</style><multicol id=x style=""transition:color 10s"" ontransitioncancel=alert(1)></multicol>",1,0,"{'benign': 0.646, 'malicious': 0.354}",24.135100000009402
+<sub id=x tabindex=1 onfocusin=alert(1)></sub>,1,0,"{'benign': 0.5398, 'malicious': 0.4602}",25.767900000005284
+"<time onclick=""alert(1)"">test</time>",1,0,"{'benign': 0.5833, 'malicious': 0.4167}",19.574599999998554
+"<aside onmouseout=""alert(1)"">test</aside>",1,0,"{'benign': 0.5809, 'malicious': 0.4191}",16.719599999987622
+"<select draggable=""true"" ondrag=""alert(1)"">test</select>",1,0,"{'benign': 0.532, 'malicious': 0.468}",25.167099999990228
+"<canvas oncontextmenu=""alert(1)"">test</canvas>",1,0,"{'benign': 0.5495, 'malicious': 0.4505}",23.804400000003056
+<figure id=x tabindex=1 onbeforeactivate=alert(1)></figure>,1,0,"{'benign': 0.5285, 'malicious': 0.4715}",22.15059999998914
+"<source oncontextmenu=""alert(1)"">test</source>",1,0,"{'benign': 0.6179, 'malicious': 0.3821}",19.04639999999347
+"<tbody onkeypress=""alert(1)"" contenteditable>test</tbody>",1,0,"{'benign': 0.5943, 'malicious': 0.4057}",23.937799999998788
+"<q onbeforecopy=""alert(1)"" contenteditable>test</q>",1,0,"{'benign': 0.5289, 'malicious': 0.4711}",20.62409999999204
+<source onpointerdown=alert(1)>XSS</source>,1,0,"{'benign': 0.612, 'malicious': 0.388}",20.78709999999262
+<input id=x tabindex=1 ondeactivate=alert(1)></input><input id=y autofocus>,1,0,"{'benign': 0.5346, 'malicious': 0.4654}",27.82290000000387
+<button onpointermove=alert(1)>XSS</button>,1,0,"{'benign': 0.5936, 'malicious': 0.4064}",18.525600000003806
+"<col onmousemove=""alert(1)"">test</col>",1,0,"{'benign': 0.5962, 'malicious': 0.4038}",20.845499999992967
+"<div draggable=""true"" contenteditable>drag me</div><bdo ondragover=alert(1) contenteditable>drop here</bdo>",1,0,"{'benign': 0.6322, 'malicious': 0.3678}",30.008100000003424
+"<b onmouseup=""alert(1)"">test</b>",1,0,"{'benign': 0.5949, 'malicious': 0.4051}",19.91069999999695
+"<body onkeypress=""alert(1)"" contenteditable>test</body>",1,0,"{'benign': 0.6115, 'malicious': 0.3885}",18.290299999989656
+ </div>,0,1,"{'benign': 0.4444, 'malicious': 0.5556}",13.42889999999386
+<ol onpointerout=alert(1)>XSS</ol>,1,0,"{'benign': 0.5828, 'malicious': 0.4172}",15.878499999999462
+"<button onpaste=""alert(1)"" contenteditable>test</button>",1,0,"{'benign': 0.5839, 'malicious': 0.4161}",21.046599999991145
+"<h1 draggable=""true"" ondragend=""alert(1)"">test</h1>",1,0,"{'benign': 0.5602, 'malicious': 0.4398}",25.01289999999301
+"<applet onpaste=""alert(1)"" contenteditable>test</applet>",1,0,"{'benign': 0.5654, 'malicious': 0.4346}",17.59059999999124
+<video id=x tabindex=1 onbeforeactivate=alert(1)></video>,1,0,"{'benign': 0.6333, 'malicious': 0.3667}",18.65739999999505
+"<center draggable=""true"" ondrag=""alert(1)"">test</center>",1,0,"{'benign': 0.5323, 'malicious': 0.4677}",21.288100000006693
+"<table oncontextmenu=""alert(1)"">test</table>",1,0,"{'benign': 0.5385, 'malicious': 0.4615}",23.329900000007342
+<samp onpointermove=alert(1)>XSS</samp>,1,0,"{'benign': 0.5824, 'malicious': 0.4176}",15.77220000000068
+<mark onpointerleave=alert(1)>XSS</mark>,1,0,"{'benign': 0.5693, 'malicious': 0.4307}",18.922599999996237
+"<main onbeforecut=""alert(1)"" contenteditable>test</main>",1,0,"{'benign': 0.6054, 'malicious': 0.3946}",19.72310000000732
+"<style>@keyframes slidein {}</style><video style=""animation-duration:1s;animation-name:slidein;animation-iteration-count:2"" onanimationiteration=""alert(1)""></video>",1,0,"{'benign': 0.594, 'malicious': 0.406}",41.040899999998715
+ </div>,0,1,"{'benign': 0.4444, 'malicious': 0.5556}",15.757699999994657
+<body onload=alert(1)>,1,0,"{'benign': 0.5225, 'malicious': 0.4775}",19.418100000009986
+"<image onmousedown=""alert(1)"">test</image>",1,0,"{'benign': 0.5329, 'malicious': 0.4671}",22.86199999998928
+"<STYLE>BODY{-moz-binding:url(""http://.rocks/moz.xml#"")}</STYLE>",1,0,"{'benign': 0.6505, 'malicious': 0.3495}",27.126699999996617
+<svg><noembed onload=alert(1)></noembed>,1,0,"{'benign': 0.6058, 'malicious': 0.3942}",20.674200000001974
+"<rp onmouseenter=""alert(1)"">test</rp>",1,0,"{'benign': 0.5649, 'malicious': 0.4351}",22.33990000000574
+"<element onmouseout=""alert(1)"">test</element>",1,0,"{'benign': 0.5353, 'malicious': 0.4647}",18.534399999992957
+"<samp onpaste=""alert(1)"" contenteditable>test</samp>",1,0,"{'benign': 0.5848, 'malicious': 0.4152}",21.4131999999978
+"<spacer draggable=""true"" ondragstart=""alert(1)"">test</spacer>",1,0,"{'benign': 0.5724, 'malicious': 0.4276}",22.009100000005333
+"<object onmouseover=""alert(1)"">test</object>",1,0,"{'benign': 0.5423, 'malicious': 0.4577}",18.293700000000968
+"<style>:target {transform: rotate(180deg);}</style><b id=x style=""transition:transform 2s"" ontransitionrun=alert(1)></b>",1,0,"{'benign': 0.5866, 'malicious': 0.4134}",38.19570000000283
+<embed onpointermove=alert(1)>XSS</embed>,1,0,"{'benign': 0.5586, 'malicious': 0.4414}",21.347000000005778
+"<th onbeforepaste=""alert(1)"" contenteditable>test</th>",1,0,"{'benign': 0.5816, 'malicious': 0.4184}",22.419700000000375
+"<section draggable=""true"" ondragleave=""alert(1)"">test</section>",1,0,"{'benign': 0.5513, 'malicious': 0.4487}",24.14359999998794
+<dl onpointerdown=alert(1)>XSS</dl>,1,0,"{'benign': 0.6017, 'malicious': 0.3983}",19.238300000012032
+"<blink onmousedown=""alert(1)"">test</blink>",1,0,"{'benign': 0.5422, 'malicious': 0.4578}",20.269900000002394
+<details id=x tabindex=1 ondeactivate=alert(1)></details><input id=y autofocus>,1,0,"{'benign': 0.557, 'malicious': 0.443}",24.498500000007084
+"<option onbeforepaste=""alert(1)"" contenteditable>test</option>",1,0,"{'benign': 0.6094, 'malicious': 0.3906}",23.867999999993117
+"<style>@keyframes x{}</style><video style=""animation-name:x"" onanimationstart=""alert(1)""></video>",1,0,"{'benign': 0.5874, 'malicious': 0.4126}",22.50060000000076
+<input4 onpointermove=alert(1)>XSS</input4>,1,0,"{'benign': 0.5722, 'malicious': 0.4278}",16.14709999999775
+"<style>:target {color: red;}</style><rb id=x style=""transition:color 10s"" ontransitioncancel=alert(1)></rb>",1,0,"{'benign': 0.6469, 'malicious': 0.3531}",30.61740000001123
+"<tt ondblclick=""alert(1)"">test</tt>",1,0,"{'benign': 0.6023, 'malicious': 0.3977}",21.709200000003648
+"<div draggable=""true"" contenteditable>drag me</div><col ondrop=alert(1) contenteditable>drop here</col>",1,0,"{'benign': 0.6249, 'malicious': 0.3751}",28.885400000007166
+"<track onmouseover=""alert(1)"">test</track>",1,0,"{'benign': 0.5469, 'malicious': 0.4531}",20.033100000006243
+<caption id=x tabindex=1 ondeactivate=alert(1)></caption><input id=y autofocus>,1,0,"{'benign': 0.5106, 'malicious': 0.4894}",25.42989999999179
+"<blockquote draggable=""true"" ondragstart=""alert(1)"">test</blockquote>",1,0,"{'benign': 0.5446, 'malicious': 0.4554}",18.213099999996984
+"<section onmouseover=""alert(1)"">test</section>",1,0,"{'benign': 0.5663, 'malicious': 0.4337}",22.075600000007967
+"<time oncontextmenu=""alert(1)"">test</time>",1,0,"{'benign': 0.5905, 'malicious': 0.4095}",21.785999999991645
+"<div draggable=""true"" contenteditable>drag me</div><script ondragover=alert(1) contenteditable>drop here</script>",1,0,"{'benign': 0.5933, 'malicious': 0.4067}",20.360300000007214
+"<bgsound onbeforepaste=""alert(1)"" contenteditable>test</bgsound>",1,0,"{'benign': 0.6151, 'malicious': 0.3849}",22.396000000000527
+"<style>@keyframes slidein {}</style><pre style=""animation-duration:1s;animation-name:slidein;animation-iteration-count:2"" onanimationiteration=""alert(1)""></pre>",1,0,"{'benign': 0.5842, 'malicious': 0.4158}",40.67919999999958
+"<style>:target {color:red;}</style><code id=x style=""transition:color 1s"" ontransitionend=alert(1)></code>",1,0,"{'benign': 0.6058, 'malicious': 0.3942}",31.820199999998522
+"<style>:target {color:red;}</style><applet id=x style=""transition:color 1s"" ontransitionend=alert(1)></applet>",1,0,"{'benign': 0.6406, 'malicious': 0.3594}",24.508199999999647
+"<col oncut=""alert(1)"" contenteditable>test</col>",1,0,"{'benign': 0.6061, 'malicious': 0.3939}",22.433600000013598
+"<thead onbeforepaste=""alert(1)"" contenteditable>test</thead>",1,0,"{'benign': 0.6119, 'malicious': 0.3881}",20.395600000000513
+"<figure draggable=""true"" ondragenter=""alert(1)"">test</figure>",1,0,"{'benign': 0.5461, 'malicious': 0.4539}",24.160600000001864
+"<h1 onkeypress=""alert(1)"" contenteditable>test</h1>",1,0,"{'benign': 0.5604, 'malicious': 0.4396}",17.462700000010045
+<svg><bdi onload=alert(1)></bdi>,1,0,"{'benign': 0.578, 'malicious': 0.422}",20.980500000007396
+"<tt draggable=""true"" ondragstart=""alert(1)"">test</tt>",1,0,"{'benign': 0.55, 'malicious': 0.45}",21.85670000000073
+"<picture onmouseup=""alert(1)"">test</picture>",1,0,"{'benign': 0.58, 'malicious': 0.42}",17.587100000000078
+"<details draggable=""true"" ondragend=""alert(1)"">test</details>",1,0,"{'benign': 0.5748, 'malicious': 0.4252}",19.55920000000333
+"<STYLE TYPE=""text/javascript"">alert('');</STYLE>",1,0,"{'benign': 0.5726, 'malicious': 0.4274}",21.602299999997854
+<applet onreadystatechange=alert(1)></applet>,1,0,"{'benign': 0.6021, 'malicious': 0.3979}",21.461099999996236
+"<output oncut=""alert(1)"" contenteditable>test</output>",1,0,"{'benign': 0.5658, 'malicious': 0.4342}",20.733800000002134
+"<style>@keyframes x{}</style><u style=""animation-name:x"" onanimationend=""alert(1)""></u>",1,0,"{'benign': 0.5733, 'malicious': 0.4267}",29.80089999999791
+"<element onmouseenter=""alert(1)"">test</element>",1,0,"{'benign': 0.5741, 'malicious': 0.4259}",21.678399999998987
+"<span draggable=""true"" ondragenter=""alert(1)"">test</span>",1,0,"{'benign': 0.5417, 'malicious': 0.4583}",23.689399999994976
+"<pre onbeforecopy=""alert(1)"" contenteditable>test</pre>",1,0,"{'benign': 0.6215, 'malicious': 0.3785}",21.279499999991458
+"<command onkeyup=""alert(1)"" contenteditable>test</command>",1,0,"{'benign': 0.5452, 'malicious': 0.4548}",22.100699999995754
+"<blink draggable=""true"" ondragenter=""alert(1)"">test</blink>",1,0,"{'benign': 0.5154, 'malicious': 0.4846}",22.81089999999608
+"<strike onkeydown=""alert(1)"" contenteditable>test</strike>",1,0,"{'benign': 0.5907, 'malicious': 0.4093}",20.459800000011796
+"<source onmouseup=""alert(1)"">test</source>",1,0,"{'benign': 0.625, 'malicious': 0.375}",22.410100000001876
+<shadow onpointermove=alert(1)>XSS</shadow>,1,0,"{'benign': 0.6092, 'malicious': 0.3908}",19.634799999991515
+<svg onpointerenter=alert(1)>XSS</svg>,1,0,"{'benign': 0.6058, 'malicious': 0.3942}",19.353100000003565
+<hgroup onpointerenter=alert(1)>XSS</hgroup>,1,0,"{'benign': 0.5703, 'malicious': 0.4297}",16.785999999996193
+"<keygen onclick=""alert(1)"">test</keygen>",1,0,"{'benign': 0.6055, 'malicious': 0.3945}",19.113500000003114
+"<section onmouseup=""alert(1)"">test</section>",1,0,"{'benign': 0.5936, 'malicious': 0.4064}",15.398300000001086
+"<style>:target {color: red;}</style><aside id=x style=""transition:color 10s"" ontransitioncancel=alert(1)></aside>",1,0,"{'benign': 0.6356, 'malicious': 0.3644}",27.018400000002885
+"<body draggable=""true"" ondrag=""alert(1)"">test</body>",1,0,"{'benign': 0.5356, 'malicious': 0.4644}",23.68079999999395
+"<style>@keyframes x{}</style><strike style=""animation-name:x"" onanimationend=""alert(1)""></strike>",1,0,"{'benign': 0.5752, 'malicious': 0.4248}",20.789299999989908
+<image2 onpointerdown=alert(1)>XSS</image2>,1,0,"{'benign': 0.6058, 'malicious': 0.3942}",15.41620000000421
+"<element draggable=""true"" ondrag=""alert(1)"">test</element>",1,0,"{'benign': 0.5082, 'malicious': 0.4918}",19.009300000007556
+"<figure oncut=""alert(1)"" contenteditable>test</figure>",1,0,"{'benign': 0.5728, 'malicious': 0.4272}",19.953700000002073
+<option onblur=alert(1) tabindex=1 id=x></option><input autofocus>,1,0,"{'benign': 0.5313, 'malicious': 0.4687}",19.98159999999416
+</div>,0,1,"{'benign': 0.4444, 'malicious': 0.5556}",15.861000000001013
+"<figcaption draggable=""true"" ondrag=""alert(1)"">test</figcaption>",1,0,"{'benign': 0.5022, 'malicious': 0.4978}",24.567700000005743
+"<section ondblclick=""alert(1)"">test</section>",1,0,"{'benign': 0.5937, 'malicious': 0.4063}",20.391700000004676
+"<map onkeydown=""alert(1)"" contenteditable>test</map>",1,0,"{'benign': 0.5706, 'malicious': 0.4294}",22.767000000001758
+"<link draggable=""true"" ondragenter=""alert(1)"">test</link>",1,0,"{'benign': 0.5555, 'malicious': 0.4445}",24.716999999995437
+"<img onkeypress=""alert(1)"" contenteditable>test</img>",1,0,"{'benign': 0.5988, 'malicious': 0.4012}",22.65459999999564
+<tr onpointermove=alert(1)>XSS</tr>,1,0,"{'benign': 0.6047, 'malicious': 0.3953}",20.83199999999863
+<ruby id=x tabindex=1 onbeforedeactivate=alert(1)></ruby><input autofocus>,1,0,"{'benign': 0.5415, 'malicious': 0.4585}",18.270499999999856
+"<STYLE type=""text/css"">BODY{background:url(""<javascript:alert>('')"")}</STYLE>",1,0,"{'benign': 0.5971, 'malicious': 0.4029}",28.487299999994775
+"<dt onkeydown=""alert(1)"" contenteditable>test</dt>",1,0,"{'benign': 0.6342, 'malicious': 0.3658}",16.77090000001158
+<del id=x tabindex=1 onactivate=alert(1)></del>,1,0,"{'benign': 0.5013, 'malicious': 0.4987}",22.813900000002718
+"<output onkeypress=""alert(1)"" contenteditable>test</output>",1,0,"{'benign': 0.5787, 'malicious': 0.4213}",16.35930000000485
+"<div draggable=""true"" contenteditable>drag me</div><ruby ondrop=alert(1) contenteditable>drop here</ruby>",1,0,"{'benign': 0.5921, 'malicious': 0.4079}",20.419399999994425
+	 <div>,0,1,"{'benign': 0.4361, 'malicious': 0.5639}",17.216399999995247
+"<noembed onbeforecopy=""alert(1)"" contenteditable>test</noembed>",1,0,"{'benign': 0.656, 'malicious': 0.344}",24.43989999999019
+"<slot ondblclick=""alert(1)"">test</slot>",1,0,"{'benign': 0.5802, 'malicious': 0.4198}",22.9487000000006
+"<dd onpaste=""alert(1)"" contenteditable>test</dd>",1,0,"{'benign': 0.598, 'malicious': 0.402}",19.582499999998504
+"<li onkeyup=""alert(1)"" contenteditable>test</li>",1,0,"{'benign': 0.597, 'malicious': 0.403}",21.206200000008835
+<keygen onpointerenter=alert(1)>XSS</keygen>,1,0,"{'benign': 0.5611, 'malicious': 0.4389}",22.951100000000224
+<rtc onpointerdown=alert(1)>XSS</rtc>,1,0,"{'benign': 0.5527, 'malicious': 0.4473}",19.277100000010705
+"<legend ondblclick=""alert(1)"">test</legend>",1,0,"{'benign': 0.5838, 'malicious': 0.4162}",20.386100000010288
+"<footer draggable=""true"" ondragend=""alert(1)"">test</footer>",1,0,"{'benign': 0.5174, 'malicious': 0.4826}",19.05090000001053
+"<div draggable=""true"" contenteditable>drag me</div><template ondragover=alert(1) contenteditable>drop here</template>",1,0,"{'benign': 0.6176, 'malicious': 0.3824}",25.35479999998813
+"<data draggable=""true"" ondragstart=""alert(1)"">test</data>",1,0,"{'benign': 0.5258, 'malicious': 0.4742}",23.107400000000666
+"<b draggable=""true"" ondragstart=""alert(1)"">test</b>",1,0,"{'benign': 0.5466, 'malicious': 0.4534}",22.535199999992983
+"<rb draggable=""true"" ondrag=""alert(1)"">test</rb>",1,0,"{'benign': 0.5521, 'malicious': 0.4479}",24.316599999991695
+"<style>:target {transform: rotate(180deg);}</style><xss id=x style=""transition:transform 2s"" ontransitionrun=alert(1)></xss>",1,0,"{'benign': 0.5868, 'malicious': 0.4132}",29.452200000008588
+"<pre ondblclick=""alert(1)"">test</pre>",1,0,"{'benign': 0.592, 'malicious': 0.408}",22.581799999997543
+<wbr onpointerleave=alert(1)>XSS</wbr>,1,0,"{'benign': 0.5998, 'malicious': 0.4002}",23.286499999997545
+"<ol onmouseleave=""alert(1)"">test</ol>",1,0,"{'benign': 0.583, 'malicious': 0.417}",19.95110000000011
+"<area onclick=""alert(1)"">test</area>",1,0,"{'benign': 0.5279, 'malicious': 0.4721}",18.77100000000098
+"<span onpaste=""alert(1)"" contenteditable>test</span>",1,0,"{'benign': 0.6019, 'malicious': 0.3981}",23.709199999998987
+<header id=x tabindex=1 onfocus=alert(1)></header>,1,0,"{'benign': 0.5079, 'malicious': 0.4921}",22.576299999997218
+<hgroup onpointerleave=alert(1)>XSS</hgroup>,1,0,"{'benign': 0.5651, 'malicious': 0.4349}",21.937100000002374
+"<fieldset onkeypress=""alert(1)"" contenteditable>test</fieldset>",1,0,"{'benign': 0.5639, 'malicious': 0.4361}",26.34189999999137
+"<sup onmouseleave=""alert(1)"">test</sup>",1,0,"{'benign': 0.5689, 'malicious': 0.4311}",22.685799999990763
+<select onpointerup=alert(1)>XSS</select>,1,0,"{'benign': 0.6038, 'malicious': 0.3962}",18.94609999999375
+<s id=x tabindex=1 ondeactivate=alert(1)></s><input id=y autofocus>,1,0,"{'benign': 0.5278, 'malicious': 0.4722}",21.776400000007357
+<plaintext id=x tabindex=1 onfocus=alert(1)></plaintext>,1,0,"{'benign': 0.5178, 'malicious': 0.4822}",20.85289999999418
+<tfoot onpointerleave=alert(1)>XSS</tfoot>,1,0,"{'benign': 0.6034, 'malicious': 0.3966}",21.852600000002553
+<article onpointerleave=alert(1)>XSS</article>,1,0,"{'benign': 0.6094, 'malicious': 0.3906}",20.99359999999706
+"<SCRIPT>document.write(""<SCRI"");</SCRIPT>PT SRC=""httx://.rocks/.js""></SCRIPT>",1,0,"{'benign': 0.5983, 'malicious': 0.4017}",31.361799999999107
+"<button ondblclick=""alert(1)"">test</button>",1,0,"{'benign': 0.6008, 'malicious': 0.3992}",22.4285999999978
+"<spacer onmouseenter=""alert(1)"">test</spacer>",1,0,"{'benign': 0.6124, 'malicious': 0.3876}",21.574600000008104
+"<hr onmousedown=""alert(1)"">test</hr>",1,0,"{'benign': 0.5865, 'malicious': 0.4135}",23.47620000000461
+"<html onmouseover=""alert(1)"">test</html>",1,0,"{'benign': 0.5508, 'malicious': 0.4492}",26.633000000003904
+"<legend oncut=""alert(1)"" contenteditable>test</legend>",1,0,"{'benign': 0.5692, 'malicious': 0.4308}",24.668899999994665
+"<base onmouseout=""alert(1)"">test</base>",1,0,"{'benign': 0.5461, 'malicious': 0.4539}",23.973900000001436
+<select onpointerdown=alert(1)>XSS</select>,1,0,"{'benign': 0.583, 'malicious': 0.417}",22.355300000000966
+<acronym onpointerup=alert(1)>XSS</acronym>,1,0,"{'benign': 0.547, 'malicious': 0.453}",20.122400000005314
+"<div class=""section"" id=""solving-specific-problems"">",0,1,"{'benign': 0.4897, 'malicious': 0.5103}",30.523999999999774
+"<nobr draggable=""true"" ondragleave=""alert(1)"">test</nobr>",1,0,"{'benign': 0.5596, 'malicious': 0.4404}",32.85530000000847
+"<style>@keyframes x{}</style><aside style=""animation-name:x"" onanimationstart=""alert(1)""></aside>",1,0,"{'benign': 0.5774, 'malicious': 0.4226}",39.25399999999968
+"<style>:target {color: red;}</style><track id=x style=""transition:color 10s"" ontransitioncancel=alert(1)></track>",1,0,"{'benign': 0.6303, 'malicious': 0.3697}",39.21160000000157
+"<progress draggable=""true"" ondragend=""alert(1)"">test</progress>",1,0,"{'benign': 0.5055, 'malicious': 0.4945}",28.224199999996813
+"<script draggable=""true"" ondragenter=""alert(1)"">test</script>",1,0,"{'benign': 0.5322, 'malicious': 0.4678}",30.94600000000014
+"<div draggable=""true"" contenteditable>drag me</div><rtc ondragover=alert(1) contenteditable>drop here</rtc>",1,0,"{'benign': 0.599, 'malicious': 0.401}",34.06370000000436
+"<!--#exec cmd=""/bin/echo '<SCR'""--><!--#exec cmd=""/bin/echo 'IPT SRC=http://.rocks/.js></SCRIPT>'""",1,0,"{'benign': 0.5746, 'malicious': 0.4254}",48.50489999999752
+<fieldset onpointerleave=alert(1)>XSS</fieldset>,1,0,"{'benign': 0.5752, 'malicious': 0.4248}",29.55930000000251
+<svg><picture onload=alert(1)></picture>,1,0,"{'benign': 0.5995, 'malicious': 0.4005}",26.06980000000192
+"<iframe onbeforepaste=""alert(1)"" contenteditable>test</iframe>",1,0,"{'benign': 0.609, 'malicious': 0.391}",26.57219999998972
+<embed id=x tabindex=1 onbeforedeactivate=alert(1)></embed><input autofocus>,1,0,"{'benign': 0.5514, 'malicious': 0.4486}",30.872700000003306
+"<i draggable=""true"" ondragstart=""alert(1)"">test</i>",1,0,"{'benign': 0.5483, 'malicious': 0.4517}",28.682299999999827
+"<center onpaste=""alert(1)"" contenteditable>test</center>",1,0,"{'benign': 0.6187, 'malicious': 0.3813}",31.571700000000646
+"<meta onmousedown=""alert(1)"">test</meta>",1,0,"{'benign': 0.537, 'malicious': 0.463}",26.113999999992643
+"<image draggable=""true"" ondragstart=""alert(1)"">test</image>",1,0,"{'benign': 0.5244, 'malicious': 0.4756}",28.710500000002526
+"<multicol onmouseenter=""alert(1)"">test</multicol>",1,0,"{'benign': 0.6081, 'malicious': 0.3919}",23.764200000002234
+	 <div>,0,1,"{'benign': 0.4361, 'malicious': 0.5639}",20.740400000008208
+"<small onmouseup=""alert(1)"">test</small>",1,0,"{'benign': 0.6068, 'malicious': 0.3932}",24.166300000004526
+<aside id=x tabindex=1 ondeactivate=alert(1)></aside><input id=y autofocus>,1,0,"{'benign': 0.5483, 'malicious': 0.4517}",29.27990000000591
+"<s onbeforecopy=""alert(1)"" contenteditable>test</s>",1,0,"{'benign': 0.5949, 'malicious': 0.4051}",23.492400000009184
+"<option onbeforecut=""alert(1)"" contenteditable>test</option>",1,0,"{'benign': 0.6013, 'malicious': 0.3987}",27.58390000001043
+"<div draggable=""true"" contenteditable>drag me</div><cite ondrop=alert(1) contenteditable>drop here</cite>",1,0,"{'benign': 0.6089, 'malicious': 0.3911}",29.145900000003166
+"<del draggable=""true"" ondragenter=""alert(1)"">test</del>",1,0,"{'benign': 0.5133, 'malicious': 0.4867}",26.92759999999339
+"<aside draggable=""true"" ondragstart=""alert(1)"">test</aside>",1,0,"{'benign': 0.5327, 'malicious': 0.4673}",17.885100000000875
+"<menuitem onmouseleave=""alert(1)"">test</menuitem>",1,0,"{'benign': 0.5302, 'malicious': 0.4698}",26.73010000000886
+"<xmp draggable=""true"" ondragstart=""alert(1)"">test</xmp>",1,0,"{'benign': 0.5045, 'malicious': 0.4955}",27.56779999999992
+"<area ondblclick=""alert(1)"">test</area>",1,0,"{'benign': 0.5532, 'malicious': 0.4468}",26.456499999994776
+"<table onbeforecut=""alert(1)"" contenteditable>test</table>",1,0,"{'benign': 0.5904, 'malicious': 0.4096}",26.385500000003503
+<dialog onpointerenter=alert(1)>XSS</dialog>,1,0,"{'benign': 0.5764, 'malicious': 0.4236}",25.611100000006104
+"<kbd onmousemove=""alert(1)"">test</kbd>",1,0,"{'benign': 0.5817, 'malicious': 0.4183}",24.849700000004304
+"<style>:target {color:red;}</style><colgroup id=x style=""transition:color 1s"" ontransitionend=alert(1)></colgroup>",1,0,"{'benign': 0.6411, 'malicious': 0.3589}",33.892099999988545
+<slot onblur=alert(1) tabindex=1 id=x></slot><input autofocus>,1,0,"{'benign': 0.5346, 'malicious': 0.4654}",31.71169999998824
+"<img onmousedown=""alert(1)"">test</img>",1,0,"{'benign': 0.5666, 'malicious': 0.4334}",23.88249999999914
+<code id=x tabindex=1 onbeforeactivate=alert(1)></code>,1,0,"{'benign': 0.5296, 'malicious': 0.4704}",27.322200000000407
+"<style>:target {transform: rotate(180deg);}</style><tt id=x style=""transition:transform 2s"" ontransitionrun=alert(1)></tt>",1,0,"{'benign': 0.5871, 'malicious': 0.4129}",38.05499999999995
+"<shadow onkeyup=""alert(1)"" contenteditable>test</shadow>",1,0,"{'benign': 0.629, 'malicious': 0.371}",23.124600000002715
+"<style>:target {color:red;}</style><pre id=x style=""transition:color 1s"" ontransitionend=alert(1)></pre>",1,0,"{'benign': 0.6218, 'malicious': 0.3782}",30.82170000000417
+<main id=x tabindex=1 onactivate=alert(1)></main>,1,0,"{'benign': 0.502, 'malicious': 0.498}",22.36390000000199
+<em onpointermove=alert(1)>XSS</em>,1,0,"{'benign': 0.5902, 'malicious': 0.4098}",20.556499999997868
+"<cite onmouseup=""alert(1)"">test</cite>",1,0,"{'benign': 0.5645, 'malicious': 0.4355}",22.045599999998444
+ </div>,0,1,"{'benign': 0.4444, 'malicious': 0.5556}",18.669599999995512
+"<a oncut=""alert(1)"" contenteditable>test</a>",1,0,"{'benign': 0.5649, 'malicious': 0.4351}",22.516500000008932
+<address onpointerenter=alert(1)>XSS</address>,1,0,"{'benign': 0.5063, 'malicious': 0.4937}",21.203799999995
+"<style>@keyframes x{}</style><legend style=""animation-name:x"" onanimationend=""alert(1)""></legend>",1,0,"{'benign': 0.5876, 'malicious': 0.4124}",28.107300000002056
+<hgroup onpointerover=alert(1)>XSS</hgroup>,1,0,"{'benign': 0.5505, 'malicious': 0.4495}",20.585299999993367
+<sup id=x tabindex=1 ondeactivate=alert(1)></sup><input id=y autofocus>,1,0,"{'benign': 0.5399, 'malicious': 0.4601}",26.75859999999375
+<image3 onpointerout=alert(1)>XSS</image3>,1,0,"{'benign': 0.5757, 'malicious': 0.4243}",28.574800000001233
+"<fieldset draggable=""true"" ondragstart=""alert(1)"">test</fieldset>",1,0,"{'benign': 0.5099, 'malicious': 0.4901}",28.332500000004757
+"<address onpaste=""alert(1)"" contenteditable>test</address>",1,0,"{'benign': 0.5134, 'malicious': 0.4866}",24.633600000001366
+"<i draggable=""true"" ondragend=""alert(1)"">test</i>",1,0,"{'benign': 0.5584, 'malicious': 0.4416}",22.203799999999774
+"<aside onmousedown=""alert(1)"">test</aside>",1,0,"{'benign': 0.5886, 'malicious': 0.4114}",23.51600000000076
+"<frame onmouseleave=""alert(1)"">test</frame>",1,0,"{'benign': 0.5715, 'malicious': 0.4285}",22.381600000002777
+"<command onmouseenter=""alert(1)"">test</command>",1,0,"{'benign': 0.5425, 'malicious': 0.4575}",20.847200000005728
+"<BODY BACKGROUND=""javascript:alert('')"">",1,0,"{'benign': 0.5925, 'malicious': 0.4075}",21.61120000000949
+"<p onmouseout=""alert(1)"">test</p>",1,0,"{'benign': 0.5076, 'malicious': 0.4924}",21.783400000003894
+"<code oncontextmenu=""alert(1)"">test</code>",1,0,"{'benign': 0.5307, 'malicious': 0.4693}",20.78939999999818
+"<option onclick=""alert(1)"">test</option>",1,0,"{'benign': 0.5338, 'malicious': 0.4662}",21.4284000000049
+"<style>@keyframes x{}</style><html style=""animation-name:x"" onanimationend=""alert(1)""></html>",1,0,"{'benign': 0.5638, 'malicious': 0.4362}",31.317700000002446
+"<style>:target {color:red;}</style><main id=x style=""transition:color 1s"" ontransitionend=alert(1)></main>",1,0,"{'benign': 0.6197, 'malicious': 0.3803}",30.399099999996793
+<q id=x tabindex=1 onbeforedeactivate=alert(1)></q><input autofocus>,1,0,"{'benign': 0.5149, 'malicious': 0.4851}",24.60039999999708
+<base id=x tabindex=1 onactivate=alert(1)></base>,1,0,"{'benign': 0.5105, 'malicious': 0.4895}",23.136399999998503
+"<legend draggable=""true"" ondragend=""alert(1)"">test</legend>",1,0,"{'benign': 0.5199, 'malicious': 0.4801}",24.11220000000469
+<blink id=x tabindex=1 ondeactivate=alert(1)></blink><input id=y autofocus>,1,0,"{'benign': 0.5326, 'malicious': 0.4674}",29.407000000006178
+<strike id=x tabindex=1 onbeforedeactivate=alert(1)></strike><input autofocus>,1,0,"{'benign': 0.5597, 'malicious': 0.4403}",26.37040000000468
+"<acronym onmouseleave=""alert(1)"">test</acronym>",1,0,"{'benign': 0.5831, 'malicious': 0.4169}",23.278599999997596
+"<span onbeforecut=""alert(1)"" contenteditable>test</span>",1,0,"{'benign': 0.6113, 'malicious': 0.3887}",21.70250000000351
+</script><script>alert('');</script>,1,0,"{'benign': 0.6117, 'malicious': 0.3883}",21.104500000006965
+<rp onblur=alert(1) tabindex=1 id=x></rp><input autofocus>,1,0,"{'benign': 0.5499, 'malicious': 0.4501}",24.289199999998345
+"<dir draggable=""true"" ondragend=""alert(1)"">test</dir>",1,0,"{'benign': 0.5069, 'malicious': 0.4931}",24.872599999994804
+<custom tags onpointerleave=alert(1)>XSS</custom tags>,1,0,"{'benign': 0.5744, 'malicious': 0.4256}",22.208100000000286
+"<ol oncontextmenu=""alert(1)"">test</ol>",1,0,"{'benign': 0.5553, 'malicious': 0.4447}",23.00209999999936
+"<style>@keyframes x{}</style><sub style=""animation-name:x"" onanimationstart=""alert(1)""></sub>",1,0,"{'benign': 0.5842, 'malicious': 0.4158}",28.467500000004975
+"<main oncopy=""alert(1)"" contenteditable>test</main>",1,0,"{'benign': 0.5426, 'malicious': 0.4574}",22.521199999999908
+<body onpointerup=alert(1)>XSS</body>,1,0,"{'benign': 0.5743, 'malicious': 0.4257}",18.603599999991616
+"<wbr onpaste=""alert(1)"" contenteditable>test</wbr>",1,0,"{'benign': 0.6175, 'malicious': 0.3825}",24.852499999994393
+"<base oncut=""alert(1)"" contenteditable>test</base>",1,0,"{'benign': 0.5873, 'malicious': 0.4127}",23.084499999995955
+"<div draggable=""true"" contenteditable>drag me</div><hr ondragover=alert(1) contenteditable>drop here</hr>",1,0,"{'benign': 0.6083, 'malicious': 0.3917}",34.19970000000205
+"<tfoot onkeyup=""alert(1)"" contenteditable>test</tfoot>",1,0,"{'benign': 0.582, 'malicious': 0.418}",31.331800000003796
+"<style>@keyframes x{from {left:0;}to {left: 1000px;}}:target {animation:10s ease-in-out 0s 1 x;}</style><strong id=x style=""position:absolute;"" onanimationcancel=""alert(1)""></strong>",1,0,"{'benign': 0.595, 'malicious': 0.405}",52.3778999999962
+"<audio id=x controls onfocus=alert(1) id=x><source src=""validaudio.wav""></audio>",1,0,"{'benign': 0.5727, 'malicious': 0.4273}",31.91540000000259
+<main id=x tabindex=1 ondeactivate=alert(1)></main><input id=y autofocus>,1,0,"{'benign': 0.519, 'malicious': 0.481}",27.948500000007925
+<set onpointerover=alert(1)>XSS</set>,1,0,"{'benign': 0.5156, 'malicious': 0.4844}",21.984500000002072
+"<h1 onkeyup=""alert(1)"" contenteditable>test</h1>",1,0,"{'benign': 0.5715, 'malicious': 0.4285}",22.046099999997182
+"<abbr draggable=""true"" ondragstart=""alert(1)"">test</abbr>",1,0,"{'benign': 0.5433, 'malicious': 0.4567}",24.50519999999301
+<svg onblur=alert(1) tabindex=1 id=x></svg><input autofocus>,1,0,"{'benign': 0.5532, 'malicious': 0.4468}",23.996299999993198
+"<caption onmousemove=""alert(1)"">test</caption>",1,0,"{'benign': 0.5418, 'malicious': 0.4582}",17.832499999997253
+"<u onbeforepaste=""alert(1)"" contenteditable>test</u>",1,0,"{'benign': 0.6008, 'malicious': 0.3992}",21.149800000003438
+"<style>@keyframes x{from {left:0;}to {left: 1000px;}}:target {animation:10s ease-in-out 0s 1 x;}</style><textarea id=x style=""position:absolute;"" onanimationcancel=""alert(1)""></textarea>",1,0,"{'benign': 0.5984, 'malicious': 0.4016}",56.70100000000389
+"<style>@keyframes x{from {left:0;}to {left: 1000px;}}:target {animation:10s ease-in-out 0s 1 x;}</style><pre id=x style=""position:absolute;"" onanimationcancel=""alert(1)""></pre>",1,0,"{'benign': 0.5961, 'malicious': 0.4039}",61.86259999999777
+"<wbr onkeydown=""alert(1)"" contenteditable>test</wbr>",1,0,"{'benign': 0.602, 'malicious': 0.398}",26.30289999999036
+<dialog onpointerup=alert(1)>XSS</dialog>,1,0,"{'benign': 0.593, 'malicious': 0.407}",21.570099999991044
+<svg id=x tabindex=1 onactivate=alert(1)></svg>,1,0,"{'benign': 0.5125, 'malicious': 0.4875}",24.270000000001346
+"<style>:target {color:red;}</style><del id=x style=""transition:color 1s"" ontransitionend=alert(1)></del>",1,0,"{'benign': 0.6132, 'malicious': 0.3868}",31.89109999999573
+"<style>@keyframes x{from {left:0;}to {left: 1000px;}}:target {animation:10s ease-in-out 0s 1 x;}</style><meta id=x style=""position:absolute;"" onanimationcancel=""alert(1)""></meta>",1,0,"{'benign': 0.5855, 'malicious': 0.4145}",45.79999999999984
+"<code onkeydown=""alert(1)"" contenteditable>test</code>",1,0,"{'benign': 0.516, 'malicious': 0.484}",34.10899999998662
+"<style>@keyframes x{}</style><style style=""animation-name:x"" onanimationstart=""alert(1)""></style>",1,0,"{'benign': 0.5693, 'malicious': 0.4307}",28.820599999988872
+<iframe id=x tabindex=1 onbeforedeactivate=alert(1)></iframe><input autofocus>,1,0,"{'benign': 0.5556, 'malicious': 0.4444}",25.36889999998948
+<blink onpointerover=alert(1)>XSS</blink>,1,0,"{'benign': 0.552, 'malicious': 0.448}",18.010599999996657
+"<style>@keyframes x{}</style><blockquote style=""animation-name:x"" onanimationend=""alert(1)""></blockquote>",1,0,"{'benign': 0.5839, 'malicious': 0.4161}",30.056200000004196
+<li id=x tabindex=1 onfocusin=alert(1)></li>,1,0,"{'benign': 0.5212, 'malicious': 0.4788}",21.830399999998917
+"<mark onmousemove=""alert(1)"">test</mark>",1,0,"{'benign': 0.5149, 'malicious': 0.4851}",22.092999999998142
+"<del onpaste=""alert(1)"" contenteditable>test</del>",1,0,"{'benign': 0.5517, 'malicious': 0.4483}",21.579400000007354
+<tfoot onpointerover=alert(1)>XSS</tfoot>,1,0,"{'benign': 0.5739, 'malicious': 0.4261}",22.23310000000822
+"<ul draggable=""true"" ondragenter=""alert(1)"">test</ul>",1,0,"{'benign': 0.5402, 'malicious': 0.4598}",21.108400000002803
+"<table onpaste=""alert(1)"" contenteditable>test</table>",1,0,"{'benign': 0.5708, 'malicious': 0.4292}",24.563499999999294
+<ruby onpointerdown=alert(1)>XSS</ruby>,1,0,"{'benign': 0.5823, 'malicious': 0.4177}",20.40879999999845
+"<template draggable=""true"" ondragend=""alert(1)"">test</template>",1,0,"{'benign': 0.5716, 'malicious': 0.4284}",22.23619999999471
+<content onpointerup=alert(1)>XSS</content>,1,0,"{'benign': 0.6215, 'malicious': 0.3785}",19.595899999998778
+"<div draggable=""true"" contenteditable>drag me</div><dl ondragover=alert(1) contenteditable>drop here</dl>",1,0,"{'benign': 0.6124, 'malicious': 0.3876}",27.72939999999835
+<del onpointerout=alert(1)>XSS</del>,1,0,"{'benign': 0.5436, 'malicious': 0.4564}",19.676599999996824
+"<basefont onpaste=""alert(1)"" contenteditable>test</basefont>",1,0,"{'benign': 0.5649, 'malicious': 0.4351}",24.33340000000328
+<head onpointerover=alert(1)>XSS</head>,1,0,"{'benign': 0.553, 'malicious': 0.447}",21.33290000000443
+"<div draggable=""true"" contenteditable>drag me</div><command ondragover=alert(1) contenteditable>drop here</command>",1,0,"{'benign': 0.5822, 'malicious': 0.4178}",27.925899999999615
+          <footer>,0,1,"{'benign': 0.4526, 'malicious': 0.5474}",17.369700000003263
+"<style>:target {color: red;}</style><caption id=x style=""transition:color 10s"" ontransitioncancel=alert(1)></caption>",1,0,"{'benign': 0.6155, 'malicious': 0.3845}",32.65750000001333
+"<bdi onkeydown=""alert(1)"" contenteditable>test</bdi>",1,0,"{'benign': 0.5867, 'malicious': 0.4133}",24.606800000000817
+"<label onmouseup=""alert(1)"">test</label>",1,0,"{'benign': 0.5641, 'malicious': 0.4359}",22.231899999994198
+<svg><animate onend=alert(1) attributeName=x dur=1s>,1,0,"{'benign': 0.5159, 'malicious': 0.4841}",24.006100000008246
+"<div draggable=""true"" contenteditable>drag me</div><big ondragover=alert(1) contenteditable>drop here</big>",1,0,"{'benign': 0.6355, 'malicious': 0.3645}",29.85630000000583
+"<bdi oncopy=""alert(1)"" contenteditable>test</bdi>",1,0,"{'benign': 0.5681, 'malicious': 0.4319}",21.929499999998825
+"<div draggable=""true"" contenteditable>drag me</div><pre ondrop=alert(1) contenteditable>drop here</pre>",1,0,"{'benign': 0.608, 'malicious': 0.392}",27.042900000012082
+"<audio oncanplay=alert(1)><source src=""validaudio.wav"" type=""audio/wav""></audio>",1,0,"{'benign': 0.6285, 'malicious': 0.3715}",28.63179999999943
+"<span draggable=""true"" ondragleave=""alert(1)"">test</span>",1,0,"{'benign': 0.5356, 'malicious': 0.4644}",28.85299999999802
+<svg><bdo onload=alert(1)></bdo>,1,0,"{'benign': 0.606, 'malicious': 0.394}",21.46400000000881
+"<rp onkeyup=""alert(1)"" contenteditable>test</rp>",1,0,"{'benign': 0.5941, 'malicious': 0.4059}",18.952499999997485
+"<blockquote onmouseup=""alert(1)"">test</blockquote>",1,0,"{'benign': 0.6105, 'malicious': 0.3895}",20.41279999998835
+"<param onmouseleave=""alert(1)"">test</param>",1,0,"{'benign': 0.5535, 'malicious': 0.4465}",22.264300000003345
+"<h1 onclick=""alert(1)"">test</h1>",1,0,"{'benign': 0.579, 'malicious': 0.421}",20.958699999994224
+"<template onmouseup=""alert(1)"">test</template>",1,0,"{'benign': 0.5887, 'malicious': 0.4113}",19.77139999999622
+"<style>@keyframes x{}</style><rt style=""animation-name:x"" onanimationstart=""alert(1)""></rt>",1,0,"{'benign': 0.5878, 'malicious': 0.4122}",28.119099999997843
+<svg><textarea onload=alert(1)></textarea>,1,0,"{'benign': 0.5776, 'malicious': 0.4224}",19.33409999999469
+<th id=x tabindex=1 onactivate=alert(1)></th>,1,0,"{'benign': 0.5045, 'malicious': 0.4955}",22.88910000000044
+<isindex id=x tabindex=1 onactivate=alert(1)></isindex>,1,0,"{'benign': 0.5286, 'malicious': 0.4714}",22.000700000006645
+<ins onpointermove=alert(1)>XSS</ins>,1,0,"{'benign': 0.5677, 'malicious': 0.4323}",20.737499999995634
+"<details onclick=""alert(1)"">test</details>",1,0,"{'benign': 0.5929, 'malicious': 0.4071}",22.174100000000863
+"<basefont draggable=""true"" ondragstart=""alert(1)"">test</basefont>",1,0,"{'benign': 0.5124, 'malicious': 0.4876}",27.630299999998442
+"<picture draggable=""true"" ondrag=""alert(1)"">test</picture>",1,0,"{'benign': 0.526, 'malicious': 0.474}",21.459399999997686
+"<div id=""p-variants"" role=""navigation"" class=""vectorMenu emptyPortlet"" aria-labelledby=""p-variants-label"">",0,1,"{'benign': 0.4989, 'malicious': 0.5011}",27.29770000000542
+<base onblur=alert(1) tabindex=1 id=x></base><input autofocus>,1,0,"{'benign': 0.5528, 'malicious': 0.4472}",21.04479999999853
+"<noframes onmouseenter=""alert(1)"">test</noframes>",1,0,"{'benign': 0.595, 'malicious': 0.405}",23.47539999999526
+"<style>@keyframes x{from {left:0;}to {left: 1000px;}}:target {animation:10s ease-in-out 0s 1 x;}</style><figcaption id=x style=""position:absolute;"" onanimationcancel=""alert(1)""></figcaption>",1,0,"{'benign': 0.6148, 'malicious': 0.3852}",54.98760000000402
+<select onpointerout=alert(1)>XSS</select>,1,0,"{'benign': 0.5782, 'malicious': 0.4218}",18.851699999999028
+"<embed onmouseover=""alert(1)"">test</embed>",1,0,"{'benign': 0.5539, 'malicious': 0.4461}",20.20620000000406
+"<span oncopy=""alert(1)"" contenteditable>test</span>",1,0,"{'benign': 0.5681, 'malicious': 0.4319}",22.538400000001957
+"<span onbeforepaste=""alert(1)"" contenteditable>test</span>",1,0,"{'benign': 0.5952, 'malicious': 0.4048}",21.87849999999969
+<iframe src=http://.rocks/scriptlet.html <,1,0,"{'benign': 0.5131, 'malicious': 0.4869}",21.703799999997386
+"<div draggable=""true"" contenteditable>drag me</div><acronym ondragover=alert(1) contenteditable>drop here</acronym>",1,0,"{'benign': 0.586, 'malicious': 0.414}",29.43189999999163
+<sup onblur=alert(1) tabindex=1 id=x></sup><input autofocus>,1,0,"{'benign': 0.5338, 'malicious': 0.4662}",25.103399999991893
+<multicol onpointerenter=alert(1)>XSS</multicol>,1,0,"{'benign': 0.6185, 'malicious': 0.3815}",23.14990000000705
+<sub id=x tabindex=1 onfocus=alert(1)></sub>,1,0,"{'benign': 0.5345, 'malicious': 0.4655}",21.9304999999963
+"<style>@keyframes x{}</style><html style=""animation-name:x"" onanimationstart=""alert(1)""></html>",1,0,"{'benign': 0.5645, 'malicious': 0.4355}",30.632600000004118
+"<style>:target {transform: rotate(180deg);}</style><th id=x style=""transition:transform 2s"" ontransitionrun=alert(1)></th>",1,0,"{'benign': 0.5899, 'malicious': 0.4101}",41.066300000011324
+"<bdi onmousedown=""alert(1)"">test</bdi>",1,0,"{'benign': 0.6151, 'malicious': 0.3849}",21.77739999999062
+"<link draggable=""true"" ondrag=""alert(1)"">test</link>",1,0,"{'benign': 0.5246, 'malicious': 0.4754}",25.722999999999274
+<rt onblur=alert(1) tabindex=1 id=x></rt><input autofocus>,1,0,"{'benign': 0.5709, 'malicious': 0.4291}",23.98420000000101
+"<image onbeforepaste=""alert(1)"" contenteditable>test</image>",1,0,"{'benign': 0.6123, 'malicious': 0.3877}",22.064200000002643
+"<wbr draggable=""true"" ondragend=""alert(1)"">test</wbr>",1,0,"{'benign': 0.5591, 'malicious': 0.4409}",24.153200000000652
+"<style>@keyframes x{}</style><fieldset style=""animation-name:x"" onanimationstart=""alert(1)""></fieldset>",1,0,"{'benign': 0.5635, 'malicious': 0.4365}",32.48829999999714
+"<style>@keyframes x{}</style><dl style=""animation-name:x"" onanimationend=""alert(1)""></dl>",1,0,"{'benign': 0.5848, 'malicious': 0.4152}",31.647700000007717
+<body onpointerover=alert(1)>XSS</body>,1,0,"{'benign': 0.5522, 'malicious': 0.4478}",25.57510000001173
+"<style>:target {color:red;}</style><wbr id=x style=""transition:color 1s"" ontransitionend=alert(1)></wbr>",1,0,"{'benign': 0.6379, 'malicious': 0.3621}",33.45900000000768
+"<font onbeforecut=""alert(1)"" contenteditable>test</font>",1,0,"{'benign': 0.5973, 'malicious': 0.4027}",21.88130000000399
+<xss id=x tabindex=1 onfocusout=alert(1)></xss><input autofocus>,1,0,"{'benign': 0.527, 'malicious': 0.473}",26.01079999999456
+<isindex id=x tabindex=1 onbeforeactivate=alert(1)></isindex>,1,0,"{'benign': 0.5491, 'malicious': 0.4509}",26.31810000001167
+"<template draggable=""true"" ondragenter=""alert(1)"">test</template>",1,0,"{'benign': 0.5771, 'malicious': 0.4229}",22.85660000001144
+"<noembed onkeypress=""alert(1)"" contenteditable>test</noembed>",1,0,"{'benign': 0.5957, 'malicious': 0.4043}",25.417799999999602
+"<spacer onkeydown=""alert(1)"" contenteditable>test</spacer>",1,0,"{'benign': 0.6129, 'malicious': 0.3871}",22.413700000001313
+"<del onmouseup=""alert(1)"">test</del>",1,0,"{'benign': 0.5576, 'malicious': 0.4424}",21.388399999992203
+"<q onpaste=""alert(1)"" contenteditable>test</q>",1,0,"{'benign': 0.5043, 'malicious': 0.4957}",23.096899999998755
+"<summary onbeforecopy=""alert(1)"" contenteditable>test</summary>",1,0,"{'benign': 0.6014, 'malicious': 0.3986}",23.044699999999807
+"<samp draggable=""true"" ondragenter=""alert(1)"">test</samp>",1,0,"{'benign': 0.5339, 'malicious': 0.4661}",24.7297999999887
+"    <input type=""hidden"" name=""area"" value=""default"" />",0,1,"{'benign': 0.4711, 'malicious': 0.5289}",22.564900000006105
+"<dt onmouseup=""alert(1)"">test</dt>",1,0,"{'benign': 0.6242, 'malicious': 0.3758}",22.05199999998797
+"<style>:target {color:red;}</style><var id=x style=""transition:color 1s"" ontransitionend=alert(1)></var>",1,0,"{'benign': 0.6157, 'malicious': 0.3843}",28.819800000007945
+<article onpointerenter=alert(1)>XSS</article>,1,0,"{'benign': 0.5883, 'malicious': 0.4117}",21.383099999994215
+"<meter onbeforepaste=""alert(1)"" contenteditable>test</meter>",1,0,"{'benign': 0.5999, 'malicious': 0.4001}",22.915600000004588
+<svg><menuitem onload=alert(1)></menuitem>,1,0,"{'benign': 0.5478, 'malicious': 0.4522}",23.85540000000219
+"<IMG SRC=""jav&#x09;ascript:alert('');"">",1,0,"{'benign': 0.5238, 'malicious': 0.4762}",24.60179999999923
+<del onpointerenter=alert(1)>XSS</del>,1,0,"{'benign': 0.5608, 'malicious': 0.4392}",21.389300000009825
+"<style oncontextmenu=""alert(1)"">test</style>",1,0,"{'benign': 0.5632, 'malicious': 0.4368}",21.6668999999996
+"  <form id=""rtd-search-form"" class=""wy-form"" action=""search.html"" method=""get"">",0,1,"{'benign': 0.4714, 'malicious': 0.5286}",27.05530000000067
+<s id=x tabindex=1 onfocusin=alert(1)></s>,1,0,"{'benign': 0.5102, 'malicious': 0.4898}",22.95610000000181
+<a onblur=alert(1) tabindex=1 id=x></a><input autofocus>,1,0,"{'benign': 0.5516, 'malicious': 0.4484}",23.739900000009584
+"<rt draggable=""true"" ondragstart=""alert(1)"">test</rt>",1,0,"{'benign': 0.5643, 'malicious': 0.4357}",24.223699999993187
+<area id=x tabindex=1 onbeforedeactivate=alert(1)></area><input autofocus>,1,0,"{'benign': 0.5514, 'malicious': 0.4486}",23.693099999988476
+"<wbr draggable=""true"" ondragleave=""alert(1)"">test</wbr>",1,0,"{'benign': 0.513, 'malicious': 0.487}",23.705499999991275
+<data id=x tabindex=1 onbeforeactivate=alert(1)></data>,1,0,"{'benign': 0.5606, 'malicious': 0.4394}",23.389399999999227
+"<button draggable=""true"" ondragleave=""alert(1)"">test</button>",1,0,"{'benign': 0.5385, 'malicious': 0.4615}",21.613599999994904
+"<template onmouseenter=""alert(1)"">test</template>",1,0,"{'benign': 0.5991, 'malicious': 0.4009}",22.37689999999759
+"<dd onmouseenter=""alert(1)"">test</dd>",1,0,"{'benign': 0.552, 'malicious': 0.448}",18.83929999999623
+<span id=x tabindex=1 ondeactivate=alert(1)></span><input id=y autofocus>,1,0,"{'benign': 0.5252, 'malicious': 0.4748}",25.158899999993878
+"<figure onmouseout=""alert(1)"">test</figure>",1,0,"{'benign': 0.516, 'malicious': 0.484}",21.483099999997535
+"<html draggable=""true"" ondragend=""alert(1)"">test</html>",1,0,"{'benign': 0.5386, 'malicious': 0.4614}",24.326200000004405
+<aside id=x tabindex=1 onactivate=alert(1)></aside>,1,0,"{'benign': 0.5287, 'malicious': 0.4713}",23.122700000001828
+"<head onmousedown=""alert(1)"">test</head>",1,0,"{'benign': 0.5101, 'malicious': 0.4899}",19.981199999989485
+<span onpointerdown=alert(1)>XSS</span>,1,0,"{'benign': 0.538, 'malicious': 0.462}",20.73710000000517
+<table onpointerup=alert(1)>XSS</table>,1,0,"{'benign': 0.5413, 'malicious': 0.4587}",21.465800000001423
+<input3 onpointerover=alert(1)>XSS</input3>,1,0,"{'benign': 0.5765, 'malicious': 0.4235}",22.61339999999734
+"<style>@keyframes x{}</style><address style=""animation-name:x"" onanimationend=""alert(1)""></address>",1,0,"{'benign': 0.5462, 'malicious': 0.4538}",30.51849999999945
+<aside onpointermove=alert(1)>XSS</aside>,1,0,"{'benign': 0.6017, 'malicious': 0.3983}",20.24919999999497
+"<ruby onmouseleave=""alert(1)"">test</ruby>",1,0,"{'benign': 0.5788, 'malicious': 0.4212}",21.894099999997252
+"<small onpaste=""alert(1)"" contenteditable>test</small>",1,0,"{'benign': 0.5806, 'malicious': 0.4194}",22.447200000002
+"<object onkeypress=""alert(1)"" contenteditable>test</object>",1,0,"{'benign': 0.5546, 'malicious': 0.4454}",21.77930000000572
+<plaintext onfocusout=alert(1) tabindex=1 id=x></plaintext><input autofocus>,1,0,"{'benign': 0.5094, 'malicious': 0.4906}",23.455100000006723
+<optgroup onpointerover=alert(1)>XSS</optgroup>,1,0,"{'benign': 0.5962, 'malicious': 0.4038}",19.074500000002104
+"<dl onmouseover=""alert(1)"">test</dl>",1,0,"{'benign': 0.5837, 'malicious': 0.4163}",22.95379999999625
+"<div draggable=""true"" contenteditable>drag me</div><meta ondragover=alert(1) contenteditable>drop here</meta>",1,0,"{'benign': 0.6052, 'malicious': 0.3948}",27.630900000005454
+"<style draggable=""true"" ondragleave=""alert(1)"">test</style>",1,0,"{'benign': 0.5435, 'malicious': 0.4565}",24.067400000006955
+<svg><code onload=alert(1)></code>,1,0,"{'benign': 0.5287, 'malicious': 0.4713}",20.2106999999927
+<p onpointerout=alert(1)>XSS</p>,1,0,"{'benign': 0.5269, 'malicious': 0.4731}",18.960900000010383
+"<track onmouseout=""alert(1)"">test</track>",1,0,"{'benign': 0.5205, 'malicious': 0.4795}",19.620199999991428
+"<div onclick=""alert(1)"">test</div>",1,0,"{'benign': 0.5442, 'malicious': 0.4558}",19.10600000000784
+<slot id=x tabindex=1 ondeactivate=alert(1)></slot><input id=y autofocus>,1,0,"{'benign': 0.522, 'malicious': 0.478}",27.244199999998386
+DATASRC=#I DATAFLD=C DATAFORMATAS=HTML,1,0,"{'benign': 0.5488, 'malicious': 0.4512}",23.064099999999144
+"<style>@keyframes x{}</style><slot style=""animation-name:x"" onanimationstart=""alert(1)""></slot>",1,0,"{'benign': 0.5766, 'malicious': 0.4234}",29.42820000001234
+<tbody onpointermove=alert(1)>XSS</tbody>,1,0,"{'benign': 0.6629, 'malicious': 0.3371}",20.38360000000239
+<svg><menu onload=alert(1)></menu>,1,0,"{'benign': 0.5207, 'malicious': 0.4793}",19.217999999995072
+<ins onfocusout=alert(1) tabindex=1 id=x></ins><input autofocus>,1,0,"{'benign': 0.508, 'malicious': 0.492}",24.937899999997626
+<xmp id=x tabindex=1 onfocusin=alert(1)></xmp>,1,0,"{'benign': 0.5131, 'malicious': 0.4869}",22.55010000000368
+<svg><span onload=alert(1)></span>,1,0,"{'benign': 0.5518, 'malicious': 0.4482}",22.203599999997436
+<animate onpointerenter=alert(1)>XSS</animate>,1,0,"{'benign': 0.5931, 'malicious': 0.4069}",22.573699999995256
+<svg><title onload=alert(1)></title>,1,0,"{'benign': 0.571, 'malicious': 0.429}",19.928900000010685
+"<div draggable=""true"" contenteditable>drag me</div><title ondragover=alert(1) contenteditable>drop here</title>",1,0,"{'benign': 0.603, 'malicious': 0.397}",28.60409999999547
+"<textarea onmouseenter=""alert(1)"">test</textarea>",1,0,"{'benign': 0.5885, 'malicious': 0.4115}",21.204300000007947
+<slot id=x tabindex=1 onfocusin=alert(1)></slot>,1,0,"{'benign': 0.5146, 'malicious': 0.4854}",23.450299999993263
+"<dl oncontextmenu=""alert(1)"">test</dl>",1,0,"{'benign': 0.5737, 'malicious': 0.4263}",23.18180000000325
+"<section onbeforepaste=""alert(1)"" contenteditable>test</section>",1,0,"{'benign': 0.6383, 'malicious': 0.3617}",22.348800000003166
+"<tt oncopy=""alert(1)"" contenteditable>test</tt>",1,0,"{'benign': 0.5622, 'malicious': 0.4378}",22.75550000000237
+<tfoot id=x tabindex=1 onactivate=alert(1)></tfoot>,1,0,"{'benign': 0.562, 'malicious': 0.438}",22.754000000006158
+"<select onmouseleave=""alert(1)"">test</select>",1,0,"{'benign': 0.59, 'malicious': 0.41}",21.419299999990926
+<output onpointermove=alert(1)>XSS</output>,1,0,"{'benign': 0.5515, 'malicious': 0.4485}",22.997500000002447
+"<svg ondblclick=""alert(1)"">test</svg>",1,0,"{'benign': 0.5859, 'malicious': 0.4141}",22.17180000000951
+"<style>:target {color: red;}</style><embed id=x style=""transition:color 10s"" ontransitioncancel=alert(1)></embed>",1,0,"{'benign': 0.6356, 'malicious': 0.3644}",31.217299999994452
+"<div draggable=""true"" contenteditable>drag me</div><h1 ondrop=alert(1) contenteditable>drop here</h1>",1,0,"{'benign': 0.581, 'malicious': 0.419}",24.90099999999984
+<animatetransform onpointerenter=alert(1)>XSS</animatetransform>,1,0,"{'benign': 0.6088, 'malicious': 0.3912}",23.442199999990976
+"<hgroup draggable=""true"" ondragend=""alert(1)"">test</hgroup>",1,0,"{'benign': 0.5319, 'malicious': 0.4681}",25.703800000002275
+"<header onmousemove=""alert(1)"">test</header>",1,0,"{'benign': 0.582, 'malicious': 0.418}",22.240899999999897
+"<style>:target {color:red;}</style><option id=x style=""transition:color 1s"" ontransitionend=alert(1)></option>",1,0,"{'benign': 0.6163, 'malicious': 0.3837}",31.621299999997632
+<ol onpointerup=alert(1)>XSS</ol>,1,0,"{'benign': 0.6051, 'malicious': 0.3949}",22.657600000002276
+</div>,0,1,"{'benign': 0.4444, 'malicious': 0.5556}",18.6655999999914
+"<ol oncopy=""alert(1)"" contenteditable>test</ol>",1,0,"{'benign': 0.5589, 'malicious': 0.4411}",23.177399999994464
+"<video onmouseout=""alert(1)"">test</video>",1,0,"{'benign': 0.5657, 'malicious': 0.4343}",22.31810000000678
+"<menuitem onmousedown=""alert(1)"">test</menuitem>",1,0,"{'benign': 0.5365, 'malicious': 0.4635}",21.640999999988253
+"<style>@keyframes x{from {left:0;}to {left: 1000px;}}:target {animation:10s ease-in-out 0s 1 x;}</style><table id=x style=""position:absolute;"" onanimationcancel=""alert(1)""></table>",1,0,"{'benign': 0.5908, 'malicious': 0.4092}",48.78569999999627
+"<b onbeforecut=""alert(1)"" contenteditable>test</b>",1,0,"{'benign': 0.6045, 'malicious': 0.3955}",19.252199999996833
+"<thead onkeypress=""alert(1)"" contenteditable>test</thead>",1,0,"{'benign': 0.5788, 'malicious': 0.4212}",23.888499999998203
+"<datalist draggable=""true"" ondrag=""alert(1)"">test</datalist>",1,0,"{'benign': 0.5527, 'malicious': 0.4473}",23.555199999989895
+<multicol onpointermove=alert(1)>XSS</multicol>,1,0,"{'benign': 0.6172, 'malicious': 0.3828}",20.219400000001997
+<base onpointerdown=alert(1)>XSS</base>,1,0,"{'benign': 0.5656, 'malicious': 0.4344}",20.24939999999731
+<canvas onpointerover=alert(1)>XSS</canvas>,1,0,"{'benign': 0.5239, 'malicious': 0.4761}",19.469000000000847
+"<noframes draggable=""true"" ondragend=""alert(1)"">test</noframes>",1,0,"{'benign': 0.5396, 'malicious': 0.4604}",23.927000000000476
+<menuitem onpointerover=alert(1)>XSS</menuitem>,1,0,"{'benign': 0.5301, 'malicious': 0.4699}",20.48899999999776
+"<b onbeforecopy=""alert(1)"" contenteditable>test</b>",1,0,"{'benign': 0.5975, 'malicious': 0.4025}",23.1454000000042
+"<meta onmouseenter=""alert(1)"">test</meta>",1,0,"{'benign': 0.5514, 'malicious': 0.4486}",20.168799999993325
+"<style>:target {color:red;}</style><datalist id=x style=""transition:color 1s"" ontransitionend=alert(1)></datalist>",1,0,"{'benign': 0.642, 'malicious': 0.358}",33.26169999999706
+<animate onpointerleave=alert(1)>XSS</animate>,1,0,"{'benign': 0.567, 'malicious': 0.433}",21.48040000000151
+"<strike draggable=""true"" ondragstart=""alert(1)"">test</strike>",1,0,"{'benign': 0.5264, 'malicious': 0.4736}",23.436199999991914
+"<style>:target {color:red;}</style><bdi id=x style=""transition:color 1s"" ontransitionend=alert(1)></bdi>",1,0,"{'benign': 0.6259, 'malicious': 0.3741}",30.7620999999898
+<q onpointerup=alert(1)>XSS</q>,1,0,"{'benign': 0.5052, 'malicious': 0.4948}",17.779199999992557
+"<blink oncontextmenu=""alert(1)"">test</blink>",1,0,"{'benign': 0.5469, 'malicious': 0.4531}",22.354700000008165
+"<basefont onmouseleave=""alert(1)"">test</basefont>",1,0,"{'benign': 0.5431, 'malicious': 0.4569}",20.3969000000086
+"<bgsound onmousedown=""alert(1)"">test</bgsound>",1,0,"{'benign': 0.5866, 'malicious': 0.4134}",22.266900000005307
+<frameset id=x tabindex=1 onbeforedeactivate=alert(1)></frameset><input autofocus>,1,0,"{'benign': 0.5449, 'malicious': 0.4551}",26.532700000004183
+<colgroup onfocusout=alert(1) tabindex=1 id=x></colgroup><input autofocus>,1,0,"{'benign': 0.5627, 'malicious': 0.4373}",23.978400000004285
+<image src=validimage.png onloadstart=alert(1)>,1,0,"{'benign': 0.5476, 'malicious': 0.4524}",19.092999999998028
+"<style>:target {transform: rotate(180deg);}</style><title id=x style=""transition:transform 2s"" ontransitionrun=alert(1)></title>",1,0,"{'benign': 0.5829, 'malicious': 0.4171}",36.61300000000267
+<font id=x tabindex=1 onbeforedeactivate=alert(1)></font><input autofocus>,1,0,"{'benign': 0.5842, 'malicious': 0.4158}",24.069699999998306
+"<div draggable=""true"" contenteditable>drag me</div><form ondragover=alert(1) contenteditable>drop here</form>",1,0,"{'benign': 0.6139, 'malicious': 0.3861}",29.65879999999288
+<sub onblur=alert(1) tabindex=1 id=x></sub><input autofocus>,1,0,"{'benign': 0.5712, 'malicious': 0.4288}",23.71800000000235
+"<u onbeforecopy=""alert(1)"" contenteditable>test</u>",1,0,"{'benign': 0.5942, 'malicious': 0.4058}",24.12629999999183
+"<rtc onkeydown=""alert(1)"" contenteditable>test</rtc>",1,0,"{'benign': 0.5503, 'malicious': 0.4497}",23.23609999999121
+<iframe onpointerup=alert(1)>XSS</iframe>,1,0,"{'benign': 0.581, 'malicious': 0.419}",18.23020000000497
+"<div draggable=""true"" contenteditable>drag me</div><q ondrop=alert(1) contenteditable>drop here</q>",1,0,"{'benign': 0.5757, 'malicious': 0.4243}",26.619400000001292
+<data onblur=alert(1) tabindex=1 id=x></data><input autofocus>,1,0,"{'benign': 0.5313, 'malicious': 0.4687}",22.14659999999924
+"<style>:target {transform: rotate(180deg);}</style><dd id=x style=""transition:transform 2s"" ontransitionrun=alert(1)></dd>",1,0,"{'benign': 0.5923, 'malicious': 0.4077}",38.073499999995875
+"<style>:target {color:red;}</style><html id=x style=""transition:color 1s"" ontransitionend=alert(1)></html>",1,0,"{'benign': 0.6132, 'malicious': 0.3868}",29.55430000000092
+"<frameset onpaste=""alert(1)"" contenteditable>test</frameset>",1,0,"{'benign': 0.5528, 'malicious': 0.4472}",21.387899999993465
+"<tt onpaste=""alert(1)"" contenteditable>test</tt>",1,0,"{'benign': 0.6092, 'malicious': 0.3908}",24.1980000000126
+"<q onbeforepaste=""alert(1)"" contenteditable>test</q>",1,0,"{'benign': 0.5263, 'malicious': 0.4737}",22.479000000004135
+<s onpointerenter=alert(1)>XSS</s>,1,0,"{'benign': 0.5717, 'malicious': 0.4283}",28.368999999997868
+<blink id=x tabindex=1 onbeforeactivate=alert(1)></blink>,1,0,"{'benign': 0.5513, 'malicious': 0.4487}",21.97369999998955
+<samp id=x tabindex=1 onbeforedeactivate=alert(1)></samp><input autofocus>,1,0,"{'benign': 0.5709, 'malicious': 0.4291}",25.358499999995843
+"<style>@keyframes slidein {}</style><div style=""animation-duration:1s;animation-name:slidein;animation-iteration-count:2"" onanimationiteration=""alert(1)""></div>",1,0,"{'benign': 0.5796, 'malicious': 0.4204}",40.39600000000121
+"<style>:target {color: red;}</style><p id=x style=""transition:color 10s"" ontransitioncancel=alert(1)></p>",1,0,"{'benign': 0.6175, 'malicious': 0.3825}",32.496399999999426
+<slot onpointerenter=alert(1)>XSS</slot>,1,0,"{'benign': 0.6014, 'malicious': 0.3986}",22.338000000004854
+"<style>@keyframes x{}</style><spacer style=""animation-name:x"" onanimationend=""alert(1)""></spacer>",1,0,"{'benign': 0.5652, 'malicious': 0.4348}",25.254900000007297
+"<header onmouseup=""alert(1)"">test</header>",1,0,"{'benign': 0.6114, 'malicious': 0.3886}",22.55739999999662
+"		<div id=""jump-to-nav""> </div>",0,1,"{'benign': 0.4963, 'malicious': 0.5037}",20.932200000004286
+"<time ondblclick=""alert(1)"">test</time>",1,0,"{'benign': 0.6067, 'malicious': 0.3933}",20.24889999999857
+<img src=validimage.png onloadend=alert(1)>,1,0,"{'benign': 0.5408, 'malicious': 0.4592}",21.382299999999077
+"<div onpaste=""alert(1)"" contenteditable>test</div>",1,0,"{'benign': 0.5493, 'malicious': 0.4507}",22.541200000006256
+"<hr onmouseup=""alert(1)"">test</hr>",1,0,"{'benign': 0.6166, 'malicious': 0.3834}",22.284299999995483
+<legend onpointerleave=alert(1)>XSS</legend>,1,0,"{'benign': 0.5999, 'malicious': 0.4001}",20.888600000006363
+"<strike onmousemove=""alert(1)"">test</strike>",1,0,"{'benign': 0.5767, 'malicious': 0.4233}",20.86390000000904
+"<basefont onbeforecopy=""alert(1)"" contenteditable>test</basefont>",1,0,"{'benign': 0.6022, 'malicious': 0.3978}",18.50679999999727
+"<nav onbeforecut=""alert(1)"" contenteditable>test</nav>",1,0,"{'benign': 0.5983, 'malicious': 0.4017}",22.448799999992275
+"<header onkeypress=""alert(1)"" contenteditable>test</header>",1,0,"{'benign': 0.6086, 'malicious': 0.3914}",22.36560000000054
+"<frameset draggable=""true"" ondragenter=""alert(1)"">test</frameset>",1,0,"{'benign': 0.5049, 'malicious': 0.4951}",23.99770000000956
+"<style>:target {color:red;}</style><embed id=x style=""transition:color 1s"" ontransitionend=alert(1)></embed>",1,0,"{'benign': 0.6285, 'malicious': 0.3715}",31.818600000008246
+<b id=x tabindex=1 onactivate=alert(1)></b>,1,0,"{'benign': 0.5319, 'malicious': 0.4681}",24.022200000004545
+<del onpointerup=alert(1)>XSS</del>,1,0,"{'benign': 0.576, 'malicious': 0.424}",19.09729999999854
+"<strong oncontextmenu=""alert(1)"">test</strong>",1,0,"{'benign': 0.5718, 'malicious': 0.4282}",22.389500000002727
+<figure id=x tabindex=1 onbeforedeactivate=alert(1)></figure><input autofocus>,1,0,"{'benign': 0.5316, 'malicious': 0.4684}",23.628900000005615
+"<noscript onmousedown=""alert(1)"">test</noscript>",1,0,"{'benign': 0.6016, 'malicious': 0.3984}",20.245100000011007
+"<main onbeforepaste=""alert(1)"" contenteditable>test</main>",1,0,"{'benign': 0.6045, 'malicious': 0.3955}",17.97220000000266
+<nextid id=x tabindex=1 ondeactivate=alert(1)></nextid><input id=y autofocus>,1,0,"{'benign': 0.5335, 'malicious': 0.4665}",20.875900000007164
+"<head draggable=""true"" ondragstart=""alert(1)"">test</head>",1,0,"{'benign': 0.5133, 'malicious': 0.4867}",20.6486999999953
+"<style>@keyframes slidein {}</style><strong style=""animation-duration:1s;animation-name:slidein;animation-iteration-count:2"" onanimationiteration=""alert(1)""></strong>",1,0,"{'benign': 0.5935, 'malicious': 0.4065}",37.53799999999785
+<s onblur=alert(1) tabindex=1 id=x></s><input autofocus>,1,0,"{'benign': 0.5448, 'malicious': 0.4552}",24.25569999999766
+"<base onkeypress=""alert(1)"" contenteditable>test</base>",1,0,"{'benign': 0.6055, 'malicious': 0.3945}",23.26460000000452
+"<article onmouseout=""alert(1)"">test</article>",1,0,"{'benign': 0.5444, 'malicious': 0.4556}",20.28819999999598
+<noframes onpointerover=alert(1)>XSS</noframes>,1,0,"{'benign': 0.5814, 'malicious': 0.4186}",21.021099999998683
+"<blink onbeforecopy=""alert(1)"" contenteditable>test</blink>",1,0,"{'benign': 0.609, 'malicious': 0.391}",21.546400000005406
+<animatemotion onpointerdown=alert(1)>XSS</animatemotion>,1,0,"{'benign': 0.5954, 'malicious': 0.4046}",22.698800000000574
+<tt id=x tabindex=1 ondeactivate=alert(1)></tt><input id=y autofocus>,1,0,"{'benign': 0.562, 'malicious': 0.438}",28.01759999999831
+"<colgroup onmouseenter=""alert(1)"">test</colgroup>",1,0,"{'benign': 0.6575, 'malicious': 0.3425}",21.51770000000397
+<i onfocusout=alert(1) tabindex=1 id=x></i><input autofocus>,1,0,"{'benign': 0.5253, 'malicious': 0.4747}",24.092800000005354
+"<style>@keyframes x{}</style><canvas style=""animation-name:x"" onanimationstart=""alert(1)""></canvas>",1,0,"{'benign': 0.574, 'malicious': 0.426}",29.084799999992583
+<b onpointerover=alert(1)>XSS</b>,1,0,"{'benign': 0.5276, 'malicious': 0.4724}",18.867999999997664
+"<big onmouseout=""alert(1)"">test</big>",1,0,"{'benign': 0.5937, 'malicious': 0.4063}",18.99219999999957
+"	 <div> </div> </td> </tr><tr><td class=""navbox-abovebelow"" colspan=""2"">",0,1,"{'benign': 0.4735, 'malicious': 0.5265}",28.39500000000328
+<u id=x tabindex=1 onbeforeactivate=alert(1)></u>,1,0,"{'benign': 0.5373, 'malicious': 0.4627}",24.36790000000144
+"<style>:target {transform: rotate(180deg);}</style><abbr id=x style=""transition:transform 2s"" ontransitionrun=alert(1)></abbr>",1,0,"{'benign': 0.632, 'malicious': 0.368}",37.98659999999643
+"<basefont onmouseenter=""alert(1)"">test</basefont>",1,0,"{'benign': 0.5619, 'malicious': 0.4381}",21.347000000005778
+<strike onpointerover=alert(1)>XSS</strike>,1,0,"{'benign': 0.5667, 'malicious': 0.4333}",21.84740000001284
+"<isindex oncut=""alert(1)"" contenteditable>test</isindex>",1,0,"{'benign': 0.5787, 'malicious': 0.4213}",24.052999999994995
+"<audio autoplay controls onvolumechange=alert(1)><source src=""validaudio.wav"" type=""audio/wav""></audio>",1,0,"{'benign': 0.6513, 'malicious': 0.3487}",30.023999999997386
+<i onpointerup=alert(1)>XSS</i>,1,0,"{'benign': 0.6078, 'malicious': 0.3922}",15.847699999994802
+"<style>:target {color:red;}</style><mark id=x style=""transition:color 1s"" ontransitionend=alert(1)></mark>",1,0,"{'benign': 0.6125, 'malicious': 0.3875}",31.19009999998923
+"<hgroup draggable=""true"" ondragenter=""alert(1)"">test</hgroup>",1,0,"{'benign': 0.5444, 'malicious': 0.4556}",25.50109999999961
+<canvas onpointerleave=alert(1)>XSS</canvas>,1,0,"{'benign': 0.5854, 'malicious': 0.4146}",20.449099999993336
+"<datalist onbeforecopy=""alert(1)"" contenteditable>test</datalist>",1,0,"{'benign': 0.639, 'malicious': 0.361}",22.946099999998637
+<section id=x tabindex=1 onbeforeactivate=alert(1)></section>,1,0,"{'benign': 0.5485, 'malicious': 0.4515}",22.121099999992566
+"<small onkeyup=""alert(1)"" contenteditable>test</small>",1,0,"{'benign': 0.6003, 'malicious': 0.3997}",21.535299999996482
+<bdo id=x tabindex=1 onfocus=alert(1)></bdo>,1,0,"{'benign': 0.5813, 'malicious': 0.4187}",23.943099999996775
+"<header draggable=""true"" ondragleave=""alert(1)"">test</header>",1,0,"{'benign': 0.5651, 'malicious': 0.4349}",22.644800000009013
+"<tfoot draggable=""true"" ondragend=""alert(1)"">test</tfoot>",1,0,"{'benign': 0.5498, 'malicious': 0.4502}",22.914900000003513
+<input3 onpointerleave=alert(1)>XSS</input3>,1,0,"{'benign': 0.5992, 'malicious': 0.4008}",19.805700000006254
+javascript:document.location='http://www.google.com/,1,0,"{'benign': 0.5086, 'malicious': 0.4914}",21.09139999998888
+"<track onmouseleave=""alert(1)"">test</track>",1,0,"{'benign': 0.5704, 'malicious': 0.4296}",19.923800000000824
+"<kbd draggable=""true"" ondragstart=""alert(1)"">test</kbd>",1,0,"{'benign': 0.5198, 'malicious': 0.4802}",24.155600000000277
+"<style>:target {transform: rotate(180deg);}</style><button id=x style=""transition:transform 2s"" ontransitionrun=alert(1)></button>",1,0,"{'benign': 0.5917, 'malicious': 0.4083}",35.95719999999858
+          </div>,0,1,"{'benign': 0.4444, 'malicious': 0.5556}",16.34119999999939
+"<video onmouseup=""alert(1)"">test</video>",1,0,"{'benign': 0.6245, 'malicious': 0.3755}",19.712799999993535
+"<main oncut=""alert(1)"" contenteditable>test</main>",1,0,"{'benign': 0.5596, 'malicious': 0.4404}",18.903800000003912
+"<button onkeypress=""alert(1)"" contenteditable>test</button>",1,0,"{'benign': 0.5879, 'malicious': 0.4121}",22.158000000004563
+"<head onclick=""alert(1)"">test</head>",1,0,"{'benign': 0.5434, 'malicious': 0.4566}",16.035000000002242
+<svg><tt onload=alert(1)></tt>,1,0,"{'benign': 0.6044, 'malicious': 0.3956}",16.25989999999433
+"<nav onkeypress=""alert(1)"" contenteditable>test</nav>",1,0,"{'benign': 0.5696, 'malicious': 0.4304}",21.206499999991024
+"<audio autoplay onplay=alert(1)><source src=""validaudio.wav"" type=""audio/wav""></audio>",1,0,"{'benign': 0.6236, 'malicious': 0.3764}",25.23180000000025
+"<rb onmousemove=""alert(1)"">test</rb>",1,0,"{'benign': 0.6002, 'malicious': 0.3998}",15.536900000000742
+"<tfoot onmouseover=""alert(1)"">test</tfoot>",1,0,"{'benign': 0.5907, 'malicious': 0.4093}",22.17399999999259
+<param id=x tabindex=1 onbeforedeactivate=alert(1)></param><input autofocus>,1,0,"{'benign': 0.5083, 'malicious': 0.4917}",27.129699999989043
+"<bdo onkeypress=""alert(1)"" contenteditable>test</bdo>",1,0,"{'benign': 0.5959, 'malicious': 0.4041}",23.189200000004462
+<svg><em onload=alert(1)></em>,1,0,"{'benign': 0.6018, 'malicious': 0.3982}",20.690800000011222
+<image onblur=alert(1) tabindex=1 id=x></image><input autofocus>,1,0,"{'benign': 0.5385, 'malicious': 0.4615}",26.136100000002216
+"<style>@keyframes x{}</style><small style=""animation-name:x"" onanimationend=""alert(1)""></small>",1,0,"{'benign': 0.5618, 'malicious': 0.4382}",29.50309999999945
+<ul onpointerenter=alert(1)>XSS</ul>,1,0,"{'benign': 0.5773, 'malicious': 0.4227}",21.637999999995827
+"<meta draggable=""true"" ondragenter=""alert(1)"">test</meta>",1,0,"{'benign': 0.5125, 'malicious': 0.4875}",24.810500000000957
+"<div draggable=""true"" contenteditable>drag me</div><script ondrop=alert(1) contenteditable>drop here</script>",1,0,"{'benign': 0.5909, 'malicious': 0.4091}",31.973399999998264
+"<style>:target {transform: rotate(180deg);}</style><caption id=x style=""transition:transform 2s"" ontransitionrun=alert(1)></caption>",1,0,"{'benign': 0.5806, 'malicious': 0.4194}",37.38380000000063
+<multicol onpointerleave=alert(1)>XSS</multicol>,1,0,"{'benign': 0.6167, 'malicious': 0.3833}",21.903800000004026
+"<style>@keyframes x{}</style><s style=""animation-name:x"" onanimationend=""alert(1)""></s>",1,0,"{'benign': 0.5631, 'malicious': 0.4369}",28.14250000000129
+<details id=x tabindex=1 onactivate=alert(1)></details>,1,0,"{'benign': 0.5299, 'malicious': 0.4701}",22.143399999990265
+<svg><blockquote onload=alert(1)></blockquote>,1,0,"{'benign': 0.5919, 'malicious': 0.4081}",23.62649999999178
+<samp onpointerenter=alert(1)>XSS</samp>,1,0,"{'benign': 0.5961, 'malicious': 0.4039}",20.6698000000074
+"<svg onmousemove=""alert(1)"">test</svg>",1,0,"{'benign': 0.574, 'malicious': 0.426}",18.541700000000105
+<dfn id=x tabindex=1 onfocus=alert(1)></dfn>,1,0,"{'benign': 0.6118, 'malicious': 0.3882}",22.67069999999194
+<blockquote onpointerleave=alert(1)>XSS</blockquote>,1,0,"{'benign': 0.5691, 'malicious': 0.4309}",22.067699999993806
+"<th onmouseleave=""alert(1)"">test</th>",1,0,"{'benign': 0.561, 'malicious': 0.439}",17.559299999987843
+<track id=x tabindex=1 onbeforedeactivate=alert(1)></track><input autofocus>,1,0,"{'benign': 0.5473, 'malicious': 0.4527}",23.48159999999666
+"<source onmousedown=""alert(1)"">test</source>",1,0,"{'benign': 0.616, 'malicious': 0.384}",20.150000000001
+"<html oncopy=""alert(1)"" contenteditable>test</html>",1,0,"{'benign': 0.5654, 'malicious': 0.4346}",20.805800000005092
+"<applet onmouseleave=""alert(1)"">test</applet>",1,0,"{'benign': 0.5996, 'malicious': 0.4004}",21.727699999999572
+<table id=x tabindex=1 onbeforeactivate=alert(1)></table>,1,0,"{'benign': 0.52, 'malicious': 0.48}",17.786400000005642
+"<button onmouseup=""alert(1)"">test</button>",1,0,"{'benign': 0.6047, 'malicious': 0.3953}",15.898300000003474
+<textarea onpointerdown=alert(1)>XSS</textarea>,1,0,"{'benign': 0.565, 'malicious': 0.435}",21.731799999997747
+"<style>@keyframes x{}</style><code style=""animation-name:x"" onanimationend=""alert(1)""></code>",1,0,"{'benign': 0.5537, 'malicious': 0.4463}",24.668899999994665
+<small onblur=alert(1) tabindex=1 id=x></small><input autofocus>,1,0,"{'benign': 0.5536, 'malicious': 0.4464}",25.13720000000319
+<bdi id=x tabindex=1 onactivate=alert(1)></bdi>,1,0,"{'benign': 0.5667, 'malicious': 0.4333}",24.93320000000665
+<textarea onchange=alert(1)>XSS</textarea>,1,0,"{'benign': 0.5823, 'malicious': 0.4177}",21.28240000000403
+"<iframe draggable=""true"" ondragleave=""alert(1)"">test</iframe>",1,0,"{'benign': 0.5355, 'malicious': 0.4645}",19.845000000003665
+"<iframe onkeyup=""alert(1)"" contenteditable>test</iframe>",1,0,"{'benign': 0.6001, 'malicious': 0.3999}",23.05749999999307
+"<legend oncopy=""alert(1)"" contenteditable>test</legend>",1,0,"{'benign': 0.5624, 'malicious': 0.4376}",21.78669999999272
+<div id='mw-data-after-content'>,0,1,"{'benign': 0.4882, 'malicious': 0.5118}",17.239799999998695
+"<article draggable=""true"" ondragenter=""alert(1)"">test</article>",1,0,"{'benign': 0.5372, 'malicious': 0.4628}",22.24130000000457
+"<label onkeydown=""alert(1)"" contenteditable>test</label>",1,0,"{'benign': 0.5698, 'malicious': 0.4302}",22.724199999998973
+<time onpointerleave=alert(1)>XSS</time>,1,0,"{'benign': 0.6348, 'malicious': 0.3652}",17.815100000007078
+"<button draggable=""true"" ondragstart=""alert(1)"">test</button>",1,0,"{'benign': 0.5352, 'malicious': 0.4648}",22.616099999993367
+"<article onmouseup=""alert(1)"">test</article>",1,0,"{'benign': 0.5799, 'malicious': 0.4201}",20.001800000002845
+"<dt onbeforecopy=""alert(1)"" contenteditable>test</dt>",1,0,"{'benign': 0.6642, 'malicious': 0.3358}",23.94010000000435
+<head>,0,1,"{'benign': 0.471, 'malicious': 0.529}",19.88219999999785
+"<ul onkeydown=""alert(1)"" contenteditable>test</ul>",1,0,"{'benign': 0.5626, 'malicious': 0.4374}",24.346800000003554
+"<style onpaste=""alert(1)"" contenteditable>test</style>",1,0,"{'benign': 0.5753, 'malicious': 0.4247}",24.06080000000088
+"<embed onbeforecopy=""alert(1)"" contenteditable>test</embed>",1,0,"{'benign': 0.6153, 'malicious': 0.3847}",23.862799999989193
+"<tbody ondblclick=""alert(1)"">test</tbody>",1,0,"{'benign': 0.6264, 'malicious': 0.3736}",22.413100000008512
+"<output onmousemove=""alert(1)"">test</output>",1,0,"{'benign': 0.5401, 'malicious': 0.4599}",18.858100000002764
+"<style>:target {transform: rotate(180deg);}</style><footer id=x style=""transition:transform 2s"" ontransitionrun=alert(1)></footer>",1,0,"{'benign': 0.5827, 'malicious': 0.4173}",37.67530000000363
+<details onfocusout=alert(1) tabindex=1 id=x></details><input autofocus>,1,0,"{'benign': 0.5402, 'malicious': 0.4598}",24.48119999999676
+<col id=x tabindex=1 onactivate=alert(1)></col>,1,0,"{'benign': 0.5192, 'malicious': 0.4808}",23.90560000000619
+<head id=x tabindex=1 onfocusin=alert(1)></head>,1,0,"{'benign': 0.5177, 'malicious': 0.4823}",22.41819999998995
+<font onpointermove=alert(1)>XSS</font>,1,0,"{'benign': 0.5605, 'malicious': 0.4395}",21.760900000003858
+<pre id=x tabindex=1 onbeforeactivate=alert(1)></pre>,1,0,"{'benign': 0.5631, 'malicious': 0.4369}",19.307299999994143
+"<rp onbeforecut=""alert(1)"" contenteditable>test</rp>",1,0,"{'benign': 0.6026, 'malicious': 0.3974}",20.356399999997166
+"<ul onmouseout=""alert(1)"">test</ul>",1,0,"{'benign': 0.5598, 'malicious': 0.4402}",21.96070000000816
+"<object onmouseup=""alert(1)"">test</object>",1,0,"{'benign': 0.5707, 'malicious': 0.4293}",27.538799999987873
+"<object onkeyup=""alert(1)"" contenteditable>test</object>",1,0,"{'benign': 0.5748, 'malicious': 0.4252}",45.79379999999844
+<rt id=x tabindex=1 onbeforeactivate=alert(1)></rt>,1,0,"{'benign': 0.5686, 'malicious': 0.4314}",59.12519999999688
+"SRC=""http://www.thesiteyouareon.com/somecommand.php?somevariables=maliciouscode",1,0,"{'benign': 0.5823, 'malicious': 0.4177}",24.91849999999829
+"<style>:target {color: red;}</style><select id=x style=""transition:color 10s"" ontransitioncancel=alert(1)></select>",1,0,"{'benign': 0.6351, 'malicious': 0.3649}",30.83749999998986
+"<style>@keyframes x{from {left:0;}to {left: 1000px;}}:target {animation:10s ease-in-out 0s 1 x;}</style><nobr id=x style=""position:absolute;"" onanimationcancel=""alert(1)""></nobr>",1,0,"{'benign': 0.6064, 'malicious': 0.3936}",51.9043000000039
+"<legend onpaste=""alert(1)"" contenteditable>test</legend>",1,0,"{'benign': 0.5804, 'malicious': 0.4196}",22.65909999999849
+<details id=x tabindex=1 onbeforeactivate=alert(1)></details>,1,0,"{'benign': 0.5759, 'malicious': 0.4241}",24.450799999996775
+"<style>@keyframes x{}</style><td style=""animation-name:x"" onanimationstart=""alert(1)""></td>",1,0,"{'benign': 0.5986, 'malicious': 0.4014}",26.28509999999551
+"<div draggable=""true"" contenteditable>drag me</div><rb ondrop=alert(1) contenteditable>drop here</rb>",1,0,"{'benign': 0.6082, 'malicious': 0.3918}",24.178800000001388
+<element onpointerdown=alert(1)>XSS</element>,1,0,"{'benign': 0.5511, 'malicious': 0.4489}",19.272600000007856
+"<output onclick=""alert(1)"">test</output>",1,0,"{'benign': 0.5301, 'malicious': 0.4699}",17.105900000004226
+"<style>@keyframes x{from {left:0;}to {left: 1000px;}}:target {animation:10s ease-in-out 0s 1 x;}</style><q id=x style=""position:absolute;"" onanimationcancel=""alert(1)""></q>",1,0,"{'benign': 0.5769, 'malicious': 0.4231}",32.88719999999046
+<head onblur=alert(1) tabindex=1 id=x></head><input autofocus>,1,0,"{'benign': 0.5388, 'malicious': 0.4612}",19.555999999994356
+<picture onfocusout=alert(1) tabindex=1 id=x></picture><input autofocus>,1,0,"{'benign': 0.5143, 'malicious': 0.4857}",23.02249999999617
+"<style>@keyframes x{from {left:0;}to {left: 1000px;}}:target {animation:10s ease-in-out 0s 1 x;}</style><header id=x style=""position:absolute;"" onanimationcancel=""alert(1)""></header>",1,0,"{'benign': 0.589, 'malicious': 0.411}",39.03830000000141
+"<svg onmouseover=""alert(1)"">test</svg>",1,0,"{'benign': 0.5585, 'malicious': 0.4415}",22.712099999992574
+"<wbr draggable=""true"" ondragstart=""alert(1)"">test</wbr>",1,0,"{'benign': 0.5368, 'malicious': 0.4632}",19.115200000001664
+"<footer ondblclick=""alert(1)"">test</footer>",1,0,"{'benign': 0.5282, 'malicious': 0.4718}",20.932800000011298
+"<center onkeyup=""alert(1)"" contenteditable>test</center>",1,0,"{'benign': 0.634, 'malicious': 0.366}",23.171500000003675
+"<summary draggable=""true"" ondragstart=""alert(1)"">test</summary>",1,0,"{'benign': 0.5045, 'malicious': 0.4955}",22.90940000000319
+"<canvas onbeforecopy=""alert(1)"" contenteditable>test</canvas>",1,0,"{'benign': 0.6178, 'malicious': 0.3822}",18.04970000000594
+"<style>:target {transform: rotate(180deg);}</style><bgsound id=x style=""transition:transform 2s"" ontransitionrun=alert(1)></bgsound>",1,0,"{'benign': 0.6126, 'malicious': 0.3874}",38.95719999999869
+<dialog id=x tabindex=1 onbeforedeactivate=alert(1)></dialog><input autofocus>,1,0,"{'benign': 0.5502, 'malicious': 0.4498}",24.19039999999484
+"<dd onkeydown=""alert(1)"" contenteditable>test</dd>",1,0,"{'benign': 0.5726, 'malicious': 0.4274}",24.005799999997635
+<time onpointerup=alert(1)>XSS</time>,1,0,"{'benign': 0.6404, 'malicious': 0.3596}",23.574099999990494
+"<li oncontextmenu=""alert(1)"">test</li>",1,0,"{'benign': 0.5514, 'malicious': 0.4486}",22.53110000000902
+"<rb onkeydown=""alert(1)"" contenteditable>test</rb>",1,0,"{'benign': 0.6019, 'malicious': 0.3981}",26.157600000004777
+"<style>@keyframes slidein {}</style><figure style=""animation-duration:1s;animation-name:slidein;animation-iteration-count:2"" onanimationiteration=""alert(1)""></figure>",1,0,"{'benign': 0.5799, 'malicious': 0.4201}",31.823599999995622
+<embed id=x tabindex=1 onbeforeactivate=alert(1)></embed>,1,0,"{'benign': 0.5415, 'malicious': 0.4585}",24.67919999999424
+"<style>@keyframes x{}</style><dd style=""animation-name:x"" onanimationend=""alert(1)""></dd>",1,0,"{'benign': 0.5534, 'malicious': 0.4466}",28.482499999995525
+"<style>:target {color: red;}</style><q id=x style=""transition:color 10s"" ontransitioncancel=alert(1)></q>",1,0,"{'benign': 0.5948, 'malicious': 0.4052}",25.397499999996853
+"<mark onmouseleave=""alert(1)"">test</mark>",1,0,"{'benign': 0.5464, 'malicious': 0.4536}",21.31939999999588
+"<video onbeforepaste=""alert(1)"" contenteditable>test</video>",1,0,"{'benign': 0.6569, 'malicious': 0.3431}",20.943100000010872
+"<output onkeydown=""alert(1)"" contenteditable>test</output>",1,0,"{'benign': 0.5824, 'malicious': 0.4176}",24.073300000011955
+"<sub onmousedown=""alert(1)"">test</sub>",1,0,"{'benign': 0.5886, 'malicious': 0.4114}",21.546599999993532
+"<style>@keyframes x{}</style><menu style=""animation-name:x"" onanimationstart=""alert(1)""></menu>",1,0,"{'benign': 0.5472, 'malicious': 0.4528}",29.213300000009212
+javascript:alert(''),1,0,"{'benign': 0.6111, 'malicious': 0.3889}",18.095799999997553
+"<aside onmouseup=""alert(1)"">test</aside>",1,0,"{'benign': 0.635, 'malicious': 0.365}",20.378100000002064
+"<div draggable=""true"" contenteditable>drag me</div><wbr ondragover=alert(1) contenteditable>drop here</wbr>",1,0,"{'benign': 0.6107, 'malicious': 0.3893}",29.2541999999969
+"<style>@keyframes x{from {left:0;}to {left: 1000px;}}:target {animation:10s ease-in-out 0s 1 x;}</style><ul id=x style=""position:absolute;"" onanimationcancel=""alert(1)""></ul>",1,0,"{'benign': 0.5972, 'malicious': 0.4028}",51.963799999995786
+"<applet oncopy=""alert(1)"" contenteditable>test</applet>",1,0,"{'benign': 0.5624, 'malicious': 0.4376}",22.803700000011418
+<ol id=x tabindex=1 onbeforedeactivate=alert(1)></ol><input autofocus>,1,0,"{'benign': 0.5753, 'malicious': 0.4247}",23.654100000001677
+"<div draggable=""true"" contenteditable>drag me</div><nobr ondrop=alert(1) contenteditable>drop here</nobr>",1,0,"{'benign': 0.6132, 'malicious': 0.3868}",25.2241999999967
+"<style>@keyframes x{}</style><nobr style=""animation-name:x"" onanimationend=""alert(1)""></nobr>",1,0,"{'benign': 0.576, 'malicious': 0.424}",28.735699999998587
+<body id=x tabindex=1 onactivate=alert(1)></body>,1,0,"{'benign': 0.5108, 'malicious': 0.4892}",21.323100000003592
+<td onpointerup=alert(1)>XSS</td>,1,0,"{'benign': 0.6045, 'malicious': 0.3955}",20.861600000003477
+<noframes id=x tabindex=1 onfocusin=alert(1)></noframes>,1,0,"{'benign': 0.5436, 'malicious': 0.4564}",22.447199999987788
+"<em onmouseenter=""alert(1)"">test</em>",1,0,"{'benign': 0.5892, 'malicious': 0.4108}",23.856300000005604
+"<nav onbeforepaste=""alert(1)"" contenteditable>test</nav>",1,0,"{'benign': 0.592, 'malicious': 0.408}",22.58540000001119
+"<body onbeforecopy=""alert(1)"" contenteditable>test</body>",1,0,"{'benign': 0.6418, 'malicious': 0.3582}",19.481999999996447
+"<ruby draggable=""true"" ondragstart=""alert(1)"">test</ruby>",1,0,"{'benign': 0.5385, 'malicious': 0.4615}",23.275799999993296
+		 </div> </div>,0,1,"{'benign': 0.4662, 'malicious': 0.5338}",17.973800000007145
+"<td onkeypress=""alert(1)"" contenteditable>test</td>",1,0,"{'benign': 0.5912, 'malicious': 0.4088}",22.825300000008042
+"<strike draggable=""true"" ondragenter=""alert(1)"">test</strike>",1,0,"{'benign': 0.5417, 'malicious': 0.4583}",23.342100000007804
+"<i onbeforepaste=""alert(1)"" contenteditable>test</i>",1,0,"{'benign': 0.6313, 'malicious': 0.3687}",18.852200000011976
+"<div draggable=""true"" contenteditable>drag me</div><font ondragover=alert(1) contenteditable>drop here</font>",1,0,"{'benign': 0.5898, 'malicious': 0.4102}",23.58049999999423
+"<summary onmousemove=""alert(1)"">test</summary>",1,0,"{'benign': 0.5603, 'malicious': 0.4397}",20.360900000000015
+<del id=x tabindex=1 onbeforedeactivate=alert(1)></del><input autofocus>,1,0,"{'benign': 0.5591, 'malicious': 0.4409}",26.538099999996234
+"<style>@keyframes x{from {left:0;}to {left: 1000px;}}:target {animation:10s ease-in-out 0s 1 x;}</style><ruby id=x style=""position:absolute;"" onanimationcancel=""alert(1)""></ruby>",1,0,"{'benign': 0.589, 'malicious': 0.411}",44.96000000000322
+"<blink onbeforecut=""alert(1)"" contenteditable>test</blink>",1,0,"{'benign': 0.6065, 'malicious': 0.3935}",23.6689000000041
+<plaintext onpointerout=alert(1)>XSS</plaintext>,1,0,"{'benign': 0.5725, 'malicious': 0.4275}",20.712700000004247
+"<datalist onmousemove=""alert(1)"">test</datalist>",1,0,"{'benign': 0.593, 'malicious': 0.407}",21.39110000000244
+"<time onkeyup=""alert(1)"" contenteditable>test</time>",1,0,"{'benign': 0.637, 'malicious': 0.363}",19.858800000008614
+<textarea onpointerout=alert(1)>XSS</textarea>,1,0,"{'benign': 0.5726, 'malicious': 0.4274}",53.54379999999992
+<input onpointerdown=alert(1)>XSS</input>,1,0,"{'benign': 0.5654, 'malicious': 0.4346}",19.996499999990647
+"<h1 onbeforecut=""alert(1)"" contenteditable>test</h1>",1,0,"{'benign': 0.571, 'malicious': 0.429}",22.44920000001116
+"<element oncontextmenu=""alert(1)"">test</element>",1,0,"{'benign': 0.5564, 'malicious': 0.4436}",20.051800000004505
+<thead onpointerover=alert(1)>XSS</thead>,1,0,"{'benign': 0.5827, 'malicious': 0.4173}",22.083299999991368
+"<frameset onkeypress=""alert(1)"" contenteditable>test</frameset>",1,0,"{'benign': 0.5668, 'malicious': 0.4332}",18.406299999995213
+"<SCRIPT DEFER>alert("""")</SCRIPT>",1,0,"{'benign': 0.5843, 'malicious': 0.4157}",23.98789999999451
+<svg onunload=window.open('javascript:alert(1)')>,1,0,"{'benign': 0.5517, 'malicious': 0.4483}",22.375900000000115
+<nextid id=x tabindex=1 onfocusin=alert(1)></nextid>,1,0,"{'benign': 0.54, 'malicious': 0.46}",37.8509999999892
+<thead id=x tabindex=1 onfocus=alert(1)></thead>,1,0,"{'benign': 0.5403, 'malicious': 0.4597}",32.89510000000462
+<track onblur=alert(1) tabindex=1 id=x></track><input autofocus>,1,0,"{'benign': 0.5443, 'malicious': 0.4557}",35.70460000000253
+"<style>@keyframes x{from {left:0;}to {left: 1000px;}}:target {animation:10s ease-in-out 0s 1 x;}</style><big id=x style=""position:absolute;"" onanimationcancel=""alert(1)""></big>",1,0,"{'benign': 0.6061, 'malicious': 0.3939}",52.16049999999939
+"<details oncopy=""alert(1)"" contenteditable>test</details>",1,0,"{'benign': 0.6138, 'malicious': 0.3862}",21.306600000002618
+<thead id=x tabindex=1 onfocusin=alert(1)></thead>,1,0,"{'benign': 0.5547, 'malicious': 0.4453}",24.789800000007745
+<option id=x tabindex=1 onbeforeactivate=alert(1)></option>,1,0,"{'benign': 0.5303, 'malicious': 0.4697}",24.476700000008123
+"<script onbeforecopy=""alert(1)"" contenteditable>test</script>",1,0,"{'benign': 0.5834, 'malicious': 0.4166}",23.01539999999136
+"<style>@keyframes x{}</style><bgsound style=""animation-name:x"" onanimationend=""alert(1)""></bgsound>",1,0,"{'benign': 0.5837, 'malicious': 0.4163}",30.34990000000448
+"<li onmouseup=""alert(1)"">test</li>",1,0,"{'benign': 0.5693, 'malicious': 0.4307}",23.738600000001497
+"<multicol onclick=""alert(1)"">test</multicol>",1,0,"{'benign': 0.5913, 'malicious': 0.4087}",22.283799999996745
+"<style>:target {color: red;}</style><dd id=x style=""transition:color 10s"" ontransitioncancel=alert(1)></dd>",1,0,"{'benign': 0.62, 'malicious': 0.38}",23.787100000006944
+"<a onmousemove=""alert(1)"">test</a>",1,0,"{'benign': 0.5655, 'malicious': 0.4345}",22.244800000009946
+<figcaption onpointerenter=alert(1)>XSS</figcaption>,1,0,"{'benign': 0.5525, 'malicious': 0.4475}",22.286100000002307
+"<cite onmouseleave=""alert(1)"">test</cite>",1,0,"{'benign': 0.5749, 'malicious': 0.4251}",21.049199999993107
+<svg><ol onload=alert(1)></ol>,1,0,"{'benign': 0.5861, 'malicious': 0.4139}",18.859899999995378
+"<meta draggable=""true"" ondragleave=""alert(1)"">test</meta>",1,0,"{'benign': 0.5188, 'malicious': 0.4812}",25.58019999999317
+"<area onmousemove=""alert(1)"">test</area>",1,0,"{'benign': 0.5402, 'malicious': 0.4598}",24.11530000000539
+"<table onmousedown=""alert(1)"">test</table>",1,0,"{'benign': 0.5047, 'malicious': 0.4953}",21.81660000000818
+"<a ondblclick=""alert(1)"">test</a>",1,0,"{'benign': 0.5845, 'malicious': 0.4155}",22.38930000000039
+"<audio autoplay controls onpause=alert(1)><source src=""validaudio.wav"" type=""audio/wav""></audio>",1,0,"{'benign': 0.6528, 'malicious': 0.3472}",30.403899999996042
+"<s draggable=""true"" ondrag=""alert(1)"">test</s>",1,0,"{'benign': 0.5045, 'malicious': 0.4955}",24.288099999992596
+"<audio onmouseup=""alert(1)"">test</audio>",1,0,"{'benign': 0.5903, 'malicious': 0.4097}",25.72310000000755
+"<mark onmouseenter=""alert(1)"">test</mark>",1,0,"{'benign': 0.5277, 'malicious': 0.4723}",19.21680000000947
+"<element draggable=""true"" ondragleave=""alert(1)"">test</element>",1,0,"{'benign': 0.5328, 'malicious': 0.4672}",24.08029999999428
+"<style>@keyframes x{}</style><output style=""animation-name:x"" onanimationend=""alert(1)""></output>",1,0,"{'benign': 0.5672, 'malicious': 0.4328}",25.970499999999674
+"<samp onbeforecopy=""alert(1)"" contenteditable>test</samp>",1,0,"{'benign': 0.6214, 'malicious': 0.3786}",16.677500000000123
+"<style>@keyframes x{}</style><audio style=""animation-name:x"" onanimationstart=""alert(1)""></audio>",1,0,"{'benign': 0.5763, 'malicious': 0.4237}",30.505999999988376
+"<li onmousedown=""alert(1)"">test</li>",1,0,"{'benign': 0.5651, 'malicious': 0.4349}",21.372700000000577
+"<iframe onmouseout=""alert(1)"">test</iframe>",1,0,"{'benign': 0.5317, 'malicious': 0.4683}",20.883900000001177
+"<style>@keyframes x{from {left:0;}to {left: 1000px;}}:target {animation:10s ease-in-out 0s 1 x;}</style><dfn id=x style=""position:absolute;"" onanimationcancel=""alert(1)""></dfn>",1,0,"{'benign': 0.6262, 'malicious': 0.3738}",51.49800000000937
+"<nextid oncontextmenu=""alert(1)"">test</nextid>",1,0,"{'benign': 0.5549, 'malicious': 0.4451}",22.50180000000057
+"<style>@keyframes x{}</style><q style=""animation-name:x"" onanimationend=""alert(1)""></q>",1,0,"{'benign': 0.5289, 'malicious': 0.4711}",28.939100000002327
+</div>,0,1,"{'benign': 0.4444, 'malicious': 0.5556}",17.27669999999648
+"<style>:target {color:red;}</style><plaintext id=x style=""transition:color 1s"" ontransitionend=alert(1)></plaintext>",1,0,"{'benign': 0.6148, 'malicious': 0.3852}",29.066999999997734
+<svg><main onload=alert(1)></main>,1,0,"{'benign': 0.5673, 'malicious': 0.4327}",21.743899999989935
+<strong onpointerleave=alert(1)>XSS</strong>,1,0,"{'benign': 0.6037, 'malicious': 0.3963}",22.996000000006234
+"<nextid ondblclick=""alert(1)"">test</nextid>",1,0,"{'benign': 0.5903, 'malicious': 0.4097}",19.72530000000461
+<hr onpointerup=alert(1)>XSS</hr>,1,0,"{'benign': 0.6201, 'malicious': 0.3799}",18.214200000002734
+"<style>:target {transform: rotate(180deg);}</style><frameset id=x style=""transition:transform 2s"" ontransitionrun=alert(1)></frameset>",1,0,"{'benign': 0.5835, 'malicious': 0.4165}",33.262299999989864
+"<style>@keyframes x{from {left:0;}to {left: 1000px;}}:target {animation:10s ease-in-out 0s 1 x;}</style><data id=x style=""position:absolute;"" onanimationcancel=""alert(1)""></data>",1,0,"{'benign': 0.586, 'malicious': 0.414}",48.21309999999812
+<shadow id=x tabindex=1 onbeforeactivate=alert(1)></shadow>,1,0,"{'benign': 0.5686, 'malicious': 0.4314}",16.858999999996627
+<template onfocusout=alert(1) tabindex=1 id=x></template><input autofocus>,1,0,"{'benign': 0.5128, 'malicious': 0.4872}",24.05879999999172
+<bdo onpointerenter=alert(1)>XSS</bdo>,1,0,"{'benign': 0.6173, 'malicious': 0.3827}",21.941099999992275
+"d=""alert('');\"")""; ",1,0,"{'benign': 0.5302, 'malicious': 0.4698}",19.93219999999951
+"<slot onmouseout=""alert(1)"">test</slot>",1,0,"{'benign': 0.5292, 'malicious': 0.4708}",20.561400000005392
+			</div>,0,1,"{'benign': 0.4444, 'malicious': 0.5556}",15.463499999995634
+"<title onmouseout=""alert(1)"">test</title>",1,0,"{'benign': 0.5461, 'malicious': 0.4539}",19.408499999997275
+<kbd id=x tabindex=1 ondeactivate=alert(1)></kbd><input id=y autofocus>,1,0,"{'benign': 0.5452, 'malicious': 0.4548}",27.984599999996362
+<spacer onpointerleave=alert(1)>XSS</spacer>,1,0,"{'benign': 0.6381, 'malicious': 0.3619}",20.825600000009103
+"<img usemap=#x><map name=""x""><area href onfocusin=alert(1) id=x>",1,0,"{'benign': 0.5107, 'malicious': 0.4893}",26.311599999999657
+<u onpointerover=alert(1)>XSS</u>,1,0,"{'benign': 0.558, 'malicious': 0.442}",21.52559999998971
+<svg><animate onrepeat=alert(1) attributeName=x dur=1s repeatCount=2 />,1,0,"{'benign': 0.5646, 'malicious': 0.4354}",22.59220000000539
+"<wbr onmouseup=""alert(1)"">test</wbr>",1,0,"{'benign': 0.5999, 'malicious': 0.4001}",20.915299999998638
+"<input/onmouseover=""javaSCRIPT&colon;confirm&lpar;1&rpar;""",1,0,"{'benign': 0.5599, 'malicious': 0.4401}",20.966699999988236

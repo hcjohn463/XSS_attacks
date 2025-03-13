@@ -12,12 +12,18 @@ import time
 
 warnings.filterwarnings("ignore")
 
-# 🔹 1. 選擇 NLP 模型
-# model_name = "BAAI/bge-small-en"
-model_name = "sentence-transformers/all-MiniLM-L6-v2"
+# 🔹 1. 選擇嵌入模型（建議用 BGE-M3 或 Sentence-BERT）
+# model_name = "BAAI/bge-small-en"  
+# model_name = "sentence-transformers/all-MiniLM-L6-v2"
+# model_name = 'microsoft/codebert-base'
+# model_name = "jackaduma/SecBERT"
+# model_name = "cssupport/mobilebert-sql-injection-detect"
+
+model_name = "roberta-base-openai-detector"
 
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModel.from_pretrained(model_name)
+model_filename = model_name.replace('-', '_').replace('/', '_')
 
 print(f"正在使用 {model_name} 模型進行 XSS 檢測...")
 
@@ -27,11 +33,11 @@ os.makedirs(base_output_dir, exist_ok=True)
 
 # 🔹 3. 加載 FAISS 向量索引 & 標籤
 base_vector_dir = "D:/RAG/xss_attacks/dataset/vector"
-model_vector_dir = os.path.join(base_vector_dir, model_name.replace('-', '_').replace('/', '_'))
+model_vector_dir = os.path.join(base_vector_dir, model_filename)
 
-index_file = os.path.join(model_vector_dir, f"xss_vector_index_{model_name.replace('-', '_').replace('/', '_')}.faiss")
-labels_file = os.path.join(model_vector_dir, f"xss_labels_{model_name.replace('-', '_').replace('/', '_')}.npy")
-payloads_file = os.path.join(model_vector_dir, f"xss_payloads_{model_name.replace('-', '_').replace('/', '_')}.npy")
+index_file = os.path.join(model_vector_dir, f"xss_vector_index_{model_filename}.faiss")
+labels_file = os.path.join(model_vector_dir, f"xss_labels_{model_filename}.npy")
+payloads_file = os.path.join(model_vector_dir, f"xss_payloads_{model_filename}.npy")
 
 print(f"📥 加載 XSS 向量庫（{index_file}）...")
 index = faiss.read_index(index_file)
@@ -42,12 +48,19 @@ print(f"✅ 向量索引中包含 {index.ntotal} 條 XSS Payloads。")
 
 # 🔹 4. 定義 XSS Payload 嵌入函數
 def get_embedding(text):
-    inputs = tokenizer(text, return_tensors="pt", padding=True, truncation=True)
+    inputs = tokenizer(
+        text, 
+        return_tensors="pt", 
+        padding=True, 
+        truncation=True,  # 截斷過長的輸入
+        max_length=512  # 限制最大長度為 512
+    )
     with torch.no_grad():
         outputs = model(**inputs)
     hidden_states = outputs.last_hidden_state
     sentence_embedding = hidden_states.mean(dim=1).squeeze().numpy()
     return sentence_embedding
+
 
 # 🔹 5. 定義 XSS 檢測函數
 def classify_xss_risk(user_input, k=5):

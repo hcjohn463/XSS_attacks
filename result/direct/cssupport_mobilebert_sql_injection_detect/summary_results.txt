@@ -1,0 +1,5 @@
+Accuracy: 83.163%
+Precision: 76.911%
+Recall: 98.237%
+Total Time: 2min 29sec
+Average Time: 54.62ms

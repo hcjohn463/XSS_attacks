@@ -1,58 +1,32 @@
 import os
 import csv
 import numpy as np
-from transformers import AutoTokenizer, AutoModelForSequenceClassification
+from transformers import AutoTokenizer, AutoModel
 import torch
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay, accuracy_score, precision_score, recall_score
 import matplotlib.pyplot as plt
 from tqdm import tqdm
 import time
 
-# 設置模型名稱
-# model_name = "microsoft/codebert-base"  # 可替換為更適合 XSS 檢測的模型
-# model_name = "jackaduma/SecBERT"
-# model_name = "cssupport/mobilebert-sql-injection-detect"
-
-model_name = "roberta-base-openai-detector"
-
+# 選擇嵌入模型
+# model_name = "BAAI/bge-small-en"
+model_name = "sentence-transformers/all-MiniLM-L6-v2"
 
 tokenizer = AutoTokenizer.from_pretrained(model_name)
-model = AutoModelForSequenceClassification.from_pretrained(model_name)
+model = AutoModel.from_pretrained(model_name)
 
 print(f"正在使用 {model_name} 模型進行 XSS 檢測...")
 
-# 定義 XSS 風險分類函數
-def classify_xss_risk(user_input):
-    """
-    使用 CodeBERT 模型判斷 XSS Payload 風險。
-    Args:
-        user_input (str): 輸入的 XSS Payload。
-    Returns:
-        dict: 包含判斷結果和詳細信息的字典。
-    """
-    start_time = time.perf_counter()
-
-    # 進行 Tokenization 並轉為 PyTorch 張量
-    inputs = tokenizer(user_input, return_tensors="pt", truncation=True, padding=True, max_length=512)
+# 取得嵌入向量的函數
+def get_embedding(text):
+    inputs = tokenizer(text, return_tensors="pt", padding=True, truncation=True, max_length=512)
     with torch.no_grad():
         outputs = model(**inputs)
-
-    # 計算 logits 和分類概率
-    logits = outputs.logits
-    probabilities = torch.nn.functional.softmax(logits, dim=-1).squeeze().tolist()
-
-    # 判斷分類結果
-    predicted_label = np.argmax(probabilities)
-    label_map = {0: "benign", 1: "malicious"}  # 0 = 合法 (benign), 1 = 惡意 (malicious)
-
-    inference_time_ms = (time.perf_counter() - start_time) * 1000  # 轉換為毫秒
-
-    return {
-        "input_payload": user_input,
-        "classification": label_map[predicted_label],
-        "probabilities": {label_map[0]: round(probabilities[0], 4), label_map[1]: round(probabilities[1], 4)},
-        "inference_time_ms": inference_time_ms
-    }
+    
+    # 取得句子嵌入（平均池化）
+    hidden_states = outputs.last_hidden_state
+    sentence_embedding = hidden_states.mean(dim=1).squeeze().numpy()
+    return sentence_embedding
 
 # 讀取測試數據
 input_file = "D:/RAG/xss_attacks/dataset/XSS_dataset_testing_cleaned.csv"
@@ -71,35 +45,34 @@ with open(input_file, "r", encoding="utf-8") as csvfile:
 # 記錄整體測試時間
 start_time_total = time.time()
 
-# 處理每筆數據
+# 計算每個 Payload 的嵌入向量，並進行分類
 for row in tqdm(data, desc="處理測試數據進度", unit="筆"):
     user_payload = row["Payload"]
-    true_label = row["Label"]
+    true_label = int(row["Label"])  # 0 = benign, 1 = malicious
 
-    # 判斷 XSS 風險
-    result = classify_xss_risk(user_payload)
+    # 取得嵌入向量
+    start_time = time.perf_counter()
+    payload_embedding = get_embedding(user_payload)
+    inference_time_ms = (time.perf_counter() - start_time) * 1000  # 轉換為毫秒
 
-    # 定義映射
-    mapped_label = {"benign": 0, "malicious": 1}
+    # 使用閾值來判斷是否為惡意 XSS
+    threshold = 0.5  # 可調整
+    similarity_score = np.linalg.norm(payload_embedding)  # 這裡可以換成 Cosine Similarity 計算
+    predicted_label = 1 if similarity_score > threshold else 0  # 設定閾值分類
 
     results.append({
         "payload": user_payload,
-        "true_label": int(true_label),  # 確保 true_label 為數字
-        "predicted_label": mapped_label[result["classification"]],  # 轉換 predicted_label
-        "probabilities": result["probabilities"],
-        "inference_time_ms": result["inference_time_ms"]
+        "true_label": true_label,
+        "predicted_label": predicted_label,
+        "similarity_score": round(similarity_score, 4),
+        "inference_time_ms": round(inference_time_ms, 4)
     })
-    true_labels.append(int(true_label))
-    predicted_labels.append(mapped_label[result["classification"]])
+    true_labels.append(true_label)
+    predicted_labels.append(predicted_label)
 
 # 記錄測試完成時間
 total_time = time.time() - start_time_total
 average_time = (total_time / data_count) * 1000  # 轉換為毫秒
-
-# 過濾錯誤預測
-wrong_predictions = [
-    result for result in results if result["true_label"] != result["predicted_label"]
-]
 
 # 設置輸出目錄
 base_output_dir = "D:/RAG/xss_attacks/result/direct"
@@ -110,31 +83,19 @@ os.makedirs(model_output_dir, exist_ok=True)
 
 # 設置輸出文件路徑
 output_file = os.path.join(model_output_dir, f"testing_results_{model_name.replace('-', '_').replace('/', '_')}.csv")
-wrong_output_file = os.path.join(model_output_dir, f"testing_results_wrong_{model_name.replace('-', '_').replace('/', '_')}.csv")
 confusion_matrix_file = os.path.join(model_output_dir, f"confusion_matrix_{model_name.replace('-', '_').replace('/', '_')}.png")
 summary_file = os.path.join(model_output_dir, "summary_results.txt")
 
 # 寫入結果到 CSV
 print(f"📄 寫入結果到 {output_file}...")
 with open(output_file, "w", newline="", encoding="utf-8") as csvfile:
-    fieldnames = ["payload", "true_label", "predicted_label", "probabilities", "inference_time_ms"]
+    fieldnames = ["payload", "true_label", "predicted_label", "similarity_score", "inference_time_ms"]
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 
     writer.writeheader()
     writer.writerows(results)
 
 print(f"✅ 結果已保存到 {output_file}！")
-
-# 寫入錯誤預測結果到 CSV
-print(f"⚠️ 正在將錯誤預測結果寫入到 {wrong_output_file}...")
-with open(wrong_output_file, "w", newline="", encoding="utf-8") as csvfile:
-    fieldnames = ["payload", "true_label", "predicted_label", "probabilities", "inference_time_ms"]
-    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-
-    writer.writeheader()
-    writer.writerows(wrong_predictions)
-
-print(f"⚠️ 錯誤預測結果已保存到 {wrong_output_file}！")
 
 # 計算 Accuracy, Precision, Recall
 accuracy = accuracy_score(true_labels, predicted_labels) * 100

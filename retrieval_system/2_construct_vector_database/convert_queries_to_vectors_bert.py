@@ -8,11 +8,21 @@ from tqdm import tqdm
 
 # 🔹 1. 選擇嵌入模型（建議用 BGE-M3 或 Sentence-BERT）
 # model_name = "BAAI/bge-small-en"  
-model_name = "sentence-transformers/all-MiniLM-L6-v2"
 # model_name = "sentence-transformers/all-MiniLM-L6-v2"
+# model_name = 'microsoft/codebert-base'
+# model_name = "jackaduma/SecBERT"
+# model_name = "cssupport/mobilebert-sql-injection-detect"
+# ---
+model_name = "roberta-base-openai-detector"
 
+
+
+
+
+print(f"🔍 使用模型: {model_name}")
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModel.from_pretrained(model_name)
+model_filename = model_name.replace('-', '_').replace('/', '_')
 
 # 🔹 2. 設定資料與輸出目錄
 base_output_dir = "D:/RAG/xss_attacks/dataset/vector"
@@ -55,12 +65,12 @@ faiss_index.add(np.array(normalized_embeddings, dtype='float32'))
 
 
 # 🔹 7. 儲存 FAISS 索引
-faiss_index_file = os.path.join(model_output_dir, "xss_vector_index.faiss")
+faiss_index_file = os.path.join(model_output_dir, f"xss_vector_index_{model_filename}.faiss")
 faiss.write_index(faiss_index, faiss_index_file)
 print(f"✅ 向量庫已儲存為: {faiss_index_file}")
 
 # 🔹 8. 儲存標籤與原始 Payload
-np.save(os.path.join(model_output_dir, "xss_labels.npy"), labels)
-np.save(os.path.join(model_output_dir, "xss_payloads.npy"), payloads)
+np.save(os.path.join(model_output_dir, f"xss_labels_{model_filename}.npy"), labels)
+np.save(os.path.join(model_output_dir, f"xss_payloads_{model_filename}.npy"), payloads)
 
 print(f"✅ 標籤與 Payload 已儲存，XSS FAISS 資料庫建立完成！🎉")

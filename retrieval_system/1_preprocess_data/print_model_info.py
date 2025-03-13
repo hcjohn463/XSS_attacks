@@ -3,11 +3,12 @@ from sentence_transformers import SentenceTransformer
 
 # 定義模型名稱清單
 model_names = [
-    'paraphrase-MiniLM-L6-v2', 
-    'paraphrase-mpnet-base-v2', 
+    'BAAI/bge-small-en', 
+    'sentence-transformers/all-MiniLM-L6-v2', 
     'microsoft/codebert-base', 
     'cssupport/mobilebert-sql-injection-detect',
-    'jackaduma/SecBERT'
+    # 'jackaduma/SecBERT'
+    'roberta-base-openai-detector'
 ]
 
 # 定義檢查函數

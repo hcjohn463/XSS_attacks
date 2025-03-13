@@ -7,20 +7,24 @@ import os
 
 # 🔹 1. 設定 NLP 模型
 # model_name = "BAAI/bge-small-en"  
-model_name = "sentence-transformers/all-MiniLM-L6-v2"
+# model_name = "sentence-transformers/all-MiniLM-L6-v2"
+# model_name = 'microsoft/codebert-base'
+# model_name = "jackaduma/SecBERT"
+
+model_name = "roberta-base-openai-detector"
 
 print(f"🔍 使用模型: {model_name}")
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModel.from_pretrained(model_name)
-
+model_filename = model_name.replace('-', '_').replace('/', '_')
 
 # 🔹 3. 加載 FAISS 向量索引 & 標籤
 base_vector_dir = "D:/RAG/xss_attacks/dataset/vector"
-model_vector_dir = os.path.join(base_vector_dir, model_name.replace('-', '_').replace('/', '_'))
+model_vector_dir = os.path.join(base_vector_dir, model_filename)
 
-index_file = os.path.join(model_vector_dir, f"xss_vector_index_{model_name.replace('-', '_').replace('/', '_')}.faiss")
-labels_file = os.path.join(model_vector_dir, f"xss_labels_{model_name.replace('-', '_').replace('/', '_')}.npy")
-payloads_file = os.path.join(model_vector_dir, f"xss_payloads_{model_name.replace('-', '_').replace('/', '_')}.npy")
+index_file = os.path.join(model_vector_dir, f"xss_vector_index_{model_filename}.faiss")
+labels_file = os.path.join(model_vector_dir, f"xss_labels_{model_filename}.npy")
+payloads_file = os.path.join(model_vector_dir, f"xss_payloads_{model_filename}.npy")
 
 # 🔹 3. 加載 FAISS 向量索引 & 標籤
 print(f"📥 加載 XSS 向量庫（{index_file}）...")

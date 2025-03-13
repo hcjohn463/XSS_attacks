@@ -1,0 +1,35 @@
+k = 1
+Accuracy: 99.781%
+Precision: 99.729%
+Recall: 99.864%
+Total Time: 92.50s
+Average Time: 33.79ms
+
+k = 2
+Accuracy: 99.781%
+Precision: 99.729%
+Recall: 99.864%
+Total Time: 92.15s
+Average Time: 33.66ms
+
+k = 3
+Accuracy: 99.416%
+Precision: 99.458%
+Recall: 99.458%
+Total Time: 94.29s
+Average Time: 34.44ms
+
+k = 4
+Accuracy: 99.562%
+Precision: 99.661%
+Recall: 99.525%
+Total Time: 92.88s
+Average Time: 33.92ms
+
+k = 5
+Accuracy: 99.196%
+Precision: 99.121%
+Recall: 99.390%
+Total Time: 92.30s
+Average Time: 33.71ms
+
