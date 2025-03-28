@@ -8,10 +8,13 @@ import os
 # 🔹 1. 設定 NLP 模型
 # model_name = "BAAI/bge-small-en"  
 # model_name = "sentence-transformers/all-MiniLM-L6-v2"
-# model_name = 'microsoft/codebert-base'
+model_name = 'microsoft/codebert-base'
 # model_name = "jackaduma/SecBERT"
+# model_name = "cssupport/mobilebert-sql-injection-detect"
+# model_name = "roberta-base-openai-detector"
 
-model_name = "roberta-base-openai-detector"
+
+
 
 print(f"🔍 使用模型: {model_name}")
 tokenizer = AutoTokenizer.from_pretrained(model_name)

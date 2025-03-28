@@ -12,17 +12,23 @@ import time
 
 warnings.filterwarnings("ignore")
 
+device = "cuda" if torch.cuda.is_available() else "cpu"
+print(f"Using device: {device}")
+
+
 # 🔹 1. 選擇嵌入模型（建議用 BGE-M3 或 Sentence-BERT）
 # model_name = "BAAI/bge-small-en"  
 # model_name = "sentence-transformers/all-MiniLM-L6-v2"
-# model_name = 'microsoft/codebert-base'
+model_name = 'microsoft/codebert-base'
 # model_name = "jackaduma/SecBERT"
 # model_name = "cssupport/mobilebert-sql-injection-detect"
+# model_name = "roberta-base-openai-detector"
 
-model_name = "roberta-base-openai-detector"
+testing = "XSS_dataset_testing_13636"
 
 tokenizer = AutoTokenizer.from_pretrained(model_name)
-model = AutoModel.from_pretrained(model_name)
+model = AutoModel.from_pretrained(model_name).to(device)  # 🚀 把模型移動到 GPU
+
 model_filename = model_name.replace('-', '_').replace('/', '_')
 
 print(f"正在使用 {model_name} 模型進行 XSS 檢測...")
@@ -46,6 +52,7 @@ payloads = np.load(payloads_file, allow_pickle=True)
 
 print(f"✅ 向量索引中包含 {index.ntotal} 條 XSS Payloads。")
 
+
 # 🔹 4. 定義 XSS Payload 嵌入函數
 def get_embedding(text):
     inputs = tokenizer(
@@ -54,11 +61,11 @@ def get_embedding(text):
         padding=True, 
         truncation=True,  # 截斷過長的輸入
         max_length=512  # 限制最大長度為 512
-    )
+    ).to(device)
     with torch.no_grad():
         outputs = model(**inputs)
     hidden_states = outputs.last_hidden_state
-    sentence_embedding = hidden_states.mean(dim=1).squeeze().numpy()
+    sentence_embedding = hidden_states.mean(dim=1).squeeze().cpu().numpy()  
     return sentence_embedding
 
 
@@ -99,9 +106,9 @@ def classify_xss_risk(user_input, k=5):
     }
 
 # 🔹 6. 讀取測試數據
-input_file = "D:/RAG/xss_attacks/dataset/XSS_dataset_testing_cleaned.csv"
+input_file = f"D:/RAG/xss_attacks/dataset/{testing}.csv"
 print(f"📥 讀取測試數據: {input_file}...")
-with open(input_file, "r", encoding="utf-8") as csvfile:
+with open(input_file, "r", encoding="ISO-8859-1") as csvfile:
     reader = csv.DictReader(csvfile)
     data = list(reader)
     print(f"✅ 共讀取到 {len(data)} 筆 XSS 測試數據。")
@@ -112,13 +119,13 @@ for k_value in range(1, 6):
     print(f"🔍 正在測試 k = {k_value} ...")
 
     # 設置輸出資料夾
-    model_output_dir = os.path.join(base_output_dir, model_name, f"k_{k_value}")
+    model_output_dir = os.path.join(base_output_dir, model_filename, f"k_{k_value}")
     os.makedirs(model_output_dir, exist_ok=True)
 
     # 設定輸出文件
     output_file = os.path.join(model_output_dir, f"testing_results_k_{k_value}.csv")
     confusion_matrix_file = os.path.join(model_output_dir, f"confusion_matrix_k_{k_value}.png")
-    summary_file = os.path.join(base_output_dir, model_name, "summary_results.txt")
+    summary_file = os.path.join(base_output_dir, model_filename, "summary_results.txt")
 
     results = []
     true_labels = []

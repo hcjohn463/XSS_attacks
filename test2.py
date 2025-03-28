@@ -9,7 +9,7 @@ import time
 import re
 from transformers import AutoTokenizer, AutoModel
 from tqdm import tqdm
-from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay, accuracy_score, precision_score, recall_score
+from sklearn.metrics import accuracy_score, precision_score, recall_score
 import matplotlib.pyplot as plt
 
 # 確定設備
@@ -18,7 +18,10 @@ print(f"Using device: {device}")
 
 # model_name = "microsoft/codebert-base"
 # model_name = "jackaduma/SecBERT"
-model_name = "cssupport/mobilebert-sql-injection-detect"
+# model_name = "cssupport/mobilebert-sql-injection-detect"
+# model_name = "sentence-transformers/all-MiniLM-L6-v2"
+# model_name = "roberta-base-openai-detector"
+model_name = "BAAI/bge-small-en"
 
 model_filename = model_name.replace('-', '_').replace('/', '_')
 total_samples = 200  # 每類各取 total_samples 筆，共 400 筆作為訓練資料來源
@@ -122,14 +125,8 @@ def evaluate_vectors(test_df, test_embeddings, test_labels, benign_pool, attack_
         accuracy = accuracy_score(test_labels, predicted_labels) * 100
         precision = precision_score(test_labels, predicted_labels, zero_division=0) * 100
         recall = recall_score(test_labels, predicted_labels, zero_division=0) * 100
-        total_time = time.time()
-        avg_time = (total_time / len(test_labels)) * 1000
-
-        cm = confusion_matrix(test_labels, predicted_labels, labels=[0, 1])
-        disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=["benign", "malicious"])
-        disp.plot(cmap=plt.cm.Blues, colorbar=False)
-        plt.savefig(os.path.join(retrieval_dir, f"confusion_matrix_{malicious_count}.png"))
-        plt.close()
+        total_time = round(time.time(), 3)
+        avg_time = round((total_time / len(test_labels)) * 1000, 3)
 
         results.append([malicious_count, legit_count, accuracy, precision, recall, total_time, avg_time])
 

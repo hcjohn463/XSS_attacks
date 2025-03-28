@@ -4,19 +4,18 @@ import json
 from transformers import AutoTokenizer, AutoModel
 import torch
 import faiss
-from tqdm import tqdm
+from tqdm import tqdm               
 
 # 🔹 1. 選擇嵌入模型（建議用 BGE-M3 或 Sentence-BERT）
 # model_name = "BAAI/bge-small-en"  
 # model_name = "sentence-transformers/all-MiniLM-L6-v2"
-# model_name = 'microsoft/codebert-base'
+model_name = 'microsoft/codebert-base'
 # model_name = "jackaduma/SecBERT"
 # model_name = "cssupport/mobilebert-sql-injection-detect"
-# ---
-model_name = "roberta-base-openai-detector"
+# model_name = "roberta-base-openai-detector"
 
 
-
+training = "xss_dataset_training_50.json"
 
 
 print(f"🔍 使用模型: {model_name}")
@@ -30,11 +29,11 @@ model_output_dir = os.path.join(base_output_dir, model_name.replace('-', '_').re
 os.makedirs(model_output_dir, exist_ok=True)
 
 # 🔹 3. 讀取 XSS 資料集
-with open("D:/RAG/xss_attacks/dataset/json/xss_dataset_training.json", "r", encoding="utf-8") as f:
+with open(f"D:/RAG/xss_attacks/dataset/json/{training}", "r", encoding="utf-8") as f:
     dataset = json.load(f)
 
 # 取得 Payloads 與 Labels
-payloads = [item["Sentence"] for item in dataset]  # XSS 內容
+payloads = [item["Payload"] for item in dataset]  # XSS 內容
 labels = [item["Label"] for item in dataset]  # 0=合法, 1=非法
 
 # 確保數據一致
