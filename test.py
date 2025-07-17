@@ -1,147 +1,145 @@
 import os
 import pandas as pd
-import json
-import numpy as np
-import torch
-import faiss
-import multiprocessing
-import time
-import re
-from transformers import AutoTokenizer, AutoModel
-from tqdm import tqdm
-from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay, accuracy_score, precision_score, recall_score
 import matplotlib.pyplot as plt
+from adjustText import adjust_text  # ✅ 引入自動調整標籤套件
+from tqdm import tqdm
 
-# 確定設備
-device = "cuda" if torch.cuda.is_available() else "cpu"
-print(f"Using device: {device}")
 
-# model_name = "microsoft/codebert-base"
-# model_name = "jackaduma/SecBERT"
-model_name = "cssupport/mobilebert-sql-injection-detect"
+# 模型清單（不要動）
+model_names = [
+    "sentence-transformers/all-MiniLM-L6-v2",
+    "jackaduma/SecBERT",
+    "microsoft/codebert-base",
+    "roberta-base-openai-detector",
+    "cssupport/mobilebert-sql-injection-detect",
+]
 
-model_filename = model_name.replace('-', '_').replace('/', '_')
-total_samples = 200  # 每類各取 total_samples 筆，共 400 筆作為訓練資料來源
+# 對照表：圖例名稱
+label_map = {
+    "sentence-transformers/all-MiniLM-L6-v2": "Proposed Model",
+    "jackaduma/SecBERT": "SecBERT",
+    "microsoft/codebert-base": "CodeBERT",
+    "roberta-base-openai-detector": "RoBERTa-detector",
+    "cssupport/mobilebert-sql-injection-detect": "MobileBERT-SQL",
+}
 
-# 設定參數
-input_file = "D:/RAG/XSS_attacks/dataset/XSS_dataset.csv"
-dataset_dir = f"D:/RAG/XSS_attacks/dataset/{total_samples}"
-os.makedirs(dataset_dir, exist_ok=True)
-json_dir = "D:/RAG/XSS_attacks/dataset/json"
-vector_dir = "D:/RAG/XSS_attacks/dataset/vector"
-retrieval_dir = f"D:/RAG/XSS_attacks/result/retrieval/{total_samples}"
-os.makedirs(json_dir, exist_ok=True)
-os.makedirs(vector_dir, exist_ok=True)
-os.makedirs(retrieval_dir, exist_ok=True)
+# 顏色
+color_map = {
+    "sentence-transformers/all-MiniLM-L6-v2": "#D62728",
+    "jackaduma/SecBERT": "#1F77B4",
+    "microsoft/codebert-base": "#2CA02C",
+    "roberta-base-openai-detector": "#9467BD",
+    "cssupport/mobilebert-sql-injection-detect": "#FF7F0E",
+}
 
-def clean_excel_text(s):
-    if isinstance(s, str):
-        return re.sub(r'[\x00-\x1F]+', '', s)
-    return s
+# 設定指標與範圍
+metric = "Precision"
+start, end = 0, 200
+base_path = "D:/RAG/XSS_attacks/result/retrieval/200"
 
-def split_dataset():
-    df = pd.read_csv(input_file, encoding="utf-8")
-    benign_pool = df[df["Label"] == 0].sample(n=total_samples, random_state=42)
-    attack_pool = df[df["Label"] == 1].sample(n=total_samples, random_state=42)
-    combined = pd.concat([benign_pool, attack_pool])
-    test_df = df.drop(combined.index)  # 減去訓練來源
+plt.figure(figsize=(18, 10))
+all_texts = []  # ✅ collect all text objects to adjust later
 
-    # 清除非法 Excel 字元並儲存成 excel
-    combined_cleaned = combined.applymap(clean_excel_text)
-    test_df_cleaned = test_df.applymap(clean_excel_text)
-    combined_cleaned.to_excel(os.path.join(dataset_dir, "xss_dataset_combined.xlsx"), index=False)
-    test_df_cleaned.to_excel(os.path.join(dataset_dir, "xss_dataset_testing.xlsx"), index=False)
+for model_name in model_names:
+    filename = model_name.replace('-', '_').replace('/', '_')
+    csv_path = os.path.join(base_path, f"XSS_summary_results_{filename}.csv")
+    if not os.path.exists(csv_path):
+        print(f"❌ 找不到檔案：{csv_path}")
+        continue
 
-    print(f"✅ 測試集（{len(test_df)}）已儲存！")
-    return benign_pool.reset_index(drop=True), attack_pool.reset_index(drop=True), test_df
+    df = pd.read_csv(csv_path)
+    df = df[df["Malicious"].between(start, end)]
 
-def convert_queries_to_vectors(train_data, index_id):
-    tokenizer = AutoTokenizer.from_pretrained(model_name)
-    model = AutoModel.from_pretrained(model_name).to(device)
-    payloads = train_data["Payload"].tolist()
-    labels = train_data["Label"].tolist()
+    label = label_map[model_name]
+    color = color_map[model_name]
+    is_ours = model_name == "sentence-transformers/all-MiniLM-L6-v2"
 
-    def get_embedding(text):
-        inputs = tokenizer(text, return_tensors="pt", padding=True, max_length=512, truncation=True).to(device)
-        with torch.no_grad():
-            outputs = model(**inputs)
-        return outputs.last_hidden_state.mean(dim=1).squeeze().cpu().numpy()
+    # 畫線
+    plt.plot(
+        df["Malicious"], df[metric],
+        label=label,
+        color=color,
+        linewidth=2.8 if is_ours else 1.5,
+        marker='o',
+        markersize=4 if is_ours else 2,
+        zorder=3 if is_ours else 2
+    )
 
-    embeddings = np.array([get_embedding(text) for text in tqdm(payloads, desc="轉換向量")])
-    embeddings = embeddings / np.linalg.norm(embeddings, axis=1, keepdims=True)
-    faiss_index = faiss.IndexFlatIP(embeddings.shape[1])
-    faiss_index.add(embeddings)
+from tqdm import tqdm
 
-    index_file = os.path.join(vector_dir, f"xss_vector_index_{index_id}.faiss")
-    label_file = os.path.join(vector_dir, f"xss_labels_{index_id}.npy")
+# ⭐ 找出最高點（for 星號 + 特別標註）
+max_idx = df[metric].idxmax()
+x_max = df.loc[max_idx, "Malicious"]
+y_max = df.loc[max_idx, metric]
 
-    faiss.write_index(faiss_index, index_file)
-    np.save(label_file, labels)
-    print(f"✅ 向量庫 {index_id} 已建立並儲存！")
+# ⭐ 一般數值標籤（排除重複、相近值，保留頭尾）
+prev_y = None
+plotted_y_set = set()
+first_idx = df.index[0]
+last_idx = df.index[-1]
 
-def precompute_test_embeddings(test_df):
-    tokenizer = AutoTokenizer.from_pretrained(model_name)
-    model = AutoModel.from_pretrained(model_name).to(device)
+for i, (x, y) in enumerate(tqdm(zip(df["Malicious"], df[metric]), total=len(df), desc=f"標註 {label}")):
+    force_label = (df.index[i] == first_idx or df.index[i] == last_idx)
 
-    def get_embedding(text):
-        inputs = tokenizer(text, return_tensors="pt", padding=True, max_length=512, truncation=True).to(device)
-        with torch.no_grad():
-            outputs = model(**inputs)
-        return outputs.last_hidden_state.mean(dim=1).squeeze().cpu().numpy()
+    rounded_y = round(y, 1)
+    rounded_y_max = round(y_max, 1)
 
-    embeddings = np.array([get_embedding(payload) for payload in tqdm(test_df["Payload"], desc="轉換測試向量")])
-    embeddings = embeddings / np.linalg.norm(embeddings, axis=1, keepdims=True)
-    return embeddings, test_df["Label"].tolist()
+    if not force_label:
+        if x == x_max or rounded_y == rounded_y_max:
+            continue
+        if rounded_y in plotted_y_set:
+            continue
+        if prev_y is not None and abs(y - prev_y) < 1000:
+            prev_y = y
+            continue
 
-def evaluate_vectors(test_df, test_embeddings, test_labels, benign_pool, attack_pool):
+    prev_y = y
+    plotted_y_set.add(rounded_y)
 
-    def classify_xss_risk(input_embedding, k, index_id):
-        index = faiss.read_index(os.path.join(vector_dir, f"xss_vector_index_{index_id}.faiss"))
-        labels = np.load(os.path.join(vector_dir, f"xss_labels_{index_id}.npy"))
-        distances, indices = index.search(np.array([input_embedding], dtype="float32"), k)
-        scores = {0: 0, 1: 0}
-        for idx, dist in zip(indices[0], distances[0]):
-            scores[labels[idx]] += dist
-        return "benign" if scores[0] > scores[1] else "malicious"
+    txt = plt.text(
+        x, y,
+        f"{y:.1f}%",
+        fontsize=15,
+        ha="center", va="bottom",
+        color="black",
+        bbox=dict(facecolor=color, edgecolor=color, alpha=0.3, boxstyle="round,pad=0.3")
+    )
+    all_texts.append(txt)
 
-    results = []
-    for malicious_count in range(total_samples + 1):
-        legit_count = total_samples - malicious_count
-        train_part = pd.concat([
-            attack_pool.iloc[:malicious_count],
-            benign_pool.iloc[:legit_count]
-        ]).reset_index(drop=True)
+# ⭐ 特別標註最高點（星星 + 錯開的標籤文字）
+# ➤ 星星在原地、文字錯開
+x_offset = 0.25 * model_names.index(model_name)  # ← 可依需要調整間距
+plt.scatter(x_max, y_max, color=color, edgecolors='black', zorder=5, s=90, marker='*')
 
-        convert_queries_to_vectors(train_part, index_id=malicious_count)
+star_text = plt.text(
+    x_max + x_offset, y_max + 1.8,
+    f"★ {y_max:.1f}% at {x_max}",
+    fontsize=15,
+    ha="center", va="bottom",
+    color="black",
+    bbox=dict(facecolor=color, edgecolor=color, alpha=0.5, boxstyle="round,pad=0.3")
+)
+all_texts.append(star_text)
 
-        predicted_labels = [
-            1 if classify_xss_risk(emb, k=1, index_id=malicious_count) == "malicious" else 0
-            for emb in tqdm(test_embeddings, desc=f"訓練比例 {malicious_count}/{total_samples}")
-        ]
 
-        accuracy = accuracy_score(test_labels, predicted_labels) * 100
-        precision = precision_score(test_labels, predicted_labels, zero_division=0) * 100
-        recall = recall_score(test_labels, predicted_labels, zero_division=0) * 100
-        total_time = time.time()
-        avg_time = (total_time / len(test_labels)) * 1000
+# ✅ 自動調整文字位置，避免重疊
+from adjustText import adjust_text
+adjust_text(all_texts, arrowprops=dict(arrowstyle='->', color='gray', lw=0.5))
 
-        cm = confusion_matrix(test_labels, predicted_labels, labels=[0, 1])
-        disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=["benign", "malicious"])
-        disp.plot(cmap=plt.cm.Blues, colorbar=False)
-        plt.savefig(os.path.join(retrieval_dir, f"confusion_matrix_{malicious_count}.png"))
-        plt.close()
+# 圖設定
+plt.title(f"Impact of Illegal Samples in Database: {metric}", fontsize=16)
+plt.xlabel("Number of Illegal Samples in Database", fontsize=16)
+plt.ylabel(f"{metric} (%)", fontsize=16)
+plt.legend(fontsize=15)
+plt.grid(True)
+plt.xlim(start, end)
+plt.tight_layout()
+# 改 X/Y 軸的刻度數字大小
+plt.xticks(fontsize=12)
+plt.yticks(fontsize=12)
 
-        results.append([malicious_count, legit_count, accuracy, precision, recall, total_time, avg_time])
 
-    df = pd.DataFrame(results, columns=["Malicious", "Legit", "Accuracy", "Precision", "Recall", "Total Time (s)", "Average Time (ms)"])
-    df.to_csv(os.path.join(retrieval_dir, f"XSS_summary_results_{model_filename}.csv"), index=False)
-    print("✅ 測試結果已完成並儲存！")
-
-def main():
-    benign_pool, attack_pool, test_df = split_dataset()
-    test_embeddings, test_labels = precompute_test_embeddings(test_df)
-    evaluate_vectors(test_df, test_embeddings, test_labels, benign_pool, attack_pool)
-    print("🚀 全部流程完成！")
-
-if __name__ == "__main__":
-    main()
+# 輸出
+output_path = os.path.join(base_path, f"{metric}_comparison_{start}_{end}_newww.png")
+plt.savefig(output_path, dpi=300)
+plt.show()

@@ -64,9 +64,9 @@ def get_embedding(text):
     ).to(device)
     with torch.no_grad():
         outputs = model(**inputs)
-    hidden_states = outputs.last_hidden_state
-    sentence_embedding = hidden_states.mean(dim=1).squeeze().cpu().numpy()  
-    return sentence_embedding
+        hidden_states = outputs.last_hidden_state
+        sentence_embedding = hidden_states.mean(dim=1).squeeze().cpu().numpy()  
+        return sentence_embedding
 
 
 # 🔹 5. 定義 XSS 檢測函數

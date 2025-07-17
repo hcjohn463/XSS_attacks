@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM XSS 測試</title>
+</head>
+<body>
+    <h2>DOM XSS 測試</h2>
+    <p id="output"></p>
+
+    <script>
+        // 取得網址中的 ?name=xxx
+        var params = new URLSearchParams(window.location.search);
+        var input = params.get("name");
+
+        // 顯示原始內容到畫面上
+        document.getElementById("output").innerHTML = input;
+
+        // 從 <script> 內容中取出並手動 eval（用於展示，不建議正式用）
+        if (input && input.includes("<script>")) {
+            var match = input.match(/<script>(.*?)<\/script>/);
+            if (match && match[1]) {
+                eval(match[1]);  // 執行 script 中的內容，例如 alert('DOM XSS')
+            }
+        }
+    </script>
+</body>
+</html>
+http://localhost:8003/domxss.html?name=<script>alert('DOM XSS')</script>

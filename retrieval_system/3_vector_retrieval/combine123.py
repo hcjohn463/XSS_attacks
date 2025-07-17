@@ -4,12 +4,12 @@ import json
 import numpy as np
 import torch
 import faiss
-import multiprocessing
 import time
 import re
 from transformers import AutoTokenizer, AutoModel
 from tqdm import tqdm
 from sklearn.metrics import accuracy_score, precision_score, recall_score
+from sentence_transformers import SentenceTransformer
 import matplotlib.pyplot as plt
 
 # 確定設備
@@ -19,9 +19,8 @@ print(f"Using device: {device}")
 # model_name = "microsoft/codebert-base"
 # model_name = "jackaduma/SecBERT"
 # model_name = "cssupport/mobilebert-sql-injection-detect"
-# model_name = "sentence-transformers/all-MiniLM-L6-v2"
+model_name = "sentence-transformers/all-MiniLM-L6-v2"
 # model_name = "roberta-base-openai-detector"
-model_name = "BAAI/bge-small-en"
 
 model_filename = model_name.replace('-', '_').replace('/', '_')
 total_samples = 200  # 每類各取 total_samples 筆，共 400 筆作為訓練資料來源
@@ -37,6 +36,32 @@ os.makedirs(json_dir, exist_ok=True)
 os.makedirs(vector_dir, exist_ok=True)
 os.makedirs(retrieval_dir, exist_ok=True)
 
+# 自動判斷對應的 get_embedding 模組
+class EmbeddingModel:
+    def __init__(self, model_name, device="cuda" if torch.cuda.is_available() else "cpu"):
+        self.model_name = model_name
+        self.device = device
+
+        if "sentence-transformers" in model_name or "MiniLM" in model_name:
+            self.backend = "sentence-transformers"
+            self.model = SentenceTransformer(model_name, device=device)
+        else:
+            self.backend = "transformers"
+            self.tokenizer = AutoTokenizer.from_pretrained(model_name)
+            self.model = AutoModel.from_pretrained(model_name).to(device)
+
+    def get_embedding(self, text):
+        if self.backend == "sentence-transformers":
+            embedding = self.model.encode(text, normalize_embeddings=True)
+            return embedding
+        inputs = self.tokenizer(text, return_tensors="pt", padding=True, max_length=512, truncation=True).to(self.device)
+        with torch.no_grad():
+            outputs = self.model(**inputs)
+        embedding = outputs.last_hidden_state.mean(dim=1).squeeze().cpu().numpy()
+        return embedding / np.linalg.norm(embedding)
+
+embedder = EmbeddingModel(model_name)
+
 def clean_excel_text(s):
     if isinstance(s, str):
         return re.sub(r'[\x00-\x1F]+', '', s)
@@ -47,52 +72,29 @@ def split_dataset():
     benign_pool = df[df["Label"] == 0].sample(n=total_samples, random_state=42)
     attack_pool = df[df["Label"] == 1].sample(n=total_samples, random_state=42)
     combined = pd.concat([benign_pool, attack_pool])
-    test_df = df.drop(combined.index)  # 減去訓練來源
-
-    # 清除非法 Excel 字元並儲存成 excel
+    test_df = df.drop(combined.index)
     combined_cleaned = combined.applymap(clean_excel_text)
     test_df_cleaned = test_df.applymap(clean_excel_text)
     combined_cleaned.to_excel(os.path.join(dataset_dir, "xss_dataset_combined.xlsx"), index=False)
     test_df_cleaned.to_excel(os.path.join(dataset_dir, "xss_dataset_testing.xlsx"), index=False)
-
     print(f"✅ 測試集（{len(test_df)}）已儲存！")
     return benign_pool.reset_index(drop=True), attack_pool.reset_index(drop=True), test_df
 
 def convert_queries_to_vectors(train_data, index_id):
-    tokenizer = AutoTokenizer.from_pretrained(model_name)
-    model = AutoModel.from_pretrained(model_name).to(device)
     payloads = train_data["Payload"].tolist()
     labels = train_data["Label"].tolist()
-
-    def get_embedding(text):
-        inputs = tokenizer(text, return_tensors="pt", padding=True, max_length=512, truncation=True).to(device)
-        with torch.no_grad():
-            outputs = model(**inputs)
-        return outputs.last_hidden_state.mean(dim=1).squeeze().cpu().numpy()
-
-    embeddings = np.array([get_embedding(text) for text in tqdm(payloads, desc="轉換向量")])
+    embeddings = np.array([embedder.get_embedding(text) for text in tqdm(payloads, desc="轉換向量")])
     embeddings = embeddings / np.linalg.norm(embeddings, axis=1, keepdims=True)
     faiss_index = faiss.IndexFlatIP(embeddings.shape[1])
     faiss_index.add(embeddings)
-
     index_file = os.path.join(vector_dir, f"xss_vector_index_{index_id}.faiss")
     label_file = os.path.join(vector_dir, f"xss_labels_{index_id}.npy")
-
     faiss.write_index(faiss_index, index_file)
     np.save(label_file, labels)
     print(f"✅ 向量庫 {index_id} 已建立並儲存！")
 
 def precompute_test_embeddings(test_df):
-    tokenizer = AutoTokenizer.from_pretrained(model_name)
-    model = AutoModel.from_pretrained(model_name).to(device)
-
-    def get_embedding(text):
-        inputs = tokenizer(text, return_tensors="pt", padding=True, max_length=512, truncation=True).to(device)
-        with torch.no_grad():
-            outputs = model(**inputs)
-        return outputs.last_hidden_state.mean(dim=1).squeeze().cpu().numpy()
-
-    embeddings = np.array([get_embedding(payload) for payload in tqdm(test_df["Payload"], desc="轉換測試向量")])
+    embeddings = np.array([embedder.get_embedding(payload) for payload in tqdm(test_df["Payload"], desc="轉換測試向量")])
     embeddings = embeddings / np.linalg.norm(embeddings, axis=1, keepdims=True)
     return embeddings, test_df["Label"].tolist()
 
@@ -131,7 +133,7 @@ def evaluate_vectors(test_df, test_embeddings, test_labels, benign_pool, attack_
         results.append([malicious_count, legit_count, accuracy, precision, recall, total_time, avg_time])
 
     df = pd.DataFrame(results, columns=["Malicious", "Legit", "Accuracy", "Precision", "Recall", "Total Time (s)", "Average Time (ms)"])
-    df.to_csv(os.path.join(retrieval_dir, f"XSS_summary_results_{model_filename}.csv"), index=False)
+    df.to_csv(os.path.join(retrieval_dir, f"XSS_summary_results_{model_filename}_2.0.csv"), index=False)
     print("✅ 測試結果已完成並儲存！")
 
 def main():

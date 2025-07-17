@@ -9,8 +9,8 @@ metric = "Accuracy"  # 可改成 "Precision" 或 "Recall"
 # model_name = "jackaduma/SecBERT"
 # model_name = "cssupport/mobilebert-sql-injection-detect"
 # model_name = "sentence-transformers/all-MiniLM-L6-v2"
-# model_name = "roberta-base-openai-detector"
-model_name = "BAAI/bge-small-en"
+model_name = "roberta-base-openai-detector"
+
 
 model_filename = model_name.replace('-', '_').replace('/', '_')
 total_samples = 200

