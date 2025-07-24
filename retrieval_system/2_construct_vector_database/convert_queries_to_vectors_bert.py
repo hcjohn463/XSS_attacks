@@ -15,7 +15,7 @@ model_name = 'microsoft/codebert-base'
 # model_name = "roberta-base-openai-detector"
 
 
-training = "xss_dataset_training_50.json"
+training = "xss_dataset.json"
 
 
 print(f"🔍 使用模型: {model_name}")
@@ -24,12 +24,12 @@ model = AutoModel.from_pretrained(model_name)
 model_filename = model_name.replace('-', '_').replace('/', '_')
 
 # 🔹 2. 設定資料與輸出目錄
-base_output_dir = "D:/RAG/xss_attacks/dataset/vector"
+base_output_dir = "../../dataset/vector"
 model_output_dir = os.path.join(base_output_dir, model_name.replace('-', '_').replace('/', '_'))
 os.makedirs(model_output_dir, exist_ok=True)
 
 # 🔹 3. 讀取 XSS 資料集
-with open(f"D:/RAG/xss_attacks/dataset/json/{training}", "r", encoding="utf-8") as f:
+with open(f"../../dataset/json/{training}", "r", encoding="utf-8") as f:
     dataset = json.load(f)
 
 # 取得 Payloads 與 Labels

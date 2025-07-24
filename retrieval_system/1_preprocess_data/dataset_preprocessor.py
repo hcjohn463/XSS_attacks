@@ -3,7 +3,8 @@ import json
 import os
 
 # 🔹 1. 讀取 CSV 文件
-file_path = "D:/RAG/XSS_attacks/dataset/XSS_dataset_training.csv"  # 替換為你的 CSV 文件路徑
+
+file_path = os.path.join("..", "..", "dataset", "XSS_dataset_cleaned.csv")  # 替換為你的 CSV 文件路徑
 df = pd.read_csv(file_path)
 
 # 🔹 2. 查看數據結構（可選）
@@ -13,11 +14,11 @@ print(df.head())
 data = df.to_dict(orient="records")
 
 # 🔹 4. 確保 JSON 目錄存在
-json_dir = "D:/RAG/XSS_attacks/dataset/json"
+json_dir = os.path.dirname(file_path)  # 設定為與 CSV 相同的資料夾
 os.makedirs(json_dir, exist_ok=True)  # 如果資料夾不存在則創建
 
 # 🔹 5. 設定 JSON 文件輸出路徑
-json_file_path = os.path.join(json_dir, "xss_dataset_training.json")
+json_file_path = os.path.join(json_dir, "xss_dataset.json")
 
 # 🔹 6. 存成 JSON 檔案
 with open(json_file_path, "w", encoding="utf-8") as f:

@@ -1,4 +1,5 @@
 import os
+os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 import faiss
 import numpy as np
 import json
@@ -6,18 +7,21 @@ from transformers import AutoTokenizer, AutoModel
 import torch
 
 # 🔹 1. 選擇 NLP 模型（建議用 BGE-M3 或 Sentence-BERT）
-model_name = "BAAI/bge-small-en"  # 或 "sentence-transformers/all-MiniLM-L6-v2"
+# model_name = "BAAI/bge-small-en"  # 或 "sentence-transformers/all-MiniLM-L6-v2"
+model_name = "microsoft/codebert-base"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModel.from_pretrained(model_name)
 
+model_filename = model_name.replace('-', '_').replace('/', '_')
+
 # 🔹 2. 設定 XSS 向量資料庫目錄
-base_dir = "D:/RAG/xss_attacks/dataset/vector"
-model_dir = os.path.join(base_dir, model_name.replace('-', '_').replace('/', '_'))
+base_dir = "../../dataset/vector"
+model_dir = os.path.join(base_dir, model_filename)
 
 # 設定 FAISS 路徑
-index_file = os.path.join(model_dir, "xss_vector_index.faiss")
-labels_file = os.path.join(model_dir, "xss_labels.npy")
-payloads_file = os.path.join(model_dir, "xss_payloads.npy")
+index_file = os.path.join(model_dir, f"xss_vector_index_{model_filename}.faiss")
+labels_file = os.path.join(model_dir, f"xss_labels_{model_filename}.npy")
+payloads_file = os.path.join(model_dir, f"xss_payloads_{model_filename}.npy")
 
 # 🔹 3. 加載 FAISS 向量索引 & 標籤
 print(f"📥 加載 XSS 向量庫（{index_file}）...")
