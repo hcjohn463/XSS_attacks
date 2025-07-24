@@ -1,4 +1,5 @@
 import os
+os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 import faiss
 import numpy as np
 from transformers import AutoTokenizer, AutoModel
@@ -20,12 +21,12 @@ print(f"正在使用 {model_name} 模型進行分類...")
 model_file_name = model_name.replace('-', '_').replace('/', '_')
 
 # 動態設置文件路徑
-base_dir = "D:/RAG/SQL_legality/dataset/vector"
+base_dir = "../../dataset/vector"
 model_dir = os.path.join(base_dir, model_file_name)
 
-index_file = os.path.join(model_dir, f"vector_index_{model_file_name}.faiss")
-labels_file = os.path.join(model_dir, f"vector_labels_{model_file_name}.npy")
-queries_file = os.path.join(model_dir, f"queries_{model_file_name}.npy")
+index_file = os.path.join(model_dir, f"xss_vector_index_{model_file_name}.faiss")
+labels_file = os.path.join(model_dir, f"xss_labels_{model_file_name}.npy")
+queries_file = os.path.join(model_dir, f"xss_payloads_{model_file_name}.npy")
 
 # 加載向量索引和標籤
 print(f"加載模型 {model_name} 的向量資料...")

@@ -14,7 +14,7 @@ print(df.head())
 data = df.to_dict(orient="records")
 
 # 🔹 4. 確保 JSON 目錄存在
-json_dir = os.path.dirname(file_path)  # 設定為與 CSV 相同的資料夾
+json_dir = os.path.join("..", "..", "dataset", "json")  # 設定為 json 資料夾
 os.makedirs(json_dir, exist_ok=True)  # 如果資料夾不存在則創建
 
 # 🔹 5. 設定 JSON 文件輸出路徑

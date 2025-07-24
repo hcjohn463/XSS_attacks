@@ -4,6 +4,7 @@ import torch
 import numpy as np
 import time
 import os
+os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 
 # 🔹 1. 設定 NLP 模型
 # model_name = "BAAI/bge-small-en"  
@@ -22,7 +23,7 @@ model = AutoModel.from_pretrained(model_name)
 model_filename = model_name.replace('-', '_').replace('/', '_')
 
 # 🔹 3. 加載 FAISS 向量索引 & 標籤
-base_vector_dir = "D:/RAG/xss_attacks/dataset/vector"
+base_vector_dir = "../../dataset/vector"
 model_vector_dir = os.path.join(base_vector_dir, model_filename)
 
 index_file = os.path.join(model_vector_dir, f"xss_vector_index_{model_filename}.faiss")
